@@ -682,6 +682,7 @@ body {
   aspect-ratio: 1;
 }
 .header__bottom {
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 .header__bottom_logo,
@@ -6298,8 +6299,7 @@ body {
   color: var(--c-red);
 }
 .gallery__thumbs-arrow.is-disabled {
-  opacity: 0.35;
-  pointer-events: none;
+  display: none;
 }
 .gallery__thumbs-arrow.is-hidden {
   display: none;
