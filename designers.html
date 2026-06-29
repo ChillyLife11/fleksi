@@ -1,0 +1,2194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fleksi</title>
+
+	<link rel="stylesheet" href="./libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="header__top">
+			<div class="wrapper">
+				<div class="header__top_row">
+					<div></div>
+					<div class="header__top_center">
+						<ul class="header__top_list">
+							<li><a href="#">Дизайнерам</a></li>
+							<li><a href="#">Опт</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата и возврат</a></li>
+							<li>
+								<a href="#">
+									О компании
+									<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.0003 0.999942L6.65716 6.6568M1.0003 6.6568H6.65716V0.999942" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<div class="header__address">
+							<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 13C6.625 10 11 9.65097 11 5.8C11 3.14903 8.76142 1 6 1C3.23858 1 1 3.14903 1 5.8C1 9.65097 5.375 10 6 13Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M6 7.6C7.03553 7.6 7.875 6.79411 7.875 5.8C7.875 4.80589 7.03553 4 6 4C4.96447 4 4.125 4.80589 4.125 5.8C4.125 6.79411 4.96447 7.6 6 7.6Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<div class="header__address_city">
+								Адреса магазинов:
+								<span>Краснодар</span>
+							</div>
+						</div>
+					</div>
+					<div class="header__top_right">
+						<div class="header__phone-wrap" data-contacts>
+							<a href="tel:88002347575" class="header__phone">
+								8 800 234 75 75
+								<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.0003 0.999942L6.65716 6.6568M1.0003 6.6568H6.65716V0.999942" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+
+							<div class="contacts-pop">
+								<div class="contacts-pop__inner">
+									<a href="mailto:info@fleksi.ru" class="contacts-pop__email">
+										<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 4L9.16492 9.71544C9.82609 10.1783 10.1567 10.4097 10.5163 10.4993C10.8339 10.5785 11.1661 10.5785 11.4837 10.4993C11.8433 10.4097 12.1739 10.1783 12.8351 9.71544L21 4M5.8 17H16.2C17.8802 17 18.7202 17 19.362 16.673C19.9265 16.3854 20.3854 15.9265 20.673 15.362C21 14.7202 21 13.8802 21 12.2V5.8C21 4.11984 21 3.27976 20.673 2.63803C20.3854 2.07354 19.9265 1.6146 19.362 1.32698C18.7202 1 17.8802 1 16.2 1H5.8C4.11984 1 3.27976 1 2.63803 1.32698C2.07354 1.6146 1.6146 2.07354 1.32698 2.63803C1 3.27976 1 4.11984 1 5.8V12.2C1 13.8802 1 14.7202 1.32698 15.362C1.6146 15.9265 2.07354 16.3854 2.63803 16.673C3.27976 17 4.11984 17 5.8 17Z" stroke="#C8C8C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<span class="contacts-pop__email-text">info@fleksi.ru</span>
+									</a>
+
+									<button type="button" class="contacts-pop__call red-btn" data-popup="callback">Заказать звонок</button>
+
+									<div class="contacts-pop__ask">
+										<p class="contacts-pop__ask-title">задать вопрос</p>
+										<div class="contacts-pop__msgs">
+											<a href="#" class="contacts-pop__msg contacts-pop__msg--tg">
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14.6663 1.33331L7.33301 8.66665M7.33301 8.66665L1.33301 5.99998L14.6663 1.33331L9.99967 14.6666L7.33301 8.66665Z" stroke="#F3F3F3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												Написать в Telegram
+											</a>
+											<a href="#" class="contacts-pop__msg contacts-pop__msg--max">
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14 7.66669C14.0023 8.5466 13.7967 9.41461 13.4 10.2C12.9296 11.1412 12.2065 11.9328 11.3116 12.4862C10.4168 13.0396 9.3855 13.3329 8.33333 13.3334C7.45342 13.3356 6.58541 13.1301 5.8 12.7334L2 14L3.26667 10.2C2.86995 9.41461 2.66437 8.5466 2.66667 7.66669C2.66707 6.61452 2.96041 5.58325 3.51381 4.68839C4.06722 3.79352 4.85884 3.0704 5.8 2.60002C6.58541 2.20331 7.45342 1.99772 8.33333 2.00002H8.66667C10.0562 2.07668 11.3687 2.66319 12.3528 3.64726C13.3368 4.63132 13.9233 5.94379 14 7.33335V7.66669Z" stroke="#F3F3F3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												Написать в MAX
+											</a>
+										</div>
+									</div>
+
+									<div class="contacts-pop__hours">
+										<p class="contacts-pop__hours-title">График работы</p>
+										<p class="contacts-pop__hours-time">9:00 – 19:00 ежедневно</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__mid">
+			<div class="wrapper">
+				<div class="header__mid_row">
+					<a href="#" class="header__logo"><img src="./img/logo.png" alt="" width="204" height="48"></a>
+
+					<a href="contacts.html" class="header__city-m">
+						<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6 13C6.625 10 11 9.65097 11 5.8C11 3.14903 8.76142 1 6 1C3.23858 1 1 3.14903 1 5.8C1 9.65097 5.375 10 6 13Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M6 7.6C7.03553 7.6 7.875 6.79411 7.875 5.8C7.875 4.80589 7.03553 4 6 4C4.96447 4 4.125 4.80589 4.125 5.8C4.125 6.79411 4.96447 7.6 6 7.6Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						Сочи
+					</a>
+
+					<div class="header__mid_center">
+						<button type="button" class="header__catalog">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="path-1-inside-1_2002_14765" fill="white">
+								<path d="M0 1C0 0.447716 0.447715 0 1 0H6.46667C7.01895 0 7.46667 0.447715 7.46667 1V3.46666C7.46667 5.6758 5.67581 7.46667 3.46667 7.46667H1C0.447716 7.46667 0 7.01895 0 6.46667V1Z"/>
+								</mask>
+								<path d="M0 1C0 0.447716 0.447715 0 1 0H6.46667C7.01895 0 7.46667 0.447715 7.46667 1V3.46666C7.46667 5.6758 5.67581 7.46667 3.46667 7.46667H1C0.447716 7.46667 0 7.01895 0 6.46667V1Z" stroke="white" stroke-width="4" mask="url(#path-1-inside-1_2002_14765)"/>
+								<mask id="path-2-inside-2_2002_14765" fill="white">
+								<path d="M0 9.53345C0 8.98116 0.447715 8.53345 1 8.53345H3.46666C5.6758 8.53345 7.46667 10.3243 7.46667 12.5334V15.0001C7.46667 15.5524 7.01895 16.0001 6.46667 16.0001H1C0.447716 16.0001 0 15.5524 0 15.0001V9.53345Z"/>
+								</mask>
+								<path d="M0 9.53345C0 8.98116 0.447715 8.53345 1 8.53345H3.46666C5.6758 8.53345 7.46667 10.3243 7.46667 12.5334V15.0001C7.46667 15.5524 7.01895 16.0001 6.46667 16.0001H1C0.447716 16.0001 0 15.5524 0 15.0001V9.53345Z" stroke="white" stroke-width="4" mask="url(#path-2-inside-2_2002_14765)"/>
+								<mask id="path-3-inside-3_2002_14765" fill="white">
+								<path d="M8.5332 1C8.5332 0.447716 8.98092 0 9.5332 0H14.9999C15.5522 0 15.9999 0.447715 15.9999 1V6.46667C15.9999 7.01895 15.5522 7.46667 14.9999 7.46667H12.5332C10.3241 7.46667 8.5332 5.67581 8.5332 3.46667V1Z"/>
+								</mask>
+								<path d="M8.5332 1C8.5332 0.447716 8.98092 0 9.5332 0H14.9999C15.5522 0 15.9999 0.447715 15.9999 1V6.46667C15.9999 7.01895 15.5522 7.46667 14.9999 7.46667H12.5332C10.3241 7.46667 8.5332 5.67581 8.5332 3.46667V1Z" stroke="white" stroke-width="4" mask="url(#path-3-inside-3_2002_14765)"/>
+								<mask id="path-4-inside-4_2002_14765" fill="white">
+								<path d="M8.5332 12.5335C8.5332 10.3243 10.3241 8.53345 12.5332 8.53345H14.9999C15.5522 8.53345 15.9999 8.98116 15.9999 9.53345V15.0001C15.9999 15.5524 15.5522 16.0001 14.9999 16.0001H9.5332C8.98092 16.0001 8.5332 15.5524 8.5332 15.0001V12.5335Z"/>
+								</mask>
+								<path d="M8.5332 12.5335C8.5332 10.3243 10.3241 8.53345 12.5332 8.53345H14.9999C15.5522 8.53345 15.9999 8.98116 15.9999 9.53345V15.0001C15.9999 15.5524 15.5522 16.0001 14.9999 16.0001H9.5332C8.98092 16.0001 8.5332 15.5524 8.5332 15.0001V12.5335Z" stroke="white" stroke-width="4" mask="url(#path-4-inside-4_2002_14765)"/>
+							</svg>
+							КАТАЛОГ
+						</button>
+
+						<form class="header__search">
+							<input type="text" class="header__search_inp" placeholder="Поиск">
+							<button type="submit" class="header__search_submit">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19 19L14.65 14.65M9 4C11.7614 4 14 6.23858 14 9M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</form>
+
+						<button type="button" class="header__phone-m" data-popup="write" aria-label="Связаться с нами">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.05 6A5 5 0 0 1 18 9.95M14.05 2A9 9 0 0 1 22 9.94M18.5 21.5a18 18 0 0 1-8-2.07 17.7 17.7 0 0 1-5.93-5.93A18 18 0 0 1 2.5 5.5 2 2 0 0 1 4.5 3.5h2.5a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11l-1 1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7a2 2 0 0 1 1.72 2v2.31a2 2 0 0 1-2 2Z" stroke="#1D1D1D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+					</div>
+
+					<div class="header__mid_right">
+						<div class="header__mid_btns">
+							<a href="#" class="header__mid_btn">
+								<svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 22C3.85485 18.9397 7.7308 17.0588 12 17.0588C16.2692 17.0588 20.1451 18.9397 23 22M17.5 6.55882C17.5 9.62888 15.0376 12.1176 12 12.1176C8.96243 12.1176 6.5 9.62888 6.5 6.55882C6.5 3.48877 8.96243 1 12 1C15.0376 1 17.5 3.48877 17.5 6.55882Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+							<a href="#" class="header__mid_btn">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.11111 13.2222V18.1111M16.8889 10.7778V18.1111M12 5.88889V18.1111M6.86667 23H17.1333C19.1869 23 20.2136 23 20.998 22.6004C21.6879 22.2488 22.2488 21.6879 22.6004 20.998C23 20.2136 23 19.1869 23 17.1333V6.86667C23 4.81314 23 3.78638 22.6004 3.00203C22.2488 2.31211 21.6879 1.75118 20.998 1.39964C20.2136 1 19.1869 1 17.1333 1H6.86667C4.81314 1 3.78638 1 3.00203 1.39964C2.31211 1.75118 1.75118 2.31211 1.39964 3.00203C1 3.78638 1 4.81314 1 6.86667V17.1333C1 19.1869 1 20.2136 1.39964 20.998C1.75118 21.6879 2.31211 22.2488 3.00203 22.6004C3.78638 23 4.81314 23 6.86667 23Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+							<a href="#" class="header__mid_btn">
+								<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.5222 1C20.3967 1 23 4.725 23 8.2C23 15.2375 12.1956 21 12 21C11.8044 21 1 15.2375 1 8.2C1 4.725 3.60333 1 7.47778 1C9.70222 1 11.1567 2.1375 12 3.1375C12.8433 2.1375 14.2978 1 16.5222 1Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+						</div>
+
+						<a href="#" class="header__cart">
+							<svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.8022 9.4V5.8C16.8022 3.14903 14.6522 1 12 1C9.34782 1 7.19781 3.14903 7.19781 5.8V9.4M1.90579 11.0224L1.18546 18.7024C0.980653 20.886 0.878248 21.9778 1.24074 22.8211C1.55919 23.562 2.11723 24.1745 2.82543 24.5605C3.63161 25 4.72872 25 6.92294 25H17.0771C19.2713 25 20.3684 25 21.1746 24.5605C21.8828 24.1745 22.4408 23.562 22.7593 22.8211C23.1218 21.9778 23.0193 20.886 22.8145 18.7024L22.0942 11.0224C21.9213 9.17842 21.8348 8.25644 21.4199 7.5594C21.0545 6.9455 20.5147 6.45413 19.8691 6.14781C19.136 5.8 18.2096 5.8 16.3567 5.8L7.64327 5.8C5.79039 5.8 4.86395 5.8 4.13091 6.14781C3.48531 6.45413 2.94547 6.9455 2.58009 7.5594C2.16522 8.25644 2.07874 9.17842 1.90579 11.0224Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+							<span>22</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__bottom">
+			<div class="wrapper">
+				<div class="header__bottom_row">
+					<a href="#" class="header__bottom_logo"><img src="./img/logo.png" alt="" width="204" height="48"></a>
+					<ul class="header__bottom_center">
+						<li>
+							<a href="#">Коллекции</a>
+						</li>
+						<li>
+							<a href="#">Лояльность</a>
+						</li>
+						<li>
+							<a href="#">Акции</a>
+						</li>
+						<li>
+							<a href="#">Блог</a>
+						</li>
+						<li>
+							<a href="#" class="header__bottom_accent">
+								Дизайн-проект
+
+								<span>
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.4737 2.57895V1M10.4737 12.0526V10.4737M4.94737 6.52632H6.52632M14.4211 6.52632H16M12.6842 8.73684L13.6316 9.68421M12.6842 4.31579L13.6316 3.36842M1 16L8.10526 8.89474M8.26316 4.31579L7.31579 3.36842" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<a href="tel:88002347575" class="header__bottom_phone">
+						8 800 234 75 75
+						<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.0003 0.999942L6.65716 6.6568M1.0003 6.6568H6.65716V0.999942" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="catalog" data-catalog>
+		<div class="wrapper">
+			<div class="catalog__inner">
+				<nav class="catalog__nav">
+					<a href="/catalog/" class="catalog__nav-item">
+						<img src="./img/catalog-menu/vse-kategorii.svg" alt="" width="34" height="34">
+						Все категории
+					</a>
+
+					<div class="catalog__nav-group">
+						<button type="button" class="catalog__nav-item" data-catalog-tab="collections">
+							<img src="./img/catalog-menu/kollekcii.svg" alt="" width="34" height="34">
+							Коллекции плитки
+						</button>
+						<button type="button" class="catalog__nav-item catalog__nav-item--active" data-catalog-tab="tile">
+							<img src="./img/catalog-menu/plitka.svg" alt="" width="34" height="34">
+							Плитка
+						</button>
+						<button type="button" class="catalog__nav-item" data-catalog-tab="plumbing">
+							<img src="./img/catalog-menu/santexnika.svg" alt="" width="34" height="34">
+							Сантехника
+						</button>
+						<button type="button" class="catalog__nav-item" data-catalog-tab="furniture">
+							<img src="./img/catalog-menu/mebel-dlya-vannoi.svg" alt="" width="34" height="34">
+							Мебель для ванной
+						</button>
+						<button type="button" class="catalog__nav-item" data-catalog-tab="floor">
+							<img src="./img/catalog-menu/napolnie-pokritia.svg" alt="" width="34" height="34">
+							Напольные покрытия
+						</button>
+						<button type="button" class="catalog__nav-item" data-catalog-tab="wall">
+							<img src="./img/catalog-menu/nastennie-pokritia.svg" alt="" width="34" height="34">
+							Настенные покрытия
+						</button>
+					</div>
+
+					<div class="catalog__nav-group">
+						<a href="/sale/" class="catalog__nav-item">
+							<img src="./img/catalog-menu/skidki-i-akcii.svg" alt="" width="34" height="34">
+							Скидки и акции
+						</a>
+						<a href="#" class="catalog__nav-item">
+							<img src="./img/catalog-menu/gotovie-reshenia.svg" alt="" width="34" height="34">
+							Готовые решения
+						</a>
+						<button type="button" class="catalog__nav-item catalog__nav-item--accent" data-popup="design">
+							<img src="./img/catalog-menu/dizayn-proekt.svg" alt="" width="34" height="34">
+							Дизайн-проект
+						</button>
+					</div>
+				</nav>
+
+				<div class="catalog__panels">
+					<img src="./img/catalog-menu/bg-light.webp" class="catalog__panels_light" />
+
+					<div class="catalog__panels-inner">
+						<div class="catalog__panel catalog__panel--active" data-catalog-panel="tile">
+							<a href="/catalog/plitka/" class="catalog__panel-head">
+								<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="9" height="6" rx="1.5" stroke="#E43D30" stroke-width="2"/><rect x="13" y="2" width="9" height="6" rx="1.5" stroke="#E43D30" stroke-width="2"/><rect x="2" y="12" width="9" height="10" rx="1.5" stroke="#E43D30" stroke-width="2"/><rect x="13" y="12" width="9" height="10" rx="1.5" stroke="#E43D30" stroke-width="2"/></svg>
+								Плитка
+							</a>
+
+							<div class="catalog__cards">
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Керамическая плитка</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-1.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Утолщенный керамогранит</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-2.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Керамогранит</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-3.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Мозаика</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-4.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Ступень</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-5.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Плинтус</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-6.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Сухие смеси</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-7.webp" alt=""></span></a>
+							</div>
+
+							<div class="catalog__main">
+							<div class="catalog__cols">
+								<div class="catalog__col">
+									<div class="catalog__col-title">Помещение</div>
+									<ul class="catalog__links">
+										<li><a href="#">Для ванной</a></li>
+										<li><a href="#">Для кухни</a></li>
+										<li><a href="#">Для коридора</a></li>
+										<li><a href="#">Для гостиной</a></li>
+										<li><a href="#">Для улицы</a></li>
+										<li><a href="#">Для публичных помещений</a></li>
+										<li><a href="#">Для бойлерных/котельной</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Рисунок</div>
+									<ul class="catalog__links">
+										<li><a href="#">Мрамор</a></li>
+										<li><a href="#">Камень</a></li>
+										<li><a href="#">Бетон</a></li>
+										<li><a href="#">Дерево</a></li>
+										<li><a href="#">Оникс</a></li>
+										<li><a href="#">Металл</a></li>
+										<li><a href="#">Монохром</a></li>
+										<li><a href="#">Кирпич</a></li>
+										<li><a href="#">Травертин</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Материал</div>
+									<ul class="catalog__links">
+										<li><a href="#">Керамогранит</a></li>
+										<li><a href="#">Керамическая плитка</a></li>
+										<li><a href="#">Утолщенный керамогранит</a></li>
+										<li><a href="#">Бордюр настенный</a></li>
+										<li><a href="#">Панно настенное</a></li>
+										<li><a href="#">Плитка напольная</a></li>
+										<li><a href="#">Декор</a></li>
+										<li><a href="#">Мозаика</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Назначение</div>
+									<ul class="catalog__links">
+										<li><a href="#">Для пола</a></li>
+										<li><a href="#">Для стен</a></li>
+										<li><a href="#">Для фартука</a></li>
+										<li><a href="#">Для фасада</a></li>
+										<li><a href="#">Для бассейна</a></li>
+										<li><a href="#">Для печей/каминов</a></li>
+										<li><a href="#">Для ступеней</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Поверхность</div>
+									<ul class="catalog__links">
+										<li><a href="#">Матовая</a></li>
+										<li><a href="#">Глянцевая</a></li>
+										<li><a href="#">Лаппатированная</a></li>
+										<li><a href="#">Сатинированная</a></li>
+										<li><a href="#">Структурированная</a></li>
+										<li><a href="#">Металлизированная</a></li>
+										<li><a href="#">Противоскользящая</a></li>
+										<li><a href="#">Стеклянная</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Размер</div>
+									<ul class="catalog__links">
+										<li><a href="#">20х40</a></li>
+										<li><a href="#">20х50</a></li>
+										<li><a href="#">20х60</a></li>
+										<li><a href="#">30х60</a></li>
+										<li><a href="#">40х80</a></li>
+										<li><a href="#">60х60</a></li>
+										<li><a href="#">90х90</a></li>
+										<li><a href="#">120х60</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Цвет</div>
+									<ul class="catalog__links">
+										<li><a href="#">Белый</a></li>
+										<li><a href="#">Черный</a></li>
+										<li><a href="#">Коричневый</a></li>
+										<li><a href="#">Синий</a></li>
+										<li><a href="#">Зеленый</a></li>
+										<li><a href="#">Серый</a></li>
+										<li><a href="#">Бежевый</a></li>
+									</ul>
+								</div>
+							</div>
+								<span class="catalog__pattern" aria-hidden="true"></span>
+							</div>
+						</div>
+
+						<div class="catalog__panel catalog__panel--collections" data-catalog-panel="collections">
+							<h3 class="catalog__panel-title">Коллекции плитки</h3>
+
+							<div class="catalog__big">
+								<a href="#" class="catalog__big-card"><img src="./img/catalog-menu/big-1.webp" alt=""><span class="catalog__big-name">Для ванной</span></a>
+								<a href="#" class="catalog__big-card"><img src="./img/catalog-menu/big-2.webp" alt=""><span class="catalog__big-name">Для кухни</span></a>
+								<a href="#" class="catalog__big-card"><img src="./img/catalog-menu/big-3.webp" alt=""><span class="catalog__big-name">Для комнаты</span></a>
+								<a href="#" class="catalog__big-card"><img src="./img/catalog-menu/big-4.webp" alt=""><span class="catalog__big-name">Для пола</span></a>
+							</div>
+
+							<div class="catalog__small">
+								<a href="#" class="catalog__small-card"><img src="./img/catalog-menu/sm-1.webp" alt=""><span class="catalog__small-name">Монохром</span></a>
+								<a href="#" class="catalog__small-card"><img src="./img/catalog-menu/sm-2.webp" alt=""><span class="catalog__small-name">Под дерево</span></a>
+								<a href="#" class="catalog__small-card"><img src="./img/catalog-menu/sm-3.webp" alt=""><span class="catalog__small-name">Под камень</span></a>
+								<a href="#" class="catalog__small-card"><img src="./img/catalog-menu/sm-4.webp" alt=""><span class="catalog__small-name">Под мрамор</span></a>
+								<a href="#" class="catalog__small-card"><img src="./img/catalog-menu/sm-5.webp" alt=""><span class="catalog__small-name">Под бетон</span></a>
+								<a href="#" class="catalog__small-card"><img src="./img/catalog-menu/sm-6.webp" alt=""><span class="catalog__small-name">Под металл</span></a>
+								<a href="#" class="catalog__small-card catalog__small-card--all">
+									<img src="./img/catalog-menu/all-collections-logo.svg" alt="">
+									<span class="catalog__small-name">Все коллекции</span>
+									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.999951 1.00005L9.95298 9.95308M0.999951 9.95308H9.95298V1.00005" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+
+							<button type="button" class="catalog__banner" data-popup="design">
+								<span class="catalog__banner-title">Индивидуальный дизайн-проект бесплатно*</span>
+								<span class="catalog__banner-bottom">
+									<span class="catalog__banner-descr">Текст описание почему Индивидуальный дизайн-проект бесплатно*</span>
+									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.999951 1.00005L9.95298 9.95308M0.999951 9.95308H9.95298V1.00005" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</button>
+						</div>
+
+						<div class="catalog__panel" data-catalog-panel="plumbing">
+							<a href="#" class="catalog__panel-head">
+								<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 10h7v3a5 5 0 0 1-5 5H4M11 10V5h4l5 3" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Сантехника
+							</a>
+							<div class="catalog__cards">
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Ванны</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-1.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Душевые</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-3.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Раковины</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-2.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Унитазы</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-1.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Смесители</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-5.webp" alt=""></span></a>
+							</div>
+							<div class="catalog__main">
+							<div class="catalog__cols">
+								<div class="catalog__col">
+									<div class="catalog__col-title">Тип</div>
+									<ul class="catalog__links">
+										<li><a href="#">Ванны</a></li>
+										<li><a href="#">Душевые кабины</a></li>
+										<li><a href="#">Раковины</a></li>
+										<li><a href="#">Унитазы</a></li>
+										<li><a href="#">Смесители</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Материал</div>
+									<ul class="catalog__links">
+										<li><a href="#">Акрил</a></li>
+										<li><a href="#">Чугун</a></li>
+										<li><a href="#">Сталь</a></li>
+										<li><a href="#">Керамика</a></li>
+										<li><a href="#">Камень</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Установка</div>
+									<ul class="catalog__links">
+										<li><a href="#">Напольная</a></li>
+										<li><a href="#">Подвесная</a></li>
+										<li><a href="#">Встраиваемая</a></li>
+										<li><a href="#">Накладная</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Цвет</div>
+									<ul class="catalog__links">
+										<li><a href="#">Белый</a></li>
+										<li><a href="#">Черный</a></li>
+										<li><a href="#">Хром</a></li>
+										<li><a href="#">Золото</a></li>
+									</ul>
+								</div>
+							</div>
+								<span class="catalog__pattern" aria-hidden="true"></span>
+							</div>
+						</div>
+
+						<div class="catalog__panel" data-catalog-panel="furniture">
+							<a href="#" class="catalog__panel-head">
+								<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#E43D30" stroke-width="2"/><path d="M3 12h18M12 4v16" stroke="#E43D30" stroke-width="2"/></svg>
+								Мебель для ванной
+							</a>
+							<div class="catalog__cards">
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Тумбы</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-2.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Зеркала</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-3.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Пеналы</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-4.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Полки</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-5.webp" alt=""></span></a>
+							</div>
+							<div class="catalog__main">
+							<div class="catalog__cols">
+								<div class="catalog__col">
+									<div class="catalog__col-title">Тип</div>
+									<ul class="catalog__links">
+										<li><a href="#">Тумбы с раковиной</a></li>
+										<li><a href="#">Зеркала</a></li>
+										<li><a href="#">Зеркальные шкафы</a></li>
+										<li><a href="#">Пеналы</a></li>
+										<li><a href="#">Полки</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Установка</div>
+									<ul class="catalog__links">
+										<li><a href="#">Напольная</a></li>
+										<li><a href="#">Подвесная</a></li>
+										<li><a href="#">Угловая</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Цвет</div>
+									<ul class="catalog__links">
+										<li><a href="#">Белый</a></li>
+										<li><a href="#">Дерево</a></li>
+										<li><a href="#">Серый</a></li>
+										<li><a href="#">Черный</a></li>
+									</ul>
+								</div>
+							</div>
+								<span class="catalog__pattern" aria-hidden="true"></span>
+							</div>
+						</div>
+
+						<div class="catalog__panel" data-catalog-panel="floor">
+							<a href="#" class="catalog__panel-head">
+								<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 8l4-3 4 3-4 3-4-3Zm10 0l4-3 4 3-4 3-4-3ZM8 16l4-3 4 3-4 3-4-3Z" stroke="#E43D30" stroke-width="2" stroke-linejoin="round"/></svg>
+								Напольные покрытия
+							</a>
+							<div class="catalog__cards">
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Ламинат</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-1.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Кварцвинил</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-2.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Паркетная доска</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-3.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Линолеум</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-4.webp" alt=""></span></a>
+							</div>
+							<div class="catalog__main">
+							<div class="catalog__cols">
+								<div class="catalog__col">
+									<div class="catalog__col-title">Тип</div>
+									<ul class="catalog__links">
+										<li><a href="#">Ламинат</a></li>
+										<li><a href="#">Кварцвинил</a></li>
+										<li><a href="#">Паркетная доска</a></li>
+										<li><a href="#">Линолеум</a></li>
+										<li><a href="#">Пробка</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Класс</div>
+									<ul class="catalog__links">
+										<li><a href="#">31 класс</a></li>
+										<li><a href="#">32 класс</a></li>
+										<li><a href="#">33 класс</a></li>
+										<li><a href="#">34 класс</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Рисунок</div>
+									<ul class="catalog__links">
+										<li><a href="#">Дуб</a></li>
+										<li><a href="#">Ясень</a></li>
+										<li><a href="#">Орех</a></li>
+										<li><a href="#">Камень</a></li>
+									</ul>
+								</div>
+							</div>
+								<span class="catalog__pattern" aria-hidden="true"></span>
+							</div>
+						</div>
+
+						<div class="catalog__panel" data-catalog-panel="wall">
+							<a href="#" class="catalog__panel-head">
+								<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#E43D30" stroke-width="2"/><path d="M3 9h18M9 9v12" stroke="#E43D30" stroke-width="2"/></svg>
+								Настенные покрытия
+							</a>
+							<div class="catalog__cards">
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Обои</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-5.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Декоративная штукатурка</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-2.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Стеновые панели</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-3.webp" alt=""></span></a>
+								<a href="#" class="catalog__card"><span class="catalog__card-name">Краска</span><span class="catalog__card-img"><img src="./img/catalog-menu/plitka-1.webp" alt=""></span></a>
+							</div>
+							<div class="catalog__main">
+							<div class="catalog__cols">
+								<div class="catalog__col">
+									<div class="catalog__col-title">Тип</div>
+									<ul class="catalog__links">
+										<li><a href="#">Обои</a></li>
+										<li><a href="#">Декоративная штукатурка</a></li>
+										<li><a href="#">Стеновые панели</a></li>
+										<li><a href="#">Краска</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Материал</div>
+									<ul class="catalog__links">
+										<li><a href="#">Флизелин</a></li>
+										<li><a href="#">Винил</a></li>
+										<li><a href="#">Бумага</a></li>
+										<li><a href="#">МДФ</a></li>
+									</ul>
+								</div>
+								<div class="catalog__col">
+									<div class="catalog__col-title">Цвет</div>
+									<ul class="catalog__links">
+										<li><a href="#">Белый</a></li>
+										<li><a href="#">Бежевый</a></li>
+										<li><a href="#">Серый</a></li>
+										<li><a href="#">Зеленый</a></li>
+									</ul>
+								</div>
+							</div>
+								<span class="catalog__pattern" aria-hidden="true"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<nav class="botnav">
+		<a href="index.html" class="botnav__item botnav__item--active">
+			<span class="botnav__ic">
+				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 10.5 12 3l9 7.5M5 9.5V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</span>
+			Главная
+		</a>
+		<button type="button" class="botnav__item" data-mobile-menu-open>
+			<span class="botnav__ic">
+				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/></svg>
+			</span>
+			Каталог
+		</button>
+		<button type="button" class="botnav__item" data-search-open>
+			<span class="botnav__ic">
+				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+			</span>
+			Поиск
+		</button>
+		<a href="#" class="botnav__item">
+			<span class="botnav__ic">
+				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20S3 14.5 3 8.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 9 2.5C21 14.5 12 20 12 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</span>
+			Избранное
+		</a>
+		<button type="button" class="botnav__item botnav__item--cart" data-popup="cart">
+			<span class="botnav__ic">
+				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.8 9.4V5.8A4.8 4.8 0 0 0 12 1a4.8 4.8 0 0 0-4.8 4.8v3.6M5.9 7.8h12.2a2 2 0 0 1 2 2.2l-.9 9A3 3 0 0 1 16.2 22H7.8a3 3 0 0 1-3-3l-.9-9a2 2 0 0 1 2-2.2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				<span class="botnav__badge">2</span>
+			</span>
+			Корзина
+		</button>
+	</nav>
+
+	<div class="m-search" data-search>
+		<div class="m-search__bar">
+			<form class="m-search__form">
+				<svg class="m-search__ic" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="#53575A" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="#53575A" stroke-width="2" stroke-linecap="round"/></svg>
+				<input type="text" class="m-search__inp" placeholder="Поиск по каталогу">
+			</form>
+			<button type="button" class="m-search__cancel" data-search-close>Отмена</button>
+		</div>
+	</div>
+
+	<div class="mobile-menu" data-mobile-menu>
+		<div class="mobile-menu__panel">
+			<div class="mobile-menu__header">
+				<a href="#" class="header__logo"><img src="./img/logo.png" alt="" width="170" height="40"></a>
+				<a href="contacts.html" class="mobile-menu__city">
+					<svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 13C6.625 10 11 9.65097 11 5.8C11 3.14903 8.76142 1 6 1C3.23858 1 1 3.14903 1 5.8C1 9.65097 5.375 10 6 13Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M6 7.6C7.03553 7.6 7.875 6.79411 7.875 5.8C7.875 4.80589 7.03553 4 6 4C4.96447 4 4.125 4.80589 4.125 5.8C4.125 6.79411 4.96447 7.6 6 7.6Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					Сочи
+				</a>
+			</div>
+
+			<div class="mobile-menu__bar">
+				<button type="button" class="mobile-menu__close" data-mobile-close aria-label="Закрыть">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+				</button>
+				<div class="mobile-menu__search">
+					<input type="text" placeholder="Поиск">
+					<button type="button">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="#53575A" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="#53575A" stroke-width="2" stroke-linecap="round"/></svg>
+					</button>
+				</div>
+				<button type="button" class="mobile-menu__phone-btn" data-popup="write" aria-label="Связаться">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 21.5a18 18 0 0 1-8-2.07 17.7 17.7 0 0 1-5.93-5.93A18 18 0 0 1 2.5 5.5 2 2 0 0 1 4.5 3.5h2.5a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11l-1 1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7a2 2 0 0 1 1.72 2v2.31a2 2 0 0 1-2 2Z" stroke="#1D1D1D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				</button>
+			</div>
+
+			<div class="mobile-menu__tabs">
+				<button type="button" class="mobile-menu__tab mobile-menu__tab--active">Каталог</button>
+				<button type="button" class="mobile-menu__tab">Сервис</button>
+			</div>
+
+			<div class="mobile-menu__scroll">
+				<div class="mobile-menu__list">
+					<a href="#" class="mobile-menu__link mobile-menu__link--accent">
+						<span class="mobile-menu__link-ic"></span>
+						Все категории
+					</a>
+					<button type="button" class="mobile-menu__link" data-mobile-open="collections">
+						<span class="mobile-menu__link-ic"></span>
+						Коллекции плитки
+						<span class="mobile-menu__chevron"></span>
+					</button>
+					<button type="button" class="mobile-menu__link" data-mobile-open="tile">
+						<span class="mobile-menu__link-ic"></span>
+						Плитка
+						<span class="mobile-menu__chevron"></span>
+					</button>
+					<button type="button" class="mobile-menu__link" data-mobile-open="plumbing">
+						<span class="mobile-menu__link-ic"></span>
+						Сантехника
+						<span class="mobile-menu__chevron"></span>
+					</button>
+					<button type="button" class="mobile-menu__link" data-mobile-open="furniture">
+						<span class="mobile-menu__link-ic"></span>
+						Мебель для ванной
+						<span class="mobile-menu__chevron"></span>
+					</button>
+					<button type="button" class="mobile-menu__link" data-mobile-open="floor">
+						<span class="mobile-menu__link-ic"></span>
+						Напольные покрытия
+						<span class="mobile-menu__chevron"></span>
+					</button>
+					<button type="button" class="mobile-menu__link" data-mobile-open="wall">
+						<span class="mobile-menu__link-ic"></span>
+						Настенные покрытия
+						<span class="mobile-menu__chevron"></span>
+					</button>
+
+					<div class="mobile-menu__group-title">Сервисы</div>
+					<a href="#" class="mobile-menu__link"><span class="mobile-menu__link-ic"></span>Коллекции</a>
+					<a href="#" class="mobile-menu__link"><span class="mobile-menu__link-ic"></span>Лояльность</a>
+					<a href="#" class="mobile-menu__link"><span class="mobile-menu__link-ic"></span>Акции</a>
+					<a href="#" class="mobile-menu__link"><span class="mobile-menu__link-ic"></span>Блог</a>
+
+					<button type="button" class="mobile-menu__link mobile-menu__link--accent" data-popup="design">
+						<span class="mobile-menu__link-ic"></span>
+						Дизайн-проект
+					</button>
+				</div>
+
+				<div class="mobile-menu__support">
+					<div class="mobile-menu__support-title">Звоните нам</div>
+					<a href="tel:88002347575" class="mobile-menu__support-phone">8 800 234 75 75</a>
+					<div class="mobile-menu__support-label">График работы</div>
+					<div class="mobile-menu__support-time">9:00 – 19:00 ежедневно</div>
+				</div>
+
+				<div class="mobile-menu__sub" data-mobile-sub="tile">
+					<button type="button" class="mobile-menu__back" data-mobile-back>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						Плитка
+					</button>
+					<ul class="mobile-menu__sublist">
+						<li><a href="#">Все товары категории «Плитка»</a></li>
+						<li><a href="#">Керамическая плитка</a></li>
+						<li><a href="#">Керамогранит</a></li>
+						<li><a href="#">Утолщенный керамогранит</a></li>
+						<li><a href="#">Мозаика</a></li>
+						<li><a href="#">Плинтус</a></li>
+						<li><a href="#">Ступень</a></li>
+						<li><a href="#">Сухие смеси</a></li>
+					</ul>
+					<div class="mobile-menu__sub-filters">
+						<div class="mobile-menu__sub-col">
+							<div class="mobile-menu__sub-title">Помещение</div>
+							<a href="#">Для ванной</a>
+							<a href="#">Для кухни</a>
+							<a href="#">Для коридора</a>
+							<a href="#">Для гостиной</a>
+						</div>
+						<div class="mobile-menu__sub-col">
+							<div class="mobile-menu__sub-title">Назначение</div>
+							<a href="#">Для пола</a>
+							<a href="#">Для стен</a>
+							<a href="#">Для фартука</a>
+							<a href="#">Для фасада</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="mobile-menu__sub" data-mobile-sub="collections">
+					<button type="button" class="mobile-menu__back" data-mobile-back>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						Коллекции плитки
+					</button>
+					<ul class="mobile-menu__sublist">
+						<li><a href="#">Все коллекции</a></li>
+						<li><a href="#">Монохром</a></li>
+						<li><a href="#">Под дерево</a></li>
+						<li><a href="#">Под камень</a></li>
+						<li><a href="#">Под мрамор</a></li>
+						<li><a href="#">Под бетон</a></li>
+						<li><a href="#">Под металл</a></li>
+					</ul>
+				</div>
+
+				<div class="mobile-menu__sub" data-mobile-sub="plumbing">
+					<button type="button" class="mobile-menu__back" data-mobile-back>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						Сантехника
+					</button>
+					<ul class="mobile-menu__sublist">
+						<li><a href="#">Все товары категории «Сантехника»</a></li>
+						<li><a href="#">Ванны</a></li>
+						<li><a href="#">Душевые кабины</a></li>
+						<li><a href="#">Раковины</a></li>
+						<li><a href="#">Унитазы</a></li>
+						<li><a href="#">Смесители</a></li>
+					</ul>
+				</div>
+
+				<div class="mobile-menu__sub" data-mobile-sub="furniture">
+					<button type="button" class="mobile-menu__back" data-mobile-back>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						Мебель для ванной
+					</button>
+					<ul class="mobile-menu__sublist">
+						<li><a href="#">Все товары категории</a></li>
+						<li><a href="#">Тумбы с раковиной</a></li>
+						<li><a href="#">Зеркала</a></li>
+						<li><a href="#">Зеркальные шкафы</a></li>
+						<li><a href="#">Пеналы</a></li>
+						<li><a href="#">Полки</a></li>
+					</ul>
+				</div>
+
+				<div class="mobile-menu__sub" data-mobile-sub="floor">
+					<button type="button" class="mobile-menu__back" data-mobile-back>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						Напольные покрытия
+					</button>
+					<ul class="mobile-menu__sublist">
+						<li><a href="#">Все товары категории</a></li>
+						<li><a href="#">Ламинат</a></li>
+						<li><a href="#">Кварцвинил</a></li>
+						<li><a href="#">Паркетная доска</a></li>
+						<li><a href="#">Линолеум</a></li>
+						<li><a href="#">Пробка</a></li>
+					</ul>
+				</div>
+
+				<div class="mobile-menu__sub" data-mobile-sub="wall">
+					<button type="button" class="mobile-menu__back" data-mobile-back>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						Настенные покрытия
+					</button>
+					<ul class="mobile-menu__sublist">
+						<li><a href="#">Все товары категории</a></li>
+						<li><a href="#">Обои</a></li>
+						<li><a href="#">Декоративная штукатурка</a></li>
+						<li><a href="#">Стеновые панели</a></li>
+						<li><a href="#">Краска</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="popup popup--callback" data-popup-window="callback">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--callback">
+		<button type="button" class="popup__close" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<div class="popup__box-body">
+			<form class="callback" action="#" method="post">
+				<div class="callback__top">
+					<div class="callback__head">
+						<h3 class="callback__title">Заказать звонок</h3>
+						<p class="callback__subtitle">Оставьте ваши данные и мы вам перезвоним</p>
+					</div>
+
+					<div class="callback__form">
+						<div class="callback__fields">
+							<label class="callback__field">
+								<input type="text" class="callback__control" placeholder="Ваше имя*" required>
+							</label>
+							<div class="callback__field">
+								<div class="phone" data-dynamic-phone>
+	<button type="button" class="phone__trigger" data-phone-trigger aria-expanded="false">
+		<span class="phone__flag" data-phone-flag></span>
+		<svg class="phone__chevron" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l3 3 3-3" stroke="#53575A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+	</button>
+
+	<ul class="phone__list" data-phone-list role="listbox">
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+7" data-mask="(000) 000-00-00">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="8" fill="#fff"/><rect y="8" width="24" height="8" fill="#0039A6"/><rect y="16" width="24" height="8" fill="#D52B1E"/></svg></span>
+				<span class="phone__name">Россия</span>
+				<span class="phone__dial">+7</span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+7" data-mask="(000) 000-00-00">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" fill="#00AFCA"/><circle cx="12" cy="11" r="4" fill="#FEC50C"/></svg></span>
+				<span class="phone__name">Казахстан</span>
+				<span class="phone__dial">+7</span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+375" data-mask="(00) 000-00-00">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="16" fill="#D22730"/><rect y="16" width="24" height="8" fill="#00A651"/></svg></span>
+				<span class="phone__name">Беларусь</span>
+				<span class="phone__dial">+375</span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+374" data-mask="(00) 000-000">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="8" fill="#D90012"/><rect y="8" width="24" height="8" fill="#0033A0"/><rect y="16" width="24" height="8" fill="#F2A800"/></svg></span>
+				<span class="phone__name">Армения</span>
+				<span class="phone__dial">+374</span>
+			</button>
+		</li>
+	</ul>
+
+	<input type="tel" class="phone__input" data-phone-input required>
+</div>
+
+							</div>
+						</div>
+
+						<div class="callback__action">
+							<button type="submit" class="callback__submit red-btn">Отправить</button>
+							<p class="callback__consent">Нажимая на кнопку «Отправить», вы даёте <a href="#">согласие на обработку</a> своих персональных данных</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="callback__messengers">
+					<p class="callback__or">Или пишите в мессенджеры, если вам так удобнее</p>
+					<div class="callback__msg-list">
+						<a href="#" class="callback__msg callback__msg--tg">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							Написать в Telegram
+						</a>
+						<a href="#" class="callback__msg callback__msg--max">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 21l1.95-5.6A8.5 8.5 0 1 1 21 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							Написать в MAX
+						</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--write" data-popup-window="write">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--write">
+		<button type="button" class="popup__close" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<div class="writeus">
+			<h3 class="writeus__title">Напишите нам</h3>
+			<div class="writeus__list">
+				<a href="#" class="writeus__item">
+					<span class="writeus__ic writeus__ic--chat">
+						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 21l1.95-5.6A8.5 8.5 0 1 1 21 11.5Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.5" cy="11.5" r="1" fill="#E43D30"/><circle cx="12" cy="11.5" r="1" fill="#E43D30"/><circle cx="15.5" cy="11.5" r="1" fill="#E43D30"/></svg>
+					</span>
+					Чат на сайте
+				</a>
+				<a href="#" class="writeus__item">
+					<span class="writeus__ic"><img src="./img/footer/vk.svg" alt="" width="26" height="26"></span>
+					VKontakte
+				</a>
+				<a href="#" class="writeus__item">
+					<span class="writeus__ic writeus__ic--max">
+						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 21l1.95-5.6A8.5 8.5 0 1 1 21 11.5Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					</span>
+					MAX
+				</a>
+				<a href="#" class="writeus__item">
+					<span class="writeus__ic"><img src="./img/footer/tg.svg" alt="" width="26" height="26"></span>
+					Telegram
+				</a>
+			</div>
+
+			<h3 class="writeus__title writeus__title--call">Звоните нам</h3>
+			<a href="tel:88002347575" class="writeus__phone">
+				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 21.5a18 18 0 0 1-8-2.07 17.7 17.7 0 0 1-5.93-5.93A18 18 0 0 1 2.5 5.5 2 2 0 0 1 4.5 3.5h2.5a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11l-1 1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7a2 2 0 0 1 1.72 2v2.31a2 2 0 0 1-2 2Z" stroke="#1D1D1D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				8 800 234 75 75
+			</a>
+
+			<div class="writeus__hours">
+				<div class="writeus__hours-title">График работы</div>
+				<div class="writeus__hours-time">9:00 – 19:00 ежедневно</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--city" data-popup-window="city">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--city">
+		<button type="button" class="popup__close popup__close--sm" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<div class="city">
+			<h3 class="city__title">Ваш город Сочи?</h3>
+			<div class="city__btns">
+				<button type="button" class="city__btn red-btn" data-popup-close>Да, верно</button>
+				<button type="button" class="city__btn city__btn--ghost">Выбрать другой</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--success" data-popup-window="success">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--success">
+		<button type="button" class="popup__close" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<div class="popup__box-body">
+			<div class="success">
+				<h3 class="success__title">Ваш запрос успешно отправлен</h3>
+				<p class="success__descr">Наш менеджер свяжется с вами в ближайшее время<br>(текст в зависимости от предыдущей формы)</p>
+				<button type="button" class="success__btn red-btn" data-popup-close>Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--map" data-popup-window="map">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--map">
+		<button type="button" class="popup__close popup__close--map" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+		<div class="map-popup" data-map-popup>
+			<div class="map-popup__panel">
+				<div class="map-popup__modes">
+					<label class="map-popup__mode">
+						<input type="radio" name="map-mode" value="pickup" checked hidden data-map-mode>
+						<span class="map-popup__mode-radio"></span>
+						Самовывоз
+					</label>
+					<label class="map-popup__mode">
+						<input type="radio" name="map-mode" value="delivery" hidden data-map-mode>
+						<span class="map-popup__mode-radio"></span>
+						Доставка
+					</label>
+				</div>
+
+				<div class="map-popup__view" data-map-view="pickup-list">
+					<h3 class="map-popup__heading">Выберите пункт выдачи:</h3>
+					<div class="map-popup__points">
+						<button type="button" class="map-point" data-map-point>
+							<span class="map-point__badge">с 27 января</span>
+							<span class="map-point__name">Склад Сочи</span>
+							<span class="map-point__addr">г. Сочи, Центральный р-н, ул. Труда, 33</span>
+						</button>
+						<button type="button" class="map-point" data-map-point>
+							<span class="map-point__badge">с 31 января</span>
+							<span class="map-point__name">Склад Краснодар</span>
+							<span class="map-point__addr">г. Краснодар, ул. Красная, 176</span>
+						</button>
+						<button type="button" class="map-point" data-map-point>
+							<span class="map-point__badge">с 1 февраля</span>
+							<span class="map-point__name">Склад Москва</span>
+							<span class="map-point__addr">г. Москва, ул. Гагарина, 56А</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="map-popup__view" data-map-view="pickup-detail" hidden>
+					<button type="button" class="map-popup__back" data-map-back>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.5">
+								<path d="M16 4C16 1.79086 14.2091 0 12 0H4C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H12C14.2091 16 16 14.2091 16 12V4Z" fill="#53575A"/>
+								<path d="M9 11L6 8L9 5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+						</svg>
+						Назад
+					</button>
+					<div class="map-detail">
+						<div class="map-detail__badges">
+							<span class="map-detail__badge map-detail__badge--free">Бесплатно</span>
+							<span class="map-detail__badge">с 27 января</span>
+						</div>
+						<h3 class="map-detail__name">Склад Сочи</h3>
+						<div class="map-detail__block">
+							<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 17C8.875 13 15 12.5346 15 7.4C15 3.86538 11.866 1 8 1C4.13401 1 1 3.86538 1 7.4C1 12.5346 7.125 13 8 17Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8 9.8C9.44975 9.8 10.625 8.72548 10.625 7.4C10.625 6.07452 9.44975 5 8 5C6.55025 5 5.375 6.07452 5.375 7.4C5.375 8.72548 6.55025 9.8 8 9.8Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<div class="map-detail__block-text">
+								<p class="map-detail__row">Сочи, Центральный район, ул. Пластунская, 72</p>
+								<p class="map-detail__row">Тел: <b>+7 862 268-15-55</b></p>
+								<p class="map-detail__row">Тел: <b>8 800 234-75-75</b> (единый номер)</p>
+								<p class="map-detail__row">Эл. почта: <a href="mailto:info@fleksi.ru">info@fleksi.ru</a></p>
+							</div>
+						</div>
+						<div class="map-detail__block">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.8715 5.43511V10.8705L14.495 12.6823M19.9304 10.8705C19.9304 15.8736 15.8746 19.9294 10.8715 19.9294C5.86833 19.9294 1.8125 15.8736 1.8125 10.8705C1.8125 5.86736 5.86833 1.81152 10.8715 1.81152C15.8746 1.81152 19.9304 5.86736 19.9304 10.8705Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<div class="map-detail__block-text">
+								<p class="map-detail__row">Ежедневно <b>с 9:00 до 18:30</b></p>
+								<p class="map-detail__row map-detail__row--muted">Выходные дни:<br>День Пасхи 20.04.2025<br>День Победы 09.05.2025<br>Короткий день до 18:00 в праздничные дни 23.02, 8.03, 1.05</p>
+							</div>
+						</div>
+						<div class="map-detail__block">
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_317_111043)">
+								<path d="M15.75 6V15.75H2.25V6M7.5 9H10.5M0.75 2.25H17.25V6H0.75V2.25Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_317_111043">
+								<rect width="18" height="18" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+							<div class="map-detail__block-text">
+								<p class="map-detail__row">Срок хранения заказа — <b>3 дня</b></p>
+							</div>
+						</div>
+					</div>
+					<div class="map-popup__actions">
+						<button type="button" class="map-popup__cancel" data-popup-close>Отмена</button>
+						<button type="button" class="map-popup__confirm red-btn" data-popup-close>Доставить сюда</button>
+					</div>
+				</div>
+
+				<div class="map-popup__view" data-map-view="delivery" hidden>
+					<h3 class="map-popup__heading">Куда доставить заказ?</h3>
+					<div class="map-popup__fields">
+						<input type="text" class="map-popup__input" placeholder="Населенный пункт, улица и дом*">
+						<div class="map-popup__fields-row">
+							<input type="text" class="map-popup__input" placeholder="Квартира / офис*">
+							<input type="text" class="map-popup__input" placeholder="Подъезд">
+						</div>
+						<div class="map-popup__fields-row">
+							<input type="text" class="map-popup__input" placeholder="Этаж">
+							<label class="map-popup__lift switch">
+								<span class="switch__label">Лифт есть</span>
+								<input type="checkbox" checked hidden>
+								<span class="switch__block"></span>
+							</label>
+						</div>
+						<textarea class="map-popup__input map-popup__textarea" placeholder="Комментарий по доставке. Например, как найти вход, пропускная система, ограничение по габаритам машины и т.д."></textarea>
+					</div>
+					<p class="map-popup__note">* - Данные необходимые для заполнения</p>
+					<div class="map-popup__actions">
+						<button type="button" class="map-popup__cancel" data-popup-close>Отмена</button>
+						<button type="button" class="map-popup__confirm red-btn" data-popup-close>Доставить сюда</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="map-popup__map">
+				<img src="./img/addresses/map.webp" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--auth" data-popup-window="auth">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--auth">
+		<button type="button" class="popup__close" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<form class="auth" action="#" method="post">
+			<h3 class="auth__title">Вход в личный кабинет</h3>
+			<p class="auth__subtitle">Введите телефон — вышлем код для входа</p>
+
+			<div class="auth__fields">
+				<input type="tel" class="auth__input" placeholder="Телефон">
+				<input type="password" class="auth__input" placeholder="Пароль">
+			</div>
+			<button type="submit" class="auth__submit red-btn">Войти</button>
+			<a href="#" class="auth__link">Забыли пароль?</a>
+		</form>
+	</div>
+</div>
+
+<div class="popup popup--cart" data-popup-window="cart">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--cart">
+		<button type="button" class="popup__close popup__close--text" data-popup-close>Закрыть</button>
+
+		<div class="cart-popup" data-cart>
+			<h3 class="cart-popup__title">Ваш заказ</h3>
+
+			<div class="cart__toolbar">
+				<div class="cart__toolbar-left">
+					<label class="check cart__select-all">
+						<input type="checkbox" class="check__input" checked data-cart-all>
+						<span class="check__box"></span>
+						<span class="check__label">Выбрано 2</span>
+					</label>
+					<button type="button" class="cart__remove" data-cart-remove>Удалить выбранное</button>
+				</div>
+				<div class="cart__toolbar-right">
+					<button type="button" class="cart__tool">
+						<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.65833 10.208L11.35 13.392M11.3417 4.608L5.65833 7.792M16 3.4C16 4.72548 14.8807 5.8 13.5 5.8C12.1193 5.8 11 4.72548 11 3.4C11 2.07452 12.1193 1 13.5 1C14.8807 1 16 2.07452 16 3.4ZM6 9C6 10.3255 4.88071 11.4 3.5 11.4C2.11929 11.4 1 10.3255 1 9C1 7.67452 2.11929 6.6 3.5 6.6C4.88071 6.6 6 7.67452 6 9ZM16 14.6C16 15.9255 14.8807 17 13.5 17C12.1193 17 11 15.9255 11 14.6C11 13.2745 12.1193 12.2 13.5 12.2C14.8807 12.2 16 13.2745 16 14.6Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						Поделиться корзиной
+					</button>
+					<button type="button" class="cart__tool">Скачать PDF</button>
+					<button type="button" class="cart__edit">Изменить заказ</button>
+				</div>
+			</div>
+
+			<div class="cart-item" data-cart-item>
+				<div class="cart-item__top">
+					<label class="check cart-item__check">
+						<input type="checkbox" class="check__input" data-cart-check>
+						<span class="check__box"></span>
+					</label>
+
+					<div class="cart-item__main">
+						<div class="cart-item__media">
+							<img src="./img/product/gallery-3.webp" alt="">
+						</div>
+
+						<div class="cart-item__info">
+							<a href="product.html" class="cart-item__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
+							<button type="button" class="cart-item__code" data-copy="467546">
+								Код: 467546
+								<svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
+							</button>
+							<div class="cart-item__actions">
+								<button type="button" class="cart-item__icon-btn" aria-label="В избранное">
+									<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.96667 0.5C11.08 0.5 12.5 2.3625 12.5 4.1C12.5 7.61875 6.60667 10.5 6.5 10.5C6.39333 10.5 0.5 7.61875 0.5 4.1C0.5 2.3625 1.92 0.5 4.03333 0.5C5.24667 0.5 6.04 1.06875 6.5 1.56875C6.96 1.06875 7.75333 0.5 8.96667 0.5Z" stroke="#1D1D1D" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<button type="button" class="cart-item__icon-btn" aria-label="Удалить" data-cart-item-remove>
+									<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.5 0.5H8.5M0.5 2.5H12.5M11.1667 2.5L10.6991 9.51286C10.629 10.565 10.5939 11.0911 10.3667 11.49C10.1666 11.8412 9.86483 12.1235 9.50111 12.2998C9.08798 12.5 8.56073 12.5 7.50623 12.5H5.49377C4.43927 12.5 3.91202 12.5 3.49889 12.2998C3.13517 12.1235 2.83339 11.8412 2.63332 11.49C2.40607 11.0911 2.371 10.565 2.30086 9.51286L1.83333 2.5M5.16667 5.5V8.83333M7.83333 5.5V8.83333" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="cart-item__measure">
+							<div class="cart-item__qty">
+								<div class="cart-item__counter">
+									<button type="button" aria-label="Уменьшить">−</button>
+									<input type="text" value="1,44" inputmode="decimal">
+									<button type="button" aria-label="Увеличить">+</button>
+								</div>
+								<div class="cart-item__unit">
+									<select>
+										<option>упак.</option>
+										<option>м²</option>
+										<option>шт.</option>
+									</select>
+									<svg width="13" height="7" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 1.25L8.2 7.25L14.41 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+							</div>
+							<span class="cart-item__per">1 480 ₽ за упак.</span>
+						</div>
+
+						<div class="cart-item__price">
+							<span class="cart-item__discount">-30%</span>
+							<span class="cart-item__old">14 501.60 ₽</span>
+							<span class="cart-item__sum">12 501.60 ₽</span>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="cart-item__addon" data-popup="addon">
+					<span class="cart-item__addon-text">
+						<span class="cart-item__addon-title">
+							Дополните комплект
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 7.33081H13.6615M7.33075 13.6616L13.6615 7.33081L7.33075 1.00006" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</span>
+						<span class="cart-item__addon-sub">Подборка аксессуаров</span>
+					</span>
+					<span class="cart-item__addon-thumbs">
+						<div class="cart-item__addon-thumb"><img src="./img/solution/1.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/4.webp" alt=""></div>
+					</span>
+				</a>
+			</div>
+
+			<div class="cart-item" data-cart-item>
+				<div class="cart-item__top">
+					<label class="check cart-item__check">
+						<input type="checkbox" class="check__input" data-cart-check>
+						<span class="check__box"></span>
+					</label>
+
+					<div class="cart-item__main">
+						<div class="cart-item__media">
+							<img src="./img/product/gallery-3.webp" alt="">
+						</div>
+
+						<div class="cart-item__info">
+							<a href="product.html" class="cart-item__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
+							<button type="button" class="cart-item__code" data-copy="467546">
+								Код: 467546
+								<svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
+							</button>
+							<div class="cart-item__actions">
+								<button type="button" class="cart-item__icon-btn" aria-label="В избранное">
+									<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.96667 0.5C11.08 0.5 12.5 2.3625 12.5 4.1C12.5 7.61875 6.60667 10.5 6.5 10.5C6.39333 10.5 0.5 7.61875 0.5 4.1C0.5 2.3625 1.92 0.5 4.03333 0.5C5.24667 0.5 6.04 1.06875 6.5 1.56875C6.96 1.06875 7.75333 0.5 8.96667 0.5Z" stroke="#1D1D1D" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<button type="button" class="cart-item__icon-btn" aria-label="Удалить" data-cart-item-remove>
+									<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.5 0.5H8.5M0.5 2.5H12.5M11.1667 2.5L10.6991 9.51286C10.629 10.565 10.5939 11.0911 10.3667 11.49C10.1666 11.8412 9.86483 12.1235 9.50111 12.2998C9.08798 12.5 8.56073 12.5 7.50623 12.5H5.49377C4.43927 12.5 3.91202 12.5 3.49889 12.2998C3.13517 12.1235 2.83339 11.8412 2.63332 11.49C2.40607 11.0911 2.371 10.565 2.30086 9.51286L1.83333 2.5M5.16667 5.5V8.83333M7.83333 5.5V8.83333" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="cart-item__measure">
+							<div class="cart-item__qty">
+								<div class="cart-item__counter">
+									<button type="button" aria-label="Уменьшить">−</button>
+									<input type="text" value="1,44" inputmode="decimal">
+									<button type="button" aria-label="Увеличить">+</button>
+								</div>
+								<div class="cart-item__unit">
+									<select>
+										<option>упак.</option>
+										<option>м²</option>
+										<option>шт.</option>
+									</select>
+									<svg width="13" height="7" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 1.25L8.2 7.25L14.41 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+							</div>
+							<span class="cart-item__per">1 480 ₽ за упак.</span>
+						</div>
+
+						<div class="cart-item__price">
+							<span class="cart-item__discount">-30%</span>
+							<span class="cart-item__old">14 501.60 ₽</span>
+							<span class="cart-item__sum">12 501.60 ₽</span>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="cart-item__addon" data-popup="addon">
+					<span class="cart-item__addon-text">
+						<span class="cart-item__addon-title">
+							Дополните комплект
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 7.33081H13.6615M7.33075 13.6616L13.6615 7.33081L7.33075 1.00006" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</span>
+						<span class="cart-item__addon-sub">Подборка аксессуаров</span>
+					</span>
+					<span class="cart-item__addon-thumbs">
+						<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/4.webp" alt=""></div>
+					</span>
+				</a>
+			</div>
+
+			<div class="cart-item" data-cart-item>
+				<div class="cart-item__top">
+					<label class="check cart-item__check">
+						<input type="checkbox" class="check__input" data-cart-check>
+						<span class="check__box"></span>
+					</label>
+
+					<div class="cart-item__main">
+						<div class="cart-item__media">
+							<img src="./img/product/gallery-3.webp" alt="">
+						</div>
+
+						<div class="cart-item__info">
+							<a href="product.html" class="cart-item__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
+							<button type="button" class="cart-item__code" data-copy="467546">
+								Код: 467546
+								<svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
+							</button>
+							<div class="cart-item__actions">
+								<button type="button" class="cart-item__icon-btn" aria-label="В избранное">
+									<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.96667 0.5C11.08 0.5 12.5 2.3625 12.5 4.1C12.5 7.61875 6.60667 10.5 6.5 10.5C6.39333 10.5 0.5 7.61875 0.5 4.1C0.5 2.3625 1.92 0.5 4.03333 0.5C5.24667 0.5 6.04 1.06875 6.5 1.56875C6.96 1.06875 7.75333 0.5 8.96667 0.5Z" stroke="#1D1D1D" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<button type="button" class="cart-item__icon-btn" aria-label="Удалить" data-cart-item-remove>
+									<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.5 0.5H8.5M0.5 2.5H12.5M11.1667 2.5L10.6991 9.51286C10.629 10.565 10.5939 11.0911 10.3667 11.49C10.1666 11.8412 9.86483 12.1235 9.50111 12.2998C9.08798 12.5 8.56073 12.5 7.50623 12.5H5.49377C4.43927 12.5 3.91202 12.5 3.49889 12.2998C3.13517 12.1235 2.83339 11.8412 2.63332 11.49C2.40607 11.0911 2.371 10.565 2.30086 9.51286L1.83333 2.5M5.16667 5.5V8.83333M7.83333 5.5V8.83333" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="cart-item__measure">
+							<div class="cart-item__qty">
+								<div class="cart-item__counter">
+									<button type="button" aria-label="Уменьшить">−</button>
+									<input type="text" value="1,44" inputmode="decimal">
+									<button type="button" aria-label="Увеличить">+</button>
+								</div>
+								<div class="cart-item__unit">
+									<select>
+										<option>упак.</option>
+										<option>м²</option>
+										<option>шт.</option>
+									</select>
+									<svg width="13" height="7" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 1.25L8.2 7.25L14.41 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+							</div>
+							<span class="cart-item__per">1 480 ₽ за упак.</span>
+						</div>
+
+						<div class="cart-item__price">
+							<span class="cart-item__discount">-30%</span>
+							<span class="cart-item__old">14 501.60 ₽</span>
+							<span class="cart-item__sum">12 501.60 ₽</span>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="cart-item__addon" data-popup="addon">
+					<span class="cart-item__addon-text">
+						<span class="cart-item__addon-title">
+							Дополните комплект
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 7.33081H13.6615M7.33075 13.6616L13.6615 7.33081L7.33075 1.00006" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</span>
+						<span class="cart-item__addon-sub">Подборка аксессуаров</span>
+					</span>
+					<span class="cart-item__addon-thumbs">
+						<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/4.webp" alt=""></div>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<section class="breadcrumbs">
+		<div class="wrapper">
+			<div class="breadcrumbs__row">
+				<a href="#" class="breadcrumbs__home">Главная</a>
+				<span class="breadcrumbs__curr">Дизайнерам</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="des-hero">
+		<div class="wrapper">
+			<div class="des-hero__row">
+				<div class="des-hero__col">
+					<h1 class="section-title section-title--left-aligned des-hero__title">Станьте партнёром FLEXI. Выгодные условия для дизайнеров и архитекторов</h1>
+					<p class="des-hero__text">Реализуйте проекты быстрее и выгодно: персональный менеджер, эксклюзивные условия, поддержка и доступ к ассортименту</p>
+					<div class="des-hero__actions">
+						<a href="#cta" class="red-btn">Заполнить анкету</a>
+						<a href="#cta" class="white-btn">
+							<svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.9419 0.0846438L0.697908 5.18868C-0.21143 5.55535 -0.196778 6.054 0.536559 6.274L3.9392 7.33004L11.8153 2.35799C12.1819 2.13799 12.5339 2.25532 12.2406 2.50466L5.86056 8.25401L11.4046 12.3461C12.0353 12.6981 12.49 12.5074 12.6513 11.7594L14.91 1.126C15.13 0.231326 14.5433 -0.194024 13.9419 0.0846438Z" fill="#1D1D1D"/>
+							</svg>
+							Обсудить сотрудничество
+						</a>
+					</div>
+				</div>
+				<div class="des-hero__media" style="background-image: url('./img/designers/main-img.webp');"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="des-audience gray-section">
+		<div class="wrapper">
+			<div class="des-audience__head">
+				<h2 class="section-title section-title--left-aligned">Для кого наша программа</h2>
+				<p class="des-audience__lead">Работаем как с начинающими специалистами, так и с опытными студиями</p>
+			</div>
+
+			<div class="des-audience__grid">
+				<div class="des-card">
+					<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M25.0105 0.00292969H0.00390625V25.0095H25.0105V0.00292969Z" fill="#C8C8C8"/>
+						<path d="M25.0072 12.5034C18.1027 12.5034 12.5039 18.1023 12.5039 25.0067C19.4084 25.0067 25.0072 19.4079 25.0072 12.5034Z" fill="black"/>
+						<path d="M25.0072 12.5033C25.0072 5.59884 19.4084 0 12.5039 0C12.5039 6.90445 18.1027 12.5033 25.0072 12.5033Z" fill="black"/>
+						<path d="M12.5033 0.00292969C5.59884 0.00292969 0 5.60177 0 12.5062C6.90445 12.5062 12.5033 6.90738 12.5033 0.00292969Z" fill="black"/>
+						<path d="M0.00390625 12.5034C0.00390625 19.4079 5.60274 25.0067 12.5072 25.0067C12.5072 18.1023 6.90835 12.5034 0.00390625 12.5034Z" fill="black"/>
+					</svg>
+					<div class="des-card__title">Дизайнеры интерьеров</div>
+					<div class="des-card__text">реализация проектов любой сложности</div>
+				</div>
+				<div class="des-card">
+					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M25.0066 0H0V25.0066H25.0066V0Z" fill="#C8C8C8"/>
+						<path d="M21.6064 3.43164H3.39844V21.6396H21.6064V3.43164Z" fill="black"/>
+						<path d="M18.1541 6.88965H6.85938V18.1814H18.1541V6.88965Z" fill="#E43D30"/>
+						<path d="M16.147 8.89233H8.86328V16.1761H16.147V8.89233Z" fill="white"/>
+					</svg>
+					<div class="des-card__title">Архитекторы</div>
+					<div class="des-card__text">подбор материалов под концепцию и бюджет</div>
+				</div>
+				<div class="des-card">
+					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M25.0066 0H0V25.0066H25.0066V0Z" fill="black"/>
+						<path d="M12.5033 12.5032C5.59883 12.5032 0 18.102 0 25.0065C6.90445 25.0065 12.5033 19.4076 12.5033 12.5032Z" fill="white"/>
+						<path d="M12.5033 12.5033C12.5033 5.59884 6.90445 0 0 0C0 6.90445 5.59883 12.5033 12.5033 12.5033Z" fill="white"/>
+						<path d="M25.0072 0C18.1027 0 12.5039 5.59884 12.5039 12.5033C19.4084 12.5033 25.0072 6.90445 25.0072 0Z" fill="white"/>
+						<path d="M12.5039 12.5032C12.5039 19.4076 18.1027 25.0065 25.0072 25.0065C25.0072 18.102 19.4084 12.5032 12.5039 12.5032Z" fill="white"/>
+					</svg>
+					<div class="des-card__title">Студии дизайна</div>
+					<div class="des-card__text">полный спектр решений для клиентов</div>
+				</div>
+				<div class="des-card">
+					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M25.0066 0H0V25.0066H25.0066V0Z" fill="black"/>
+						<path d="M6.25164 18.7549H0C0 22.2071 2.79942 25.0065 6.25164 25.0065V18.7549Z" fill="white"/>
+						<path d="M6.25 18.7549H12.5016C12.5016 22.2071 9.70222 25.0065 6.25 25.0065V18.7549Z" fill="#C8C8C8"/>
+						<path d="M6.25 18.7548H12.5016C12.5016 15.3026 9.70222 12.5032 6.25 12.5032V18.7548Z" fill="#53575A"/>
+						<path d="M6.25164 18.7548H0C0 15.3026 2.79942 12.5032 6.25164 12.5032V18.7548Z" fill="#E43D30"/>
+						<path d="M18.7578 6.25164H25.0094C25.0094 2.79942 22.21 0 18.7578 0V6.25164Z" fill="#53575A"/>
+						<path d="M18.7556 6.25164H12.5039C12.5039 2.79942 15.3033 0 18.7556 0V6.25164Z" fill="#E43D30"/>
+						<path d="M18.7556 6.25146H12.5039C12.5039 9.70369 15.3033 12.5031 18.7556 12.5031V6.25146Z" fill="white"/>
+						<path d="M18.7578 6.25146H25.0094C25.0094 9.70369 22.21 12.5031 18.7578 12.5031V6.25146Z" fill="#C8C8C8"/>
+						<path d="M18.7556 18.7549H12.5039C12.5039 22.2071 15.3033 25.0065 18.7556 25.0065V18.7549Z" fill="white"/>
+						<path d="M18.7578 18.7549H25.0094C25.0094 22.2071 22.21 25.0065 18.7578 25.0065V18.7549Z" fill="#C8C8C8"/>
+						<path d="M18.7578 18.7548H25.0094C25.0094 15.3026 22.21 12.5032 18.7578 12.5032V18.7548Z" fill="#53575A"/>
+						<path d="M18.7556 18.7548H12.5039C12.5039 15.3026 15.3033 12.5032 18.7556 12.5032V18.7548Z" fill="#E43D30"/>
+						<path d="M6.25 6.25164H12.5016C12.5016 2.79942 9.70222 0 6.25 0V6.25164Z" fill="#53575A"/>
+						<path d="M6.25164 6.25164H0C0 2.79942 2.79942 0 6.25164 0V6.25164Z" fill="#E43D30"/>
+						<path d="M6.25164 6.25146H0C0 9.70369 2.79942 12.5031 6.25164 12.5031V6.25146Z" fill="white"/>
+						<path d="M6.25 6.25146H12.5016C12.5016 9.70369 9.70222 12.5031 6.25 12.5031V6.25146Z" fill="#C8C8C8"/>
+					</svg>
+					<div class="des-card__title">Фрилансеры</div>
+					<div class="des-card__text">работа удалённо с поддержкой и логистикой</div>
+				</div>
+			</div>
+		</div>
+
+		<img src="./img/designers/programm-img.webp" alt="" class="des-audience__bg">
+		<img src="./img/designers/programm-light.webp" alt="" class="des-audience__light">
+	</section>
+
+	<section class="des-benefits">
+		<div class="wrapper">
+			<div class="des-benefits__row">
+				<div class="des-benefits__aside">
+					<h2 class="section-title section-title--left-aligned">Выгоды сотрудничества <br>с FLEXI</h2>
+					<a href="#cta" class="red-btn">Получить партнёрские условия</a>
+				</div>
+
+				<div class="des-benefits__cards">
+					<div class="des-benefit">
+						<h3 class="des-benefit__title">Выгодные и прозрачные условия</h3>
+						<ul class="des-benefit__list">
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Заказы, оформленные по клиенту, закрепляются за дизайнером
+							</li>
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Значимые скидки на всю продукцию
+							</li>
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Выплаты без задержек
+							</li>
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Стабильные цены
+							</li>
+						</ul>
+					</div>
+					<div class="des-benefit">
+						<h3 class="des-benefit__title">Удобство работы над проектами</h3>
+						<ul class="des-benefit__list">
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Наличие текстур в высоком качестве
+							</li>
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Быстрый расчёт и коммерческое предложение
+							</li>
+						</ul>
+					</div>
+					<div class="des-benefit">
+						<h3 class="des-benefit__title">Логистика и сервис</h3>
+						<ul class="des-benefit__list">
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Большой склад и наличие товара
+							</li>
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Поставка без срывов
+							</li>
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Работа с рекламациями
+							</li>
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Быстрая доставка
+							</li>
+							<li>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 4.5C9 6.98528 6.98528 9 4.5 9C2.01472 9 0 6.98528 0 4.5C0 2.01472 2.01472 0 4.5 0C6.98528 0 9 2.01472 9 4.5Z" fill="#1D1D1D"/>
+									<path d="M2.66673 4.00003L4.66692 6.00001L4.00019 6.66667L2 4.66669L2.66673 4.00003Z" fill="white"/>
+									<path d="M7.33333 3.33333L4.00019 6.66667L3.33296 5.99996L6.6666 2.66667L7.33333 3.33333Z" fill="white"/>
+								</svg>
+								Собственная логистика и контроль качества
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="des-why">
+		<div class="wrapper">
+			<div class="des-why__box" style="background-image: url('./img/designers/why-bg.webp');">
+				<h2 class="section-title section-title--left-aligned des-why__title">Почему FLEXI&nbsp;— надёжный партнёр</h2>
+
+				<div class="des-why__cards">
+					<div></div>
+					<div class="des-glass des-why__card des-why__card--wide">
+						<div class="des-glass__top">
+							<img src="./img/designers/why-check.svg" alt="">
+							<img src="./img/designers/why-logo.svg" alt="" class="des-glass__logo">
+						</div>
+						<div class="des-glass__text">Большой ассортимент плитки, сантехники, мебели и отделочных материалов</div>
+					</div>
+					<div class="des-glass des-glass__card">
+						<div class="des-glass__top">
+							<img src="./img/designers/why-check.svg" alt="">
+
+						</div>
+						<div class="des-glass__text">Работаем с 1995 года</div>
+					</div>
+					<div class="des-glass des-glass__card">
+						<div class="des-glass__top">
+							<img src="./img/designers/why-check.svg" alt="">
+
+						</div>
+						<div class="des-glass__text">Более 2000 реализованных проектов</div>
+					</div>
+					<div class="des-glass des-glass__card">
+						<div class="des-glass__top">
+							<img src="./img/designers/why-check.svg" alt="">
+
+						</div>
+						<div class="des-glass__text">Шоурумы <br>в Сочи и Адлере</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="house house--des gray-section">
+		<img src="./img/house/bg.webp" alt="" class="house__light">
+
+		<div class="wrapper">
+			<h2 class="section-title house__title">Торговый Дом FLEXI</h2>
+			<div class="house__content">
+				<img src="./img/house/main.webp" alt="" class="house__img">
+				<div class="house__cols">
+					<div class="house__col">
+						<div class="house__item">
+							<img src="./img/house/circle-check.svg" alt="" width="20" height="20">
+							<div class="house__text">
+								<h3 class="house__name">Быстрая и удобная доставка</h3>
+								<p class="house__descr">Собственная логистическая служба, точные сроки доставки, подъем и установка по запросу</p>
+							</div>
+						</div>
+						<div class="house__item">
+							<img src="./img/house/circle-check.svg" alt="" width="20" height="20">
+							<div class="house__text">
+								<h3 class="house__name">Более 5 000 товаров в каталоге</h3>
+								<p class="house__descr">Большой выбор плитки, сантехники, мебели для ванной, напольных и настенных покрытий в наличии</p>
+							</div>
+						</div>
+					</div>
+					<div class="house__col">
+						<div class="house__item">
+							<img src="./img/house/circle-check.svg" alt="" width="20" height="20">
+							<div class="house__text">
+								<h3 class="house__name">Официальная <br>гарантия на всё</h3>
+								<p class="house__descr">Работаем только с проверенными поставщиками и предоставляем документы на каждый товар</p>
+							</div>
+						</div>
+						<div class="house__item">
+							<img src="./img/house/circle-check.svg" alt="" width="20" height="20">
+							<div class="house__text">
+								<h3 class="house__name">Честные цены и регулярные акции</h3>
+								<p class="house__descr">Мы стараемся сохранить самые доступные цены на товары и регулярно проводим акции для наших клиентов</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="house__bottom">
+					<button type="button" class="house__btn red-btn" data-seo-btn>узнать больше о нашей компании</button>
+				</div>
+
+				<div class="house__seo" data-seo hidden>
+					<div class="house__seo-inner">
+						<h3>Торговый Дом FLEXI — плитка, сантехника и отделочные материалы</h3>
+						<p>Торговый Дом FLEXI — это широкий ассортимент керамической плитки, керамогранита, сантехники, мебели для ванной комнаты, а также напольных и настенных покрытий. В нашем каталоге собрано более 5 000 товаров от проверенных российских и зарубежных производителей, которые всегда доступны в наличии и с быстрой доставкой по городу и области.</p>
+						<p>Мы помогаем подобрать материалы для ремонта и отделки квартир, домов и коммерческих помещений: ванных комнат, кухонь, прихожих и общественных пространств. У нас вы найдёте настенную и напольную плитку, мозаику, мрамор и керамогранит под камень и дерево, душевые системы, смесители, унитазы, раковины и комплекты мебели для ванной.</p>
+						<p>Собственная логистическая служба обеспечивает точные сроки доставки, а по запросу — подъём и установку. Мы работаем только с надёжными поставщиками, предоставляем официальную гарантию и документы на каждый товар, сохраняя честные цены и регулярно проводя акции для наших клиентов.</p>
+						<p>Закажите плитку, сантехнику и отделочные материалы в Торговом Доме FLEXI — выгодные цены, большой выбор и удобная доставка для частных покупателей, дизайнеров и строительных компаний.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="des-steps">
+		<div class="wrapper">
+			<h2 class="section-title section-title--left-aligned des-steps__title">Как мы работаем с дизайнерами</h2>
+
+			<ol class="des-steps__list">
+				<li class="des-step">
+					<div class="des-step__top">
+						<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.707 1C18.707 0.447716 18.2593 5.73967e-07 17.707 3.21086e-07L8.70703 1.12188e-06C8.15475 7.84701e-07 7.70703 0.447716 7.70703 1C7.70703 1.55229 8.15475 2 8.70703 2L16.707 2L16.707 10C16.707 10.5523 17.1547 11 17.707 11C18.2593 11 18.707 10.5523 18.707 10L18.707 1ZM0.707031 18L1.41414 18.7071L18.4141 1.70711L17.707 1L16.9999 0.292894L-7.55191e-05 17.2929L0.707031 18Z" fill="white"/>
+						</svg>
+					</div>
+					<div class="des-step__main">
+						<span class="des-step__text">Оставляете заявку</span>
+						<span class="des-step__num">
+							<svg width="38" height="77" viewBox="0 0 38 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M38 77H21.0756V21.7586L4.47059 28.4129L0 14.048L38 0V77Z" fill="white"/>
+							</svg>
+						</span>
+					</div>
+				</li>
+				<li class="des-step">
+					<div class="des-step__main">
+						<span class="des-step__text">Обсуждаем проекты и условия</span>
+						<span class="des-step__num">
+							<svg width="55" height="75" viewBox="0 0 55 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.8891 18.0672L2.31358 3.67647C8.30784 1.57563 17.7725 0 27.2371 0C45.6405 0 54.6845 4.20168 54.6845 21.9538C54.6845 37.1849 50.3729 42.1218 23.3461 60.1891H55V75H0V61.2395C34.5985 35.5042 36.7017 33.5084 36.7017 23.7395C36.7017 17.1219 33.9675 15.2311 25.4493 15.2311C18.7189 15.2311 10.5163 16.5966 5.8891 18.0672Z" fill="white"/>
+							</svg>
+						</span>
+					</div>
+					<div class="des-step__bottom">
+						<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.707 17.707C18.707 18.2593 18.2593 18.707 17.707 18.707L8.70703 18.707C8.15475 18.707 7.70703 18.2593 7.70703 17.707C7.70703 17.1547 8.15475 16.707 8.70703 16.707L16.707 16.707L16.707 8.70703C16.707 8.15475 17.1547 7.70703 17.707 7.70703C18.2593 7.70703 18.707 8.15475 18.707 8.70703L18.707 17.707ZM0.707031 0.707031L1.41414 -7.55191e-05L18.4141 16.9999L17.707 17.707L16.9999 18.4141L-7.55191e-05 1.41414L0.707031 0.707031Z" fill="white"/>
+						</svg>
+					</div>
+				</li>
+				<li class="des-step">
+					<div class="des-step__top">
+						<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.707 1C18.707 0.447716 18.2593 5.73967e-07 17.707 3.21086e-07L8.70703 1.12188e-06C8.15475 7.84701e-07 7.70703 0.447716 7.70703 1C7.70703 1.55229 8.15475 2 8.70703 2L16.707 2L16.707 10C16.707 10.5523 17.1547 11 17.707 11C18.2593 11 18.707 10.5523 18.707 10L18.707 1ZM0.707031 18L1.41414 18.7071L18.4141 1.70711L17.707 1L16.9999 0.292894L-7.55191e-05 17.2929L0.707031 18Z" fill="white"/>
+						</svg>
+					</div>
+					<div class="des-step__main">
+						<span class="des-step__text">Подбираем материалы и делаем расчёты</span>
+						<span class="des-step__num">
+							<svg width="55" height="76" viewBox="0 0 55 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.9904 43.9506V29.544H26.0749C32.9367 29.544 35.3647 28.1868 35.3647 22.3407C35.3647 17.0165 33.0422 15.3462 21.1132 15.3462C16.1516 15.3462 7.70633 16.0769 3.48369 17.3297L0.316699 2.60989C6.96737 1.14836 16.6795 0 25.1248 0C46.8714 0 53.5221 5.01099 53.5221 18.8956C53.5221 29.022 50.8829 35.1813 37.6871 36.2253C51.6219 36.8516 55 43.6374 55 55.0165C55 70.6758 46.4491 76 25.0192 76C17.3129 76 6.75624 74.956 0 73.4945L3.16699 58.5659C7.38964 59.8187 15.9405 60.5494 21.0077 60.5494C33.8868 60.5494 36.4203 58.6703 36.4203 52.3022C36.4203 45.7253 33.6756 43.9506 26.3916 43.9506H14.9904Z" fill="white"/>
+							</svg>
+						</span>
+					</div>
+				</li>
+				<li class="des-step">
+					<div class="des-step__main">
+						<span class="des-step__text">Сопровождаем проект и поддерживаем клиента</span>
+						<span class="des-step__num">
+							<svg width="62" height="73" viewBox="0 0 62 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M36.3158 55.6141H0V49.8537C7.89474 35.7145 21.5789 12.9871 30.8421 0H52.5263V41.4749H62V55.6141H52.5263V73H36.3158V55.6141ZM36.3158 41.4749V15.6055C30.6316 23.2511 23.5789 35.1908 20.2105 41.4749H36.3158Z" fill="white"/>
+							</svg>
+						</span>
+					</div>
+
+					<div class="des-step__bottom">
+						<div class="des-step__stars">
+							<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.57231 0L6.88739 4.04741H11.1431L7.70016 6.54885L9.01524 10.5963L5.57231 8.09482L2.12938 10.5963L3.44446 6.54885L0.00152874 4.04741H4.25723L5.57231 0Z" fill="#E43D30"/>
+							</svg>
+							<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.57231 0L6.88739 4.04741H11.1431L7.70016 6.54885L9.01524 10.5963L5.57231 8.09482L2.12938 10.5963L3.44446 6.54885L0.00152874 4.04741H4.25723L5.57231 0Z" fill="#E43D30"/>
+							</svg>
+							<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.57231 0L6.88739 4.04741H11.1431L7.70016 6.54885L9.01524 10.5963L5.57231 8.09482L2.12938 10.5963L3.44446 6.54885L0.00152874 4.04741H4.25723L5.57231 0Z" fill="#E43D30"/>
+							</svg>
+							<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.57231 0L6.88739 4.04741H11.1431L7.70016 6.54885L9.01524 10.5963L5.57231 8.09482L2.12938 10.5963L3.44446 6.54885L0.00152874 4.04741H4.25723L5.57231 0Z" fill="#E43D30"/>
+							</svg>
+							<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.57231 0L6.88739 4.04741H11.1431L7.70016 6.54885L9.01524 10.5963L5.57231 8.09482L2.12938 10.5963L3.44446 6.54885L0.00152874 4.04741H4.25723L5.57231 0Z" fill="#E43D30"/>
+							</svg>
+						</div>
+					</div>
+				</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="des-partnership">
+		<div class="wrapper">
+			<div class="des-partnership__box" style="background-image: url('./img/designers/partnership-bg.webp');">
+				<h2 class="section-title section-title--left-aligned des-partnership__title">Больше чем партнёрство</h2>
+
+				<div class="des-partnership__cards">
+					<div class="des-partnership__card">
+						<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M43.5 20.58V22.512C43.4974 27.0405 42.031 31.4468 39.3196 35.0738C36.6081 38.7009 32.7969 41.3542 28.4542 42.6382C24.1116 43.9222 19.4702 43.768 15.2224 42.1986C10.9745 40.6293 7.34777 37.7288 4.88302 33.9298C2.41826 30.1309 1.24756 25.6369 1.54552 21.1183C1.84348 16.5996 3.59413 12.2983 6.53639 8.85587C9.47864 5.41344 13.4548 3.01432 17.872 2.01633C22.2891 1.01833 26.9106 1.47493 31.047 3.31802M43.5 5.7L22.5 26.721L16.2 20.421" stroke="#F4F4F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<div class="des-partnership__card-text">Участие в конкурсе «Золотая плитка» - делитесь проектами и получайте публикации</div>
+					</div>
+					<div class="des-partnership__card">
+						<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M43.5 20.58V22.512C43.4974 27.0405 42.031 31.4468 39.3196 35.0738C36.6081 38.7009 32.7969 41.3542 28.4542 42.6382C24.1116 43.9222 19.4702 43.768 15.2224 42.1986C10.9745 40.6293 7.34777 37.7288 4.88302 33.9298C2.41826 30.1309 1.24756 25.6369 1.54552 21.1183C1.84348 16.5996 3.59413 12.2983 6.53639 8.85587C9.47864 5.41344 13.4548 3.01432 17.872 2.01633C22.2891 1.01833 26.9106 1.47493 31.047 3.31802M43.5 5.7L22.5 26.721L16.2 20.421" stroke="#F4F4F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<div class="des-partnership__card-text">Клуб дизайнеров FLEXI - закрытые мероприятия и бонусы</div>
+					</div>
+					<div class="des-partnership__card">
+						<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M43.5 20.58V22.512C43.4974 27.0405 42.031 31.4468 39.3196 35.0738C36.6081 38.7009 32.7969 41.3542 28.4542 42.6382C24.1116 43.9222 19.4702 43.768 15.2224 42.1986C10.9745 40.6293 7.34777 37.7288 4.88302 33.9298C2.41826 30.1309 1.24756 25.6369 1.54552 21.1183C1.84348 16.5996 3.59413 12.2983 6.53639 8.85587C9.47864 5.41344 13.4548 3.01432 17.872 2.01633C22.2891 1.01833 26.9106 1.47493 31.047 3.31802M43.5 5.7L22.5 26.721L16.2 20.421" stroke="#F4F4F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<div class="des-partnership__card-text">Поделиться своим проектом — публикация + PR в соцсетях</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="des-cta" id="cta">
+		<div class="wrapper">
+			<div class="des-cta__body">
+				<div class="des-cta__top">
+					<div class="des-cta__intro">
+						<h2 class="section-title section-title--left-aligned des-cta__title">Подбор материалов под ваш дизайн-проект</h2>
+						<p class="des-cta__lead">Эксперт поможет подобрать материалы под концепцию проекта, бюджет и сроки</p>
+					</div>
+
+					<div class="des-cta__expert">
+						<div class="des-cta__expert-photo" style="background-image: url('./img/designers/pavel-expert.webp');"></div>
+						<div class="des-cta__expert-text">
+							<div class="des-cta__expert-title">Павел - эксперт Fleksi</div>
+							<ul class="des-cta__expert-list">
+								<li>Более X лет в работе с керамогранитом</li>
+								<li>Отлично знает весь ассортимент и склад</li>
+								<li>Помогает дизайнерам собрать проект целиком</li>
+								<li>Работает с дизайн-проектами любой сложности</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="des-cta__bottom">
+					<img src="./img/designers/expert-logo.svg" alt="" class="des-cta__logo">
+					
+					<form class="des-cta__form">
+						<div class="des-cta__form-title">Оставьте контакты - Павел свяжется <br>с вами и поможет с подбором!</div>
+						<div class="des-cta__fields">
+							<input type="text" class="des-cta__input" placeholder="Ваше имя">
+							<input type="email" class="des-cta__input" placeholder="Email">
+							<div class="des-cta__input des-cta__phone"><div class="phone" data-dynamic-phone>
+	<button type="button" class="phone__trigger" data-phone-trigger aria-expanded="false">
+		<span class="phone__flag" data-phone-flag></span>
+		<svg class="phone__chevron" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l3 3 3-3" stroke="#53575A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+	</button>
+
+	<ul class="phone__list" data-phone-list role="listbox">
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+7" data-mask="(000) 000-00-00">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="8" fill="#fff"/><rect y="8" width="24" height="8" fill="#0039A6"/><rect y="16" width="24" height="8" fill="#D52B1E"/></svg></span>
+				<span class="phone__name">Россия</span>
+				<span class="phone__dial">+7</span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+7" data-mask="(000) 000-00-00">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" fill="#00AFCA"/><circle cx="12" cy="11" r="4" fill="#FEC50C"/></svg></span>
+				<span class="phone__name">Казахстан</span>
+				<span class="phone__dial">+7</span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+375" data-mask="(00) 000-00-00">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="16" fill="#D22730"/><rect y="16" width="24" height="8" fill="#00A651"/></svg></span>
+				<span class="phone__name">Беларусь</span>
+				<span class="phone__dial">+375</span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+374" data-mask="(00) 000-000">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="8" fill="#D90012"/><rect y="8" width="24" height="8" fill="#0033A0"/><rect y="16" width="24" height="8" fill="#F2A800"/></svg></span>
+				<span class="phone__name">Армения</span>
+				<span class="phone__dial">+374</span>
+			</button>
+		</li>
+	</ul>
+
+	<input type="tel" class="phone__input" data-phone-input required>
+</div>
+</div>
+						</div>
+						<button type="submit" class="red-btn des-cta__submit">Получить подбор от эксперта</button>
+						<label class="des-cta__consent">
+							<span class="switch switch--lg">
+								<input type="checkbox" checked hidden>
+								<span class="switch__block"></span>
+							</span>
+							<span>Нажимая на кнопку «Получить подбор от эксперта», вы даёте согласие на обработку своих персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a> и <a href="#">обработкой данных</a></span>
+						</label>
+					</form>
+
+					<div class="des-faq" data-accordion>
+						<div class="des-faq__item" data-accordion-item="open">
+							<div class="des-faq__head" data-accordion-trigger>
+								<span>Как зарегистрироваться в программе для профессионалов?</span>
+								<svg class="des-faq__chevron" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.33203 1V13.6615M1.00129 7.33075L7.33203 13.6615L13.6628 7.33075" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="des-faq__drop" data-accordion-dropdown>
+								<div class="des-faq__body">
+									<span class="des-faq__logo">
+										<img src="./img/logo.png" alt="" width="96">
+									</span>
+									<p>Оставьте заявку на этой странице или свяжитесь с персональным менеджером — мы расскажем об условиях и подключим вас к партнёрской программе FLEXI.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="des-faq__item" data-accordion-item>
+							<div class="des-faq__head" data-accordion-trigger>
+								<span>Какие материалы доступны?</span>
+								<svg class="des-faq__chevron" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.33203 1V13.6615M1.00129 7.33075L7.33203 13.6615L13.6628 7.33075" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="des-faq__drop" data-accordion-dropdown>
+								<div class="des-faq__body">
+									<p>Весь ассортимент: плитка, керамогранит, сантехника, мебель для ванной, напольные и настенные покрытия — более 5 000 позиций.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="des-faq__item" data-accordion-item>
+							<div class="des-faq__head" data-accordion-trigger>
+								<span>Доступны ли образцы?</span>
+								<svg class="des-faq__chevron" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.33203 1V13.6615M1.00129 7.33075L7.33203 13.6615L13.6628 7.33075" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="des-faq__drop" data-accordion-dropdown>
+								<div class="des-faq__body">
+									<p>Да, образцы материалов доступны для партнёров — уточните у менеджера наличие и условия получения.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="des-faq__item" data-accordion-item>
+							<div class="des-faq__head" data-accordion-trigger>
+								<span>Как зарегистрироваться в программе для профессионалов?</span>
+								<svg class="des-faq__chevron" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.33203 1V13.6615M1.00129 7.33075L7.33203 13.6615L13.6628 7.33075" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="des-faq__drop" data-accordion-dropdown>
+								<div class="des-faq__body">
+									<p>Оставьте заявку на этой странице или свяжитесь с персональным менеджером — мы расскажем об условиях и подключим вас к партнёрской программе FLEXI.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="follow" style="background-image: url('./img/follow/bg.webp');">
+		<div class="wrapper">
+			<div class="follow__content">
+				<div class="follow__main">
+					<h2 class="follow__title">Следите за нами в соцсетях и получайте первыми новости об акциях</h2>
+					<div class="follow__bottom">
+						<div class="follow__soc">
+							<div class="follow__soc_title">Выбирайте удобную вам соцсеть:</div>
+							<div class="follow__soc_items">
+								<a href="#" class="follow__soc_item">
+									<img src="./img/follow/tg.svg" alt="" width="38" height="38">
+									Следите за нами в Телеграм
+								</a>
+								<a href="#" class="follow__soc_item">
+									<img src="./img/follow/vk.svg" alt="" width="38" height="38">
+									Подписывайтесь на группу в ВК
+								</a>
+							</div>
+						</div>
+
+						<div class="follow__sub">
+							<form class="follow__sub_main">
+								<input type="text" class="follow__sub_inp" placeholder="Ваша почта">
+								<button type="submit" class="follow__sub_btn">
+									<img src="./img/follow/arrow-right.svg" alt="" width="25" height="17">
+								</button>
+							</form>
+
+							<div class="follow__sub_descr">Нажимая на стрелку вправо, вы даёте согласие на обработку своих персональных данных</div>
+						</div>
+					</div>
+				</div>
+
+				<img src="./img/follow/logo.svg" alt="" class="follow__logo" width="101" height="101">
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__content">
+				<div class="footer__main">
+					<div class="footer__cols" data-accordion data-accordion-multiple>
+						<div class="footer__col">
+							<div class="footer__list" data-accordion-item>
+								<div class="footer__list_title" data-accordion-trigger>О НАС</div>
+								<ul class="footer__list_items">
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Команда</a></li>
+									<li><a href="#">Партнеры</a></li>
+									<li><a href="#">Отзывы</a></li>
+								</ul>
+							</div>
+							<div class="footer__list" data-accordion-item>
+								<div class="footer__list_title" data-accordion-trigger>ПРОФЕССИОНАЛАМ</div>
+								<ul class="footer__list_items">
+									<li><a href="#">Дизайнеры и строители</a></li>
+									<li><a href="#">Оптовый отдел</a></li>
+									<li><a href="#">Дилерский отдел</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__col">
+							<div class="footer__list" data-accordion-item>
+								<div class="footer__list_title" data-accordion-trigger>ПОКУПАТЕЛЯМ</div>
+								<ul class="footer__list_items">
+									<li><a href="#">Доставка</a></li>
+									<li><a href="#">Оплата и возврат</a></li>
+									<li><a href="#">Дизайн-проект</a></li>
+									<li><a href="#">Гарантии</a></li>
+									<li><a href="#">Блог</a></li>
+									<li><a href="#">Акции</a></li>
+								</ul>
+							</div>
+							<div class="footer__list" data-accordion-item>
+								<div class="footer__list_title" data-accordion-trigger>КАТАЛОГ</div>
+								<ul class="footer__list_items">
+									<li><a href="#">Керамическая плитка</a></li>
+									<li><a href="#">Керамогранит</a></li>
+									<li><a href="#">Сантехника</a></li>
+									<li><a href="#">Мебель для ванной</a></li>
+									<li><a href="#">Напольные покрытия</a></li>
+									<li><a href="#">Обои</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__contact">
+						<a href="#" class="footer__phone">
+							8 800 234 75 75
+							<img src="./img/footer/arrow-down-right.svg" alt="" width="8" height="8">
+						</a>
+
+						<div class="footer__soc">
+							<div class="footer__soc_title">Следите за нами:</div>
+							<ul class="footer__soc_items">
+								<li><a href="#"><img src="./img/footer/tg.svg" alt="" width="24" height="24"></a></li>
+								<li><a href="#"><img src="./img/footer/vk.svg" alt="" width="24" height="24"></a></li>
+							</ul>
+						</div>
+
+						<div class="footer__email" data-copy-tip="info@fleksi.ru">
+							<img src="./img/footer/mail.svg" alt="" width="20" height="16">
+							info@fleksi.ru
+							<span class="copy-tip" data-copy-tip-label>Скопировать</span>
+						</div>
+
+						<button type="button" class="footer__order red-btn">заказать звонок</button>
+
+						<div class="footer__city">
+							<div class="footer__city_title">МЫ ЕСТЬ В ГОРОДАХ</div>
+							<ul class="footer__city_list">
+								<li><img src="./img/footer/loc.svg" alt="" width="10" height="12"> Сочи</li>
+								<li><img src="./img/footer/loc.svg" alt="" width="10" height="12"> Адлер</li>
+								<li><img src="./img/footer/loc.svg" alt="" width="10" height="12"> Краснодар</li>
+							</ul>
+							<div class="footer__city_delivery">
+								<img src="./img/footer/delivery.svg" alt="" width="11" height="10">
+
+								Доставка по РФ
+							</div>
+						</div>
+
+						<div class="footer__sch">
+							<div class="footer__sch_title">ГРАФИК РАБОТЫ</div>
+							<div class="footer__sch_text">9:00 – 19:00 ежедневно</div>
+						</div>
+
+						<a href="#" class="footer__ya"><img src="./img/footer/ya.png" alt="" width="149" height="26"></a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<ul class="footer__bottom_list">
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Согласие на обработку персональных данных</a></li>
+					</ul>
+
+					<div class="footer__copyright">2007 - 2026 © Торговый Дом FLEXI</div>
+				</div>
+
+				<div class="footer__bg"><img src="./img/footer/bg.webp" alt=""></div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="./libs/swiper/swiper.min.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<div class="cat-filters__head">
+                        <span class="cat-filters__head-title">Фильтры</span>
+                        <button type="button" class="cat-filters__head-close" data-filters-close aria-label="Закрыть">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+                        </button>
+                    </div>
+
+                    <div class="cat-filters__accent">
+                        <ul class="cat-filters__accent_list">
+                            <li class="cat-filters__accent_curr"><a href="#">Керамогранит</a></li>
+                            <li><a href="#">Керамическая плитка</a></li>
+                            <li><a href="#">Утолщенный керамогранит</a></li>
+                            <li><a href="#">Мозайка</a></li>
+                            <li><a href="#">Плинтус</a></li>
+                            <li><a href="#">Ступени</a></li>
+                            <li><a href="#">Сухие смеси</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="cat-filters__main" data-accordion data-accordion-multiple>
+                        <div class="cat-filters__row" data-accordion-item="open">
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Цена
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <div
+                                        class="price-filter"
+                                        data-price-range-from="3500"
+                                        data-price-range-to="233500"
+                                    >
+                                        <div class="price-filter__fields">
+                                            <div class="price-filter__field">
+                                                <div class="price-filter__field_prepend">от</div>
+                                                <input type="number" min="0" class="price-filter__inp price-filter__inp--from" value="3500" placeholder="3500">
+                                            </div>
+                                            <div class="price-filter__field">
+                                                <div class="price-filter__field_prepend">до</div>
+                                                <input type="number" min="0" class="price-filter__inp price-filter__inp--to" value="233500" placeholder="233500">
+                                            </div>
+                                        </div>
+                                        <div class="price-filter__slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row cat-filters__row--static">
+                            <div class="cat-filters__row_inner">
+                                <ul class="cat-filters__checks">
+                                    <li>
+                                        <label class="cat-filters__switch switch">
+                                            <input type="checkbox" checked hidden>
+                                            <div class="switch__label">Хит продаж</div>
+                                            <div class="switch__block"></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="cat-filters__switch switch">
+                                            <input type="checkbox" hidden>
+                                            <div class="switch__label">Новинка</div>
+                                            <div class="switch__block"></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="cat-filters__switch switch">
+                                            <input type="checkbox" checked hidden>
+                                            <div class="switch__label">Распродажа</div>
+                                            <div class="switch__block"></div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item="open">
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Наличие
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li>
+                                            <label class="cat-filters__switch switch">
+                                                <input type="checkbox" checked hidden>
+                                                <div class="switch__label">Есть на складе</div>
+                                                <div class="switch__block"></div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item="open">
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Применение
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Для пола</span><span class="check__count">120</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input" checked><span class="check__box"></span><span class="check__label">Для стен</span><span class="check__count">321</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Для замера</span><span class="check__count">45</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item="open">
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                По размеру
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input" checked><span class="check__box"></span><span class="check__label">60x60</span><span class="check__count">150</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">60x120</span><span class="check__count">80</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">60x90</span><span class="check__count">60</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat-filters__foot">
+                        <button type="button" class="cat-filters__reset">Сбросить</button>
+                        <button type="button" class="cat-filters__apply red-btn" data-filters-close>Показать</button>
+                    </div>

@@ -1,0 +1,596 @@
+<div class="popup popup--callback" data-popup-window="callback">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--callback">
+		<button type="button" class="popup__close" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<div class="popup__box-body">
+			<form class="callback" action="#" method="post">
+				<div class="callback__top">
+					<div class="callback__head">
+						<h3 class="callback__title">Заказать звонок</h3>
+						<p class="callback__subtitle">Оставьте ваши данные и мы вам перезвоним</p>
+					</div>
+
+					<div class="callback__form">
+						<div class="callback__fields">
+							<label class="callback__field">
+								<input type="text" class="callback__control" placeholder="Ваше имя*" required>
+							</label>
+							<div class="callback__field">
+								<div class="phone" data-dynamic-phone>
+	<button type="button" class="phone__trigger" data-phone-trigger aria-expanded="false">
+		<span class="phone__flag" data-phone-flag></span>
+		<svg class="phone__chevron" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l3 3 3-3" stroke="#53575A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+	</button>
+
+	<ul class="phone__list" data-phone-list role="listbox">
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+7" data-mask="(000) 000-00-00">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="8" fill="#fff"/><rect y="8" width="24" height="8" fill="#0039A6"/><rect y="16" width="24" height="8" fill="#D52B1E"/></svg></span>
+				<span class="phone__name">Россия</span>
+				<span class="phone__dial">+7</span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+7" data-mask="(000) 000-00-00">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" fill="#00AFCA"/><circle cx="12" cy="11" r="4" fill="#FEC50C"/></svg></span>
+				<span class="phone__name">Казахстан</span>
+				<span class="phone__dial">+7</span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+375" data-mask="(00) 000-00-00">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="16" fill="#D22730"/><rect y="16" width="24" height="8" fill="#00A651"/></svg></span>
+				<span class="phone__name">Беларусь</span>
+				<span class="phone__dial">+375</span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="phone__option" data-phone-option data-dial="+374" data-mask="(00) 000-000">
+				<span class="phone__flag"><svg class="flag-ic" viewBox="0 0 24 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="8" fill="#D90012"/><rect y="8" width="24" height="8" fill="#0033A0"/><rect y="16" width="24" height="8" fill="#F2A800"/></svg></span>
+				<span class="phone__name">Армения</span>
+				<span class="phone__dial">+374</span>
+			</button>
+		</li>
+	</ul>
+
+	<input type="tel" class="phone__input" data-phone-input required>
+</div>
+
+							</div>
+						</div>
+
+						<div class="callback__action">
+							<button type="submit" class="callback__submit red-btn">Отправить</button>
+							<p class="callback__consent">Нажимая на кнопку «Отправить», вы даёте <a href="#">согласие на обработку</a> своих персональных данных</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="callback__messengers">
+					<p class="callback__or">Или пишите в мессенджеры, если вам так удобнее</p>
+					<div class="callback__msg-list">
+						<a href="#" class="callback__msg callback__msg--tg">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							Написать в Telegram
+						</a>
+						<a href="#" class="callback__msg callback__msg--max">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 21l1.95-5.6A8.5 8.5 0 1 1 21 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							Написать в MAX
+						</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--write" data-popup-window="write">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--write">
+		<button type="button" class="popup__close" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<div class="writeus">
+			<h3 class="writeus__title">Напишите нам</h3>
+			<div class="writeus__list">
+				<a href="#" class="writeus__item">
+					<span class="writeus__ic writeus__ic--chat">
+						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 21l1.95-5.6A8.5 8.5 0 1 1 21 11.5Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.5" cy="11.5" r="1" fill="#E43D30"/><circle cx="12" cy="11.5" r="1" fill="#E43D30"/><circle cx="15.5" cy="11.5" r="1" fill="#E43D30"/></svg>
+					</span>
+					Чат на сайте
+				</a>
+				<a href="#" class="writeus__item">
+					<span class="writeus__ic"><img src="./img/footer/vk.svg" alt="" width="26" height="26"></span>
+					VKontakte
+				</a>
+				<a href="#" class="writeus__item">
+					<span class="writeus__ic writeus__ic--max">
+						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 21l1.95-5.6A8.5 8.5 0 1 1 21 11.5Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					</span>
+					MAX
+				</a>
+				<a href="#" class="writeus__item">
+					<span class="writeus__ic"><img src="./img/footer/tg.svg" alt="" width="26" height="26"></span>
+					Telegram
+				</a>
+			</div>
+
+			<h3 class="writeus__title writeus__title--call">Звоните нам</h3>
+			<a href="tel:88002347575" class="writeus__phone">
+				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 21.5a18 18 0 0 1-8-2.07 17.7 17.7 0 0 1-5.93-5.93A18 18 0 0 1 2.5 5.5 2 2 0 0 1 4.5 3.5h2.5a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11l-1 1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7a2 2 0 0 1 1.72 2v2.31a2 2 0 0 1-2 2Z" stroke="#1D1D1D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				8 800 234 75 75
+			</a>
+
+			<div class="writeus__hours">
+				<div class="writeus__hours-title">График работы</div>
+				<div class="writeus__hours-time">9:00 – 19:00 ежедневно</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--city" data-popup-window="city">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--city">
+		<button type="button" class="popup__close popup__close--sm" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<div class="city">
+			<h3 class="city__title">Ваш город Сочи?</h3>
+			<div class="city__btns">
+				<button type="button" class="city__btn red-btn" data-popup-close>Да, верно</button>
+				<button type="button" class="city__btn city__btn--ghost">Выбрать другой</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--success" data-popup-window="success">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--success">
+		<button type="button" class="popup__close" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<div class="popup__box-body">
+			<div class="success">
+				<h3 class="success__title">Ваш запрос успешно отправлен</h3>
+				<p class="success__descr">Наш менеджер свяжется с вами в ближайшее время<br>(текст в зависимости от предыдущей формы)</p>
+				<button type="button" class="success__btn red-btn" data-popup-close>Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--map" data-popup-window="map">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--map">
+		<button type="button" class="popup__close popup__close--map" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+		<div class="map-popup" data-map-popup>
+			<div class="map-popup__panel">
+				<div class="map-popup__modes">
+					<label class="map-popup__mode">
+						<input type="radio" name="map-mode" value="pickup" checked hidden data-map-mode>
+						<span class="map-popup__mode-radio"></span>
+						Самовывоз
+					</label>
+					<label class="map-popup__mode">
+						<input type="radio" name="map-mode" value="delivery" hidden data-map-mode>
+						<span class="map-popup__mode-radio"></span>
+						Доставка
+					</label>
+				</div>
+
+				<div class="map-popup__view" data-map-view="pickup-list">
+					<h3 class="map-popup__heading">Выберите пункт выдачи:</h3>
+					<div class="map-popup__points">
+						<button type="button" class="map-point" data-map-point>
+							<span class="map-point__badge">с 27 января</span>
+							<span class="map-point__name">Склад Сочи</span>
+							<span class="map-point__addr">г. Сочи, Центральный р-н, ул. Труда, 33</span>
+						</button>
+						<button type="button" class="map-point" data-map-point>
+							<span class="map-point__badge">с 31 января</span>
+							<span class="map-point__name">Склад Краснодар</span>
+							<span class="map-point__addr">г. Краснодар, ул. Красная, 176</span>
+						</button>
+						<button type="button" class="map-point" data-map-point>
+							<span class="map-point__badge">с 1 февраля</span>
+							<span class="map-point__name">Склад Москва</span>
+							<span class="map-point__addr">г. Москва, ул. Гагарина, 56А</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="map-popup__view" data-map-view="pickup-detail" hidden>
+					<button type="button" class="map-popup__back" data-map-back>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.5">
+								<path d="M16 4C16 1.79086 14.2091 0 12 0H4C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H12C14.2091 16 16 14.2091 16 12V4Z" fill="#53575A"/>
+								<path d="M9 11L6 8L9 5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+						</svg>
+						Назад
+					</button>
+					<div class="map-detail">
+						<div class="map-detail__badges">
+							<span class="map-detail__badge map-detail__badge--free">Бесплатно</span>
+							<span class="map-detail__badge">с 27 января</span>
+						</div>
+						<h3 class="map-detail__name">Склад Сочи</h3>
+						<div class="map-detail__block">
+							<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 17C8.875 13 15 12.5346 15 7.4C15 3.86538 11.866 1 8 1C4.13401 1 1 3.86538 1 7.4C1 12.5346 7.125 13 8 17Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8 9.8C9.44975 9.8 10.625 8.72548 10.625 7.4C10.625 6.07452 9.44975 5 8 5C6.55025 5 5.375 6.07452 5.375 7.4C5.375 8.72548 6.55025 9.8 8 9.8Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<div class="map-detail__block-text">
+								<p class="map-detail__row">Сочи, Центральный район, ул. Пластунская, 72</p>
+								<p class="map-detail__row">Тел: <b>+7 862 268-15-55</b></p>
+								<p class="map-detail__row">Тел: <b>8 800 234-75-75</b> (единый номер)</p>
+								<p class="map-detail__row">Эл. почта: <a href="mailto:info@fleksi.ru">info@fleksi.ru</a></p>
+							</div>
+						</div>
+						<div class="map-detail__block">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.8715 5.43511V10.8705L14.495 12.6823M19.9304 10.8705C19.9304 15.8736 15.8746 19.9294 10.8715 19.9294C5.86833 19.9294 1.8125 15.8736 1.8125 10.8705C1.8125 5.86736 5.86833 1.81152 10.8715 1.81152C15.8746 1.81152 19.9304 5.86736 19.9304 10.8705Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<div class="map-detail__block-text">
+								<p class="map-detail__row">Ежедневно <b>с 9:00 до 18:30</b></p>
+								<p class="map-detail__row map-detail__row--muted">Выходные дни:<br>День Пасхи 20.04.2025<br>День Победы 09.05.2025<br>Короткий день до 18:00 в праздничные дни 23.02, 8.03, 1.05</p>
+							</div>
+						</div>
+						<div class="map-detail__block">
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_317_111043)">
+								<path d="M15.75 6V15.75H2.25V6M7.5 9H10.5M0.75 2.25H17.25V6H0.75V2.25Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_317_111043">
+								<rect width="18" height="18" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+							<div class="map-detail__block-text">
+								<p class="map-detail__row">Срок хранения заказа — <b>3 дня</b></p>
+							</div>
+						</div>
+					</div>
+					<div class="map-popup__actions">
+						<button type="button" class="map-popup__cancel" data-popup-close>Отмена</button>
+						<button type="button" class="map-popup__confirm red-btn" data-popup-close>Доставить сюда</button>
+					</div>
+				</div>
+
+				<div class="map-popup__view" data-map-view="delivery" hidden>
+					<h3 class="map-popup__heading">Куда доставить заказ?</h3>
+					<div class="map-popup__fields">
+						<input type="text" class="map-popup__input" placeholder="Населенный пункт, улица и дом*">
+						<div class="map-popup__fields-row">
+							<input type="text" class="map-popup__input" placeholder="Квартира / офис*">
+							<input type="text" class="map-popup__input" placeholder="Подъезд">
+						</div>
+						<div class="map-popup__fields-row">
+							<input type="text" class="map-popup__input" placeholder="Этаж">
+							<label class="map-popup__lift switch">
+								<span class="switch__label">Лифт есть</span>
+								<input type="checkbox" checked hidden>
+								<span class="switch__block"></span>
+							</label>
+						</div>
+						<textarea class="map-popup__input map-popup__textarea" placeholder="Комментарий по доставке. Например, как найти вход, пропускная система, ограничение по габаритам машины и т.д."></textarea>
+					</div>
+					<p class="map-popup__note">* - Данные необходимые для заполнения</p>
+					<div class="map-popup__actions">
+						<button type="button" class="map-popup__cancel" data-popup-close>Отмена</button>
+						<button type="button" class="map-popup__confirm red-btn" data-popup-close>Доставить сюда</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="map-popup__map">
+				<img src="./img/addresses/map.webp" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup--auth" data-popup-window="auth">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--auth">
+		<button type="button" class="popup__close" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<form class="auth" action="#" method="post">
+			<h3 class="auth__title">Вход в личный кабинет</h3>
+			<p class="auth__subtitle">Введите телефон — вышлем код для входа</p>
+
+			<div class="auth__fields">
+				<input type="tel" class="auth__input" placeholder="Телефон">
+				<input type="password" class="auth__input" placeholder="Пароль">
+			</div>
+			<button type="submit" class="auth__submit red-btn">Войти</button>
+			<a href="#" class="auth__link">Забыли пароль?</a>
+		</form>
+	</div>
+</div>
+
+<div class="popup popup--cart" data-popup-window="cart">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--cart">
+		<button type="button" class="popup__close popup__close--text" data-popup-close>Закрыть</button>
+
+		<div class="cart-popup" data-cart>
+			<h3 class="cart-popup__title">Ваш заказ</h3>
+
+			<div class="cart__toolbar">
+				<div class="cart__toolbar-left">
+					<label class="check cart__select-all">
+						<input type="checkbox" class="check__input" checked data-cart-all>
+						<span class="check__box"></span>
+						<span class="check__label">Выбрано 2</span>
+					</label>
+					<button type="button" class="cart__remove" data-cart-remove>Удалить выбранное</button>
+				</div>
+				<div class="cart__toolbar-right">
+					<button type="button" class="cart__tool">
+						<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.65833 10.208L11.35 13.392M11.3417 4.608L5.65833 7.792M16 3.4C16 4.72548 14.8807 5.8 13.5 5.8C12.1193 5.8 11 4.72548 11 3.4C11 2.07452 12.1193 1 13.5 1C14.8807 1 16 2.07452 16 3.4ZM6 9C6 10.3255 4.88071 11.4 3.5 11.4C2.11929 11.4 1 10.3255 1 9C1 7.67452 2.11929 6.6 3.5 6.6C4.88071 6.6 6 7.67452 6 9ZM16 14.6C16 15.9255 14.8807 17 13.5 17C12.1193 17 11 15.9255 11 14.6C11 13.2745 12.1193 12.2 13.5 12.2C14.8807 12.2 16 13.2745 16 14.6Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						Поделиться корзиной
+					</button>
+					<button type="button" class="cart__tool">Скачать PDF</button>
+					<button type="button" class="cart__edit">Изменить заказ</button>
+				</div>
+			</div>
+
+			<div class="cart-item" data-cart-item>
+				<div class="cart-item__top">
+					<label class="check cart-item__check">
+						<input type="checkbox" class="check__input" data-cart-check>
+						<span class="check__box"></span>
+					</label>
+
+					<div class="cart-item__main">
+						<div class="cart-item__media">
+							<img src="./img/product/gallery-3.webp" alt="">
+						</div>
+
+						<div class="cart-item__info">
+							<a href="product.html" class="cart-item__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
+							<button type="button" class="cart-item__code" data-copy="467546">
+								Код: 467546
+								<svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
+							</button>
+							<div class="cart-item__actions">
+								<button type="button" class="cart-item__icon-btn" aria-label="В избранное">
+									<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.96667 0.5C11.08 0.5 12.5 2.3625 12.5 4.1C12.5 7.61875 6.60667 10.5 6.5 10.5C6.39333 10.5 0.5 7.61875 0.5 4.1C0.5 2.3625 1.92 0.5 4.03333 0.5C5.24667 0.5 6.04 1.06875 6.5 1.56875C6.96 1.06875 7.75333 0.5 8.96667 0.5Z" stroke="#1D1D1D" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<button type="button" class="cart-item__icon-btn" aria-label="Удалить" data-cart-item-remove>
+									<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.5 0.5H8.5M0.5 2.5H12.5M11.1667 2.5L10.6991 9.51286C10.629 10.565 10.5939 11.0911 10.3667 11.49C10.1666 11.8412 9.86483 12.1235 9.50111 12.2998C9.08798 12.5 8.56073 12.5 7.50623 12.5H5.49377C4.43927 12.5 3.91202 12.5 3.49889 12.2998C3.13517 12.1235 2.83339 11.8412 2.63332 11.49C2.40607 11.0911 2.371 10.565 2.30086 9.51286L1.83333 2.5M5.16667 5.5V8.83333M7.83333 5.5V8.83333" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="cart-item__measure">
+							<div class="cart-item__qty">
+								<div class="cart-item__counter">
+									<button type="button" aria-label="Уменьшить">−</button>
+									<input type="text" value="1,44" inputmode="decimal">
+									<button type="button" aria-label="Увеличить">+</button>
+								</div>
+								<div class="cart-item__unit">
+									<select>
+										<option>упак.</option>
+										<option>м²</option>
+										<option>шт.</option>
+									</select>
+									<svg width="13" height="7" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 1.25L8.2 7.25L14.41 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+							</div>
+							<span class="cart-item__per">1 480 ₽ за упак.</span>
+						</div>
+
+						<div class="cart-item__price">
+							<span class="cart-item__discount">-30%</span>
+							<span class="cart-item__old">14 501.60 ₽</span>
+							<span class="cart-item__sum">12 501.60 ₽</span>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="cart-item__addon" data-popup="addon">
+					<span class="cart-item__addon-text">
+						<span class="cart-item__addon-title">
+							Дополните комплект
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 7.33081H13.6615M7.33075 13.6616L13.6615 7.33081L7.33075 1.00006" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</span>
+						<span class="cart-item__addon-sub">Подборка аксессуаров</span>
+					</span>
+					<span class="cart-item__addon-thumbs">
+						<div class="cart-item__addon-thumb"><img src="./img/solution/1.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/4.webp" alt=""></div>
+					</span>
+				</a>
+			</div>
+
+			<div class="cart-item" data-cart-item>
+				<div class="cart-item__top">
+					<label class="check cart-item__check">
+						<input type="checkbox" class="check__input" data-cart-check>
+						<span class="check__box"></span>
+					</label>
+
+					<div class="cart-item__main">
+						<div class="cart-item__media">
+							<img src="./img/product/gallery-3.webp" alt="">
+						</div>
+
+						<div class="cart-item__info">
+							<a href="product.html" class="cart-item__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
+							<button type="button" class="cart-item__code" data-copy="467546">
+								Код: 467546
+								<svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
+							</button>
+							<div class="cart-item__actions">
+								<button type="button" class="cart-item__icon-btn" aria-label="В избранное">
+									<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.96667 0.5C11.08 0.5 12.5 2.3625 12.5 4.1C12.5 7.61875 6.60667 10.5 6.5 10.5C6.39333 10.5 0.5 7.61875 0.5 4.1C0.5 2.3625 1.92 0.5 4.03333 0.5C5.24667 0.5 6.04 1.06875 6.5 1.56875C6.96 1.06875 7.75333 0.5 8.96667 0.5Z" stroke="#1D1D1D" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<button type="button" class="cart-item__icon-btn" aria-label="Удалить" data-cart-item-remove>
+									<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.5 0.5H8.5M0.5 2.5H12.5M11.1667 2.5L10.6991 9.51286C10.629 10.565 10.5939 11.0911 10.3667 11.49C10.1666 11.8412 9.86483 12.1235 9.50111 12.2998C9.08798 12.5 8.56073 12.5 7.50623 12.5H5.49377C4.43927 12.5 3.91202 12.5 3.49889 12.2998C3.13517 12.1235 2.83339 11.8412 2.63332 11.49C2.40607 11.0911 2.371 10.565 2.30086 9.51286L1.83333 2.5M5.16667 5.5V8.83333M7.83333 5.5V8.83333" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="cart-item__measure">
+							<div class="cart-item__qty">
+								<div class="cart-item__counter">
+									<button type="button" aria-label="Уменьшить">−</button>
+									<input type="text" value="1,44" inputmode="decimal">
+									<button type="button" aria-label="Увеличить">+</button>
+								</div>
+								<div class="cart-item__unit">
+									<select>
+										<option>упак.</option>
+										<option>м²</option>
+										<option>шт.</option>
+									</select>
+									<svg width="13" height="7" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 1.25L8.2 7.25L14.41 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+							</div>
+							<span class="cart-item__per">1 480 ₽ за упак.</span>
+						</div>
+
+						<div class="cart-item__price">
+							<span class="cart-item__discount">-30%</span>
+							<span class="cart-item__old">14 501.60 ₽</span>
+							<span class="cart-item__sum">12 501.60 ₽</span>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="cart-item__addon" data-popup="addon">
+					<span class="cart-item__addon-text">
+						<span class="cart-item__addon-title">
+							Дополните комплект
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 7.33081H13.6615M7.33075 13.6616L13.6615 7.33081L7.33075 1.00006" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</span>
+						<span class="cart-item__addon-sub">Подборка аксессуаров</span>
+					</span>
+					<span class="cart-item__addon-thumbs">
+						<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/4.webp" alt=""></div>
+					</span>
+				</a>
+			</div>
+
+			<div class="cart-item" data-cart-item>
+				<div class="cart-item__top">
+					<label class="check cart-item__check">
+						<input type="checkbox" class="check__input" data-cart-check>
+						<span class="check__box"></span>
+					</label>
+
+					<div class="cart-item__main">
+						<div class="cart-item__media">
+							<img src="./img/product/gallery-3.webp" alt="">
+						</div>
+
+						<div class="cart-item__info">
+							<a href="product.html" class="cart-item__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
+							<button type="button" class="cart-item__code" data-copy="467546">
+								Код: 467546
+								<svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
+							</button>
+							<div class="cart-item__actions">
+								<button type="button" class="cart-item__icon-btn" aria-label="В избранное">
+									<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.96667 0.5C11.08 0.5 12.5 2.3625 12.5 4.1C12.5 7.61875 6.60667 10.5 6.5 10.5C6.39333 10.5 0.5 7.61875 0.5 4.1C0.5 2.3625 1.92 0.5 4.03333 0.5C5.24667 0.5 6.04 1.06875 6.5 1.56875C6.96 1.06875 7.75333 0.5 8.96667 0.5Z" stroke="#1D1D1D" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<button type="button" class="cart-item__icon-btn" aria-label="Удалить" data-cart-item-remove>
+									<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.5 0.5H8.5M0.5 2.5H12.5M11.1667 2.5L10.6991 9.51286C10.629 10.565 10.5939 11.0911 10.3667 11.49C10.1666 11.8412 9.86483 12.1235 9.50111 12.2998C9.08798 12.5 8.56073 12.5 7.50623 12.5H5.49377C4.43927 12.5 3.91202 12.5 3.49889 12.2998C3.13517 12.1235 2.83339 11.8412 2.63332 11.49C2.40607 11.0911 2.371 10.565 2.30086 9.51286L1.83333 2.5M5.16667 5.5V8.83333M7.83333 5.5V8.83333" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="cart-item__measure">
+							<div class="cart-item__qty">
+								<div class="cart-item__counter">
+									<button type="button" aria-label="Уменьшить">−</button>
+									<input type="text" value="1,44" inputmode="decimal">
+									<button type="button" aria-label="Увеличить">+</button>
+								</div>
+								<div class="cart-item__unit">
+									<select>
+										<option>упак.</option>
+										<option>м²</option>
+										<option>шт.</option>
+									</select>
+									<svg width="13" height="7" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 1.25L8.2 7.25L14.41 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+							</div>
+							<span class="cart-item__per">1 480 ₽ за упак.</span>
+						</div>
+
+						<div class="cart-item__price">
+							<span class="cart-item__discount">-30%</span>
+							<span class="cart-item__old">14 501.60 ₽</span>
+							<span class="cart-item__sum">12 501.60 ₽</span>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="cart-item__addon" data-popup="addon">
+					<span class="cart-item__addon-text">
+						<span class="cart-item__addon-title">
+							Дополните комплект
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 7.33081H13.6615M7.33075 13.6616L13.6615 7.33081L7.33075 1.00006" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</span>
+						<span class="cart-item__addon-sub">Подборка аксессуаров</span>
+					</span>
+					<span class="cart-item__addon-thumbs">
+						<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
+						<div class="cart-item__addon-thumb"><img src="./img/solution/4.webp" alt=""></div>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

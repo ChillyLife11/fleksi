@@ -1,0 +1,422 @@
+<div class="cat-filters__head">
+                        <span class="cat-filters__head-title">Фильтры</span>
+                        <button type="button" class="cat-filters__head-close" data-filters-close aria-label="Закрыть">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+                        </button>
+                    </div>
+
+                    <div class="cat-filters__accent">
+                        <div class="cat-filters__accent_top">
+                            <div class="cat-filters__accent_title">Категории</div>
+                            <img src="./img/category/logo.svg" alt="" width="48" height="48">
+                        </div>
+
+                        <ul class="cat-filters__accent_list">
+                            <li class="cat-filters__accent_back"><a href="#"><img src="./img/category/chevron-back.svg" alt="" width="8" height="14"> Плитка</a></li>
+                            <li class="cat-filters__accent_curr"><a href="#">Керамогранит</a></li>
+                            <li><a href="#">Керамическая плитка</a></li>
+                            <li><a href="#">Утолщенный керамогранит</a></li>
+                            <li><a href="#">Мозайка</a></li>
+                            <li><a href="#">Плинтус</a></li>
+                            <li><a href="#">Ступень</a></li>
+                            <li><a href="#">Сухие смеси</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="cat-filters__main" data-accordion data-accordion-multiple>
+                        <div class="cat-filters__row" data-accordion-item="open">
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Цена
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <div
+                                        class="price-filter"
+                                        data-price-range-from="0"
+                                        data-price-range-to="20000"
+                                    >
+                                        <div class="price-filter__fields">
+                                            <div class="price-filter__field">
+                                                <div class="price-filter__field_prepend">от</div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    class="price-filter__inp price-filter__inp--from"
+                                                    value="0"
+                                                    placeholder="0"
+                                                >
+                                            </div>
+                                            <div class="price-filter__field">
+                                                <div class="price-filter__field_prepend">до</div>
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    class="price-filter__inp price-filter__inp--to"
+                                                    value="20000"
+                                                    placeholder="20000"
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="price-filter__slider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat-filters__row cat-filters__row--static">
+                            <div class="cat-filters__row_inner">
+                                <ul class="cat-filters__checks">
+                                    <li>
+                                        <label class="cat-filters__switch switch">
+                                            <input type="checkbox" checked hidden>
+
+                                            <div class="switch__label">Хит продаж</div>
+                                            <div class="switch__block"></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="cat-filters__switch switch">
+                                            <input type="checkbox" hidden>
+
+                                            <div class="switch__label">Новинка</div>
+                                            <div class="switch__block"></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="cat-filters__switch switch">
+                                            <input type="checkbox" checked hidden>
+
+                                            <div class="switch__label">Распродажа</div>
+                                            <div class="switch__block"></div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item="open">
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Наличие
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li>
+                                            <label class="cat-filters__switch switch">
+                                                <input type="checkbox" checked hidden>
+                                                <div class="switch__label">Есть на складе</div>
+                                                <div class="switch__block"></div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item="open">
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Бренд
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <div class="cat-filters__search">
+                                        <input type="text" placeholder="Поиск по брендам">
+                                    </div>
+                                    <ul class="cat-filters__checks cat-filters__checks--scroll">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Italon</span><span class="check__count">150</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input" checked><span class="check__box"></span><span class="check__label">KERALD</span><span class="check__count">321</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Atlas Concorde</span><span class="check__count">45</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">La Faenza</span><span class="check__count">33</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input" checked><span class="check__box"></span><span class="check__label">Imola</span><span class="check__count">87</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">VitrA</span><span class="check__count">10</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Idalgo</span><span class="check__count">1</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Baldocer</span><span class="check__count">9 854</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item="open">
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Страна производства
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Россия</span><span class="check__count">150</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input" checked><span class="check__box"></span><span class="check__label">Италия</span><span class="check__count">321</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Франция</span><span class="check__count">45</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item>
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Размер
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">20х40</span><span class="check__count">150</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">30х60</span><span class="check__count">321</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">60х60</span><span class="check__count">45</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">120х60</span><span class="check__count">33</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item>
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Толщина
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">8 мм</span><span class="check__count">150</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">9 мм</span><span class="check__count">80</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">10 мм</span><span class="check__count">60</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">12 мм</span><span class="check__count">30</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item="open">
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Цвет
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__color" style="background:#fff"></span><span class="check__label">Белый</span><span class="check__count">150</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input" checked><span class="check__box"></span><span class="check__color" style="background:#EBE0CC"></span><span class="check__label">Бежевый</span><span class="check__count">321</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__color" style="background:#000"></span><span class="check__label">Черный</span><span class="check__count">45</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__color" style="background:#808080"></span><span class="check__label">Серый</span><span class="check__count">33</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input" checked><span class="check__box"></span><span class="check__color" style="background:#6E2B27"></span><span class="check__label">Коричневый</span><span class="check__count">87</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__color" style="background:#0027FF"></span><span class="check__label">Синий</span><span class="check__count">10</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item>
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Материал
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Керамогранит</span><span class="check__count">321</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Керамическая плитка</span><span class="check__count">150</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Утолщенный керамогранит</span><span class="check__count">45</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item>
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Поверхность
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Матовая</span><span class="check__count">200</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Глянцевая</span><span class="check__count">180</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Лаппатированная</span><span class="check__count">60</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Сатинированная</span><span class="check__count">40</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item>
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Назначение
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Для пола</span><span class="check__count">300</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Для стен</span><span class="check__count">250</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Для фартука</span><span class="check__count">90</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Для фасада</span><span class="check__count">40</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item>
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                Износостойкость
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">PEI II</span><span class="check__count">40</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">PEI III</span><span class="check__count">120</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">PEI IV</span><span class="check__count">80</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">PEI V</span><span class="check__count">30</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item>
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                <span class="cat-filters__row_label">
+                                    Коэффициент скольжения
+                                    <span class="cat-filters__info">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#C8C8C8"/>
+                                            <path d="M11 7.81934V6H12.582V7.81934H11ZM11 18.8848V9.55078H12.582V18.8848H11Z" fill="#C8C8C8"/>
+                                        </svg>
+                                        <span class="cat-filters__info_tip">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#E43D30"/>
+                                                <path d="M11 7.81934V6H12.582V7.81934H11ZM11 18.8848V9.55078H12.582V18.8848H11Z" fill="#E43D30"/>
+                                            </svg>
+                                            способность препятствовать скольжению обуви или босых ног.
+                                        </span>
+                                    </span>
+                                </span>
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">R9</span><span class="check__count">100</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">R10</span><span class="check__count">80</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">R11</span><span class="check__count">50</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">R12</span><span class="check__count">20</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cat-filters__row" data-accordion-item>
+                            <div class="cat-filters__row_head" data-accordion-trigger>
+                                <span class="cat-filters__row_label">
+                                    По рисунку
+                                    <span class="cat-filters__info">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#C8C8C8"/>
+                                            <path d="M11 7.81934V6H12.582V7.81934H11ZM11 18.8848V9.55078H12.582V18.8848H11Z" fill="#C8C8C8"/>
+                                        </svg>
+                                        <span class="cat-filters__info_tip">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#E43D30"/>
+                                                <path d="M11 7.81934V6H12.582V7.81934H11ZM11 18.8848V9.55078H12.582V18.8848H11Z" fill="#E43D30"/>
+                                            </svg>
+                                            способность препятствовать скольжению обуви или босых ног.
+                                        </span>
+                                    </span>
+                                </span>
+
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.00022 1.25L8.20323 7.25L14.4062 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="cat-filters__row_dropdown" data-accordion-dropdown>
+                                <div class="cat-filters__row_inner">
+                                    <ul class="cat-filters__checks">
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Мрамор</span><span class="check__count">150</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Дерево</span><span class="check__count">120</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Камень</span><span class="check__count">90</span></label></li>
+                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Бетон</span><span class="check__count">70</span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat-filters__banner" style="background-image: url('./img/category/filters-banner.png');">
+                        <div class="cat-filters__banner_title">Подбор плитки <br>от эксперта</div>
+                        <div class="cat-filters__banner_descr">Быстро, под ваш бюджет и задачу</div>
+                        <ul class="cat-filters__banner_soc">
+                            <li>
+                                <a href="#">
+                                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="23.1565" cy="23.1565" r="23.1565" fill="#E43D30"/>
+                                        <path d="M33.3905 12.1173L8.16243 21.8398C6.43026 22.5382 6.45817 23.4881 7.85508 23.9072L14.3366 25.9188L29.3395 16.4477C30.0379 16.0286 30.7084 16.2521 30.1497 16.7271L17.9966 27.6788L28.5573 35.4736C29.7586 36.1441 30.6247 35.7809 30.932 34.3561L35.2345 14.1009C35.6535 12.3967 34.536 11.5865 33.3905 12.1173Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="23.1565" cy="23.1565" r="23.1565" fill="#E43D30"/>
+                                        <g clip-path="url(#clip0_317_109041)">
+                                        <path d="M22.7281 6.17144C13.3966 6.65904 7.23665 13.9776 7.62583 23.2062C7.79582 27.2458 9.41968 30.7216 9.80439 34.5553C9.90281 35.5484 9.61651 36.7742 10.7617 37.2081C12.1708 37.7404 14.3315 36.8457 15.5125 36.0271C15.9151 35.7542 16.2998 35.4366 16.5951 35.0429C17.8163 35.8526 18.9749 36.6355 20.4288 36.9844C26.8303 38.5188 33.8446 35.0071 36.9626 29.3662C42.8228 18.7686 34.9003 5.53621 22.7281 6.17144ZM19.1046 28.2881C18.5991 28.6817 18.1115 29.2185 17.5524 29.5272C16.7427 29.9611 16.4922 29.5093 16.188 28.7936C15.2307 26.5166 15.1144 22.6381 15.6735 20.2538C16.4251 17.0106 18.9347 14.1565 22.3837 13.8523C25.8729 13.5436 29.1117 15.3151 30.5745 18.5136C33.8133 25.6308 25.524 32.6586 19.1046 28.2925V28.2881Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_317_109041">
+                                        <rect width="32.2087" height="32.2087" fill="white" transform="translate(7.05371 5.74219)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="23.1565" cy="23.1565" r="23.1565" fill="#E43D30"/>
+                                        <path d="M34.9286 29.5067C34.6714 28.7351 33.7712 27.5991 32.5924 26.2489C31.9494 25.4773 30.9848 24.6629 30.6848 24.2556C30.2775 23.7198 30.3847 23.484 30.6848 23.0125C30.6848 23.0125 34.0713 18.2544 34.4142 16.6255C34.5857 16.0468 34.4141 15.5967 33.5782 15.5967H30.7919C30.0847 15.5967 29.7632 15.961 29.5918 16.3897C29.5918 16.3897 28.1771 19.8404 26.1839 22.0694C25.5409 22.7124 25.2408 22.9267 24.8979 22.9267C24.7264 22.9267 24.4692 22.7124 24.4692 22.1337V16.6255C24.4692 15.9182 24.2549 15.5967 23.6763 15.5967H19.304C18.8539 15.5967 18.5966 15.9182 18.5966 16.2397C18.5966 16.9041 19.604 17.0541 19.6897 18.9402V23.0339C19.6897 23.9341 19.5183 24.0842 19.1753 24.0842C18.2323 24.0842 15.939 20.6334 14.5887 16.6683C14.3315 15.8967 14.0528 15.5967 13.3455 15.5967H10.5592C9.76622 15.5967 9.61621 15.961 9.61621 16.3897C9.61621 17.1184 10.5592 20.762 13.9885 25.5845C16.2818 28.8851 19.5182 30.6641 22.4545 30.6641C24.212 30.6641 24.4479 30.2783 24.4479 29.5924V27.1062C24.4479 26.3132 24.6193 26.1631 25.1766 26.1631C25.5838 26.1631 26.2911 26.3775 27.9414 27.9635C29.8275 29.8496 30.1276 30.6855 31.1992 30.6855H33.9855C34.7786 30.6855 35.1643 30.2783 34.9286 29.5067Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cat-filters__foot">
+                        <button type="button" class="cat-filters__reset">Сбросить</button>
+                        <button type="button" class="cat-filters__apply red-btn" data-filters-close>Показать 2 599</button>
+                    </div>
