@@ -1,7 +1,11 @@
 <section class="join-section">
     <div class="wrapper">
-        <div class="join" style="background-image: url('./img/join.webp');">
-            <img src="" alt="" class="join__bg">
+        <div class="join">
+            <picture>
+                <source srcset="./img/join-mob.webp" media="(max-width: 750px)" />
+                <source srcset="./img/join.webp" media="(min-width: 751px)" />
+                <img src="./img/join.webp" alt="" class="join__bg">
+            </picture>
             <div class="join__content">
                 <div class="join__title">Присоединяйся <br>к нашей команде!</div>
                 <div class="join__bottom">
