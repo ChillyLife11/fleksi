@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Elektra Text Pro';
+  font-family: 'Elektra Text Pro';;
   src: url('../fonts/ElektraTextPro.eot');
   src: url('../fonts/ElektraTextPro.eot?#iefix') format('embedded-opentype'), url('../fonts/ElektraTextPro.woff2') format('woff2'), url('../fonts/ElektraTextPro.woff') format('woff'), url('../fonts/ElektraTextPro.ttf') format('truetype'), url('../fonts/ElektraTextPro.svg#ElektraTextPro') format('svg');
   font-weight: 400;
