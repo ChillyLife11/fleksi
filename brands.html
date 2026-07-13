@@ -228,9 +228,13 @@
 		</div>
 	</header>
 
-	<div class="catalog" data-catalog>
-		<div class="wrapper">
+		<div class="catalog" data-catalog data-mobile-menu data-menu>
+		<div class="wrapper catalog__wrapper">
 			<div class="catalog__inner">
+				<div class="catalog__tabs">
+				<button type="button" class="catalog__tab catalog__tab--active">Каталог</button>
+				<button type="button" class="catalog__tab">Сервис</button>
+			</div>
 				<nav class="catalog__nav">
 					<a href="/catalog/" class="catalog__nav-item">
 						<img src="./img/catalog-menu/vse-kategorii.svg" alt="" width="34" height="34">
@@ -264,12 +268,12 @@
 						</button>
 					</div>
 
-					<div class="catalog__nav-group">
-						<a href="/sale/" class="catalog__nav-item">
+					<div class="catalog__nav-group catalog__nav-group--pc-extra">
+						<a href="/sale/" class="catalog__nav-item catalog__nav-item--pc">
 							<img src="./img/catalog-menu/skidki-i-akcii.svg" alt="" width="34" height="34">
 							Скидки и акции
 						</a>
-						<a href="#" class="catalog__nav-item">
+						<a href="#" class="catalog__nav-item catalog__nav-item--pc">
 							<img src="./img/catalog-menu/gotovie-reshenia.svg" alt="" width="34" height="34">
 							Готовые решения
 						</a>
@@ -278,6 +282,13 @@
 							Дизайн-проект
 						</button>
 					</div>
+				
+					<div class="catalog__nav-group catalog__nav-group--mob">
+						<a href="#" class="catalog__nav-item"><img src="./img/catalog-menu/mob-collection-icon.svg" alt="" width="34" height="34">Коллекции</a>
+						<a href="#" class="catalog__nav-item"><img src="./img/catalog-menu/loyalnost.svg" alt="" width="34" height="34">Лояльность</a>
+						<a href="#" class="catalog__nav-item"><img src="./img/catalog-menu/skidki-i-akcii.svg" alt="" width="34" height="34">Акции</a>
+						<a href="#" class="catalog__nav-item"><img src="./img/catalog-menu/blog.svg" alt="" width="34" height="34">Блог</a>
+					</div>
 				</nav>
 
 				<div class="catalog__panels">
@@ -285,6 +296,7 @@
 
 					<div class="catalog__panels-inner">
 						<div class="catalog__panel catalog__panel--active" data-catalog-panel="tile">
+							<button type="button" class="catalog__back" data-catalog-back><span class="catalog__back-ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Плитка</button>
 							<a href="/catalog/plitka/" class="catalog__panel-head">
 								<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="9" height="6" rx="1.5" stroke="#E43D30" stroke-width="2"/><rect x="13" y="2" width="9" height="6" rx="1.5" stroke="#E43D30" stroke-width="2"/><rect x="2" y="12" width="9" height="10" rx="1.5" stroke="#E43D30" stroke-width="2"/><rect x="13" y="12" width="9" height="10" rx="1.5" stroke="#E43D30" stroke-width="2"/></svg>
 								Плитка
@@ -397,6 +409,7 @@
 						</div>
 
 						<div class="catalog__panel catalog__panel--collections" data-catalog-panel="collections">
+							<button type="button" class="catalog__back" data-catalog-back><span class="catalog__back-ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Коллекции плитки</button>
 							<div class="catalog__panel-title">Коллекции плитки</div>
 
 							<div class="catalog__big">
@@ -434,6 +447,7 @@
 						</div>
 
 						<div class="catalog__panel" data-catalog-panel="plumbing">
+							<button type="button" class="catalog__back" data-catalog-back><span class="catalog__back-ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Сантехника</button>
 							<a href="#" class="catalog__panel-head">
 								<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 10h7v3a5 5 0 0 1-5 5H4M11 10V5h4l5 3" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 								Сантехника
@@ -491,6 +505,7 @@
 						</div>
 
 						<div class="catalog__panel" data-catalog-panel="furniture">
+							<button type="button" class="catalog__back" data-catalog-back><span class="catalog__back-ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Мебель для ванной</button>
 							<a href="#" class="catalog__panel-head">
 								<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#E43D30" stroke-width="2"/><path d="M3 12h18M12 4v16" stroke="#E43D30" stroke-width="2"/></svg>
 								Мебель для ванной
@@ -536,6 +551,7 @@
 						</div>
 
 						<div class="catalog__panel" data-catalog-panel="floor">
+							<button type="button" class="catalog__back" data-catalog-back><span class="catalog__back-ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Напольные покрытия</button>
 							<a href="#" class="catalog__panel-head">
 								<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 8l4-3 4 3-4 3-4-3Zm10 0l4-3 4 3-4 3-4-3ZM8 16l4-3 4 3-4 3-4-3Z" stroke="#E43D30" stroke-width="2" stroke-linejoin="round"/></svg>
 								Напольные покрытия
@@ -582,6 +598,7 @@
 						</div>
 
 						<div class="catalog__panel" data-catalog-panel="wall">
+							<button type="button" class="catalog__back" data-catalog-back><span class="catalog__back-ic"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Настенные покрытия</button>
 							<a href="#" class="catalog__panel-head">
 								<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#E43D30" stroke-width="2"/><path d="M3 9h18M9 9v12" stroke="#E43D30" stroke-width="2"/></svg>
 								Настенные покрытия
@@ -627,10 +644,65 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="catalog__mobextra">
+<div class="catalog__msupport">
+					<div class="catalog__msupport-title">Поддержка</div>
+					<a href="tel:88002347575" class="catalog__msupport-phone">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.12 5C14.0967 5.19057 14.9944 5.66826 15.698 6.37194C16.4017 7.07561 16.8794 7.97326 17.07 8.95M13.12 1C15.1492 1.22544 17.0416 2.13417 18.4862 3.57701C19.9309 5.01984 20.842 6.91101 21.07 8.94M9.29695 12.8631C8.09537 11.6615 7.14659 10.3028 6.45059 8.85323C6.39072 8.72854 6.36079 8.66619 6.33779 8.5873C6.25607 8.30695 6.31477 7.96269 6.48478 7.72526C6.53262 7.65845 6.58978 7.60129 6.70409 7.48698C7.0537 7.13737 7.2285 6.96257 7.34278 6.78679C7.77378 6.1239 7.77378 5.26932 7.34279 4.60643C7.2285 4.43065 7.0537 4.25585 6.70409 3.90624L6.50922 3.71137C5.97778 3.17993 5.71206 2.91421 5.42668 2.76987C4.85912 2.4828 4.18885 2.4828 3.62129 2.76987C3.33591 2.91421 3.07019 3.17993 2.53874 3.71137L2.38111 3.86901C1.85149 4.39863 1.58668 4.66344 1.38443 5.02348C1.16001 5.42298 0.998645 6.04347 1.00001 6.5017C1.00124 6.91464 1.08134 7.19687 1.24155 7.76131C2.10252 10.7947 3.72699 13.6571 6.11497 16.045C8.50295 18.433 11.3653 20.0575 14.3987 20.9185C14.9632 21.0787 15.2454 21.1588 15.6583 21.16C16.1165 21.1614 16.737 21 17.1365 20.7756C17.4966 20.5733 17.7614 20.3085 18.291 19.7789L18.4486 19.6213C18.9801 19.0898 19.2458 18.8241 19.3902 18.5387C19.6772 17.9712 19.6772 17.3009 19.3902 16.7333C19.2458 16.448 18.9801 16.1822 18.4486 15.6508L18.2538 15.4559C17.9042 15.1063 17.7294 14.9315 17.5536 14.8172C16.8907 14.3862 16.0361 14.3862 15.3732 14.8172C15.1975 14.9315 15.0226 15.1063 14.673 15.4559C14.5587 15.5702 14.5016 15.6274 14.4348 15.6752C14.1973 15.8453 13.8531 15.904 13.5727 15.8222C13.4938 15.7992 13.4315 15.7693 13.3068 15.7094C11.8572 15.0134 10.4985 14.0646 9.29695 12.8631Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						8 800 234-75-75
+					</a>
+					<div class="catalog__msupport-label">График работы</div>
+					<div class="catalog__msupport-time">9:00 – 19:00 ежедневно</div>
+				</div>
+<div class="catalog__mgroup">
+					<div class="catalog__mgroup-title">Покупателям</div>
+					<a href="contacts.html" class="catalog__mlink">
+						<span class="catalog__mlink-ic">
+							<img src="./img/catalog-menu/mob-contacts.svg" alt="">
+						</span>
+						Контакты
+					</a>
+					<a href="about.html" class="catalog__mlink">
+						<span class="catalog__mlink-ic">
+							<img src="./img/catalog-menu/mob-about.svg" alt="">
+						</span>
+						О компании
+					</a>
+					<a href="#" class="catalog__mlink">
+						<span class="catalog__mlink-ic">
+							<img src="./img/catalog-menu/mob-delivery.svg" alt="">
+						</span>
+						Доставка
+					</a>
+					<a href="#" class="catalog__mlink">
+						<span class="catalog__mlink-ic">
+							<img src="./img/catalog-menu/mob-pay.svg" alt="">
+						</span>
+						Оплата и возврат
+					</a>
+				</div>
+<div class="catalog__mgroup">
+					<div class="catalog__mgroup-title">Сотрудничество</div>
+					<a href="#" class="catalog__mlink">
+						<span class="catalog__mlink-ic">
+							<img src="./img/catalog-menu/mob-designers.svg" alt="">
+						</span>
+						Дизайнерам
+					</a>
+					<a href="#" class="catalog__mlink">
+						<span class="catalog__mlink-ic">
+							<img src="./img/catalog-menu/mob-opt.svg" alt="">
+						</span>
+						Опт
+					</a>
+				</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
 
 	<div class="m-search-overlay" data-search-close></div>
 
@@ -641,229 +713,6 @@
 				<input type="text" class="m-search__inp" placeholder="Поиск по каталогу">
 			</form>
 			<button type="button" class="m-search__cancel" data-search-close>Отмена</button>
-		</div>
-	</div>
-
-	<div class="mobile-menu" data-mobile-menu>
-		<div class="mobile-menu__panel">
-			<div class="mobile-menu__tabs">
-				<button type="button" class="mobile-menu__tab mobile-menu__tab--active">Каталог</button>
-				<button type="button" class="mobile-menu__tab">Сервис</button>
-			</div>
-
-			<div class="mobile-menu__scroll">
-				<div class="mobile-menu__list">
-					<a href="#" class="mobile-menu__link">
-						<span class="mobile-menu__link-ic"><img src="./img/catalog-menu/vse-kategorii.svg" alt=""></span>
-						Все категории
-					</a>
-					<button type="button" class="mobile-menu__link" data-mobile-open="collections">
-						<span class="mobile-menu__link-ic"><img src="./img/catalog-menu/kollekcii.svg" alt=""></span>
-						Коллекции плитки
-						<span class="mobile-menu__chevron"></span>
-					</button>
-					<button type="button" class="mobile-menu__link" data-mobile-open="tile">
-						<span class="mobile-menu__link-ic"><img src="./img/catalog-menu/plitka.svg" alt=""></span>
-						Плитка
-						<span class="mobile-menu__chevron"></span>
-					</button>
-					<button type="button" class="mobile-menu__link" data-mobile-open="plumbing">
-						<span class="mobile-menu__link-ic"><img src="./img/catalog-menu/santexnika.svg" alt=""></span>
-						Сантехника
-						<span class="mobile-menu__chevron"></span>
-					</button>
-					<button type="button" class="mobile-menu__link" data-mobile-open="furniture">
-						<span class="mobile-menu__link-ic"><img src="./img/catalog-menu/mebel-dlya-vannoi.svg" alt=""></span>
-						Мебель для ванной
-						<span class="mobile-menu__chevron"></span>
-					</button>
-					<button type="button" class="mobile-menu__link" data-mobile-open="floor">
-						<span class="mobile-menu__link-ic"><img src="./img/catalog-menu/napolnie-pokritia.svg" alt=""></span>
-						Напольные покрытия
-						<span class="mobile-menu__chevron"></span>
-					</button>
-					<button type="button" class="mobile-menu__link" data-mobile-open="wall">
-						<span class="mobile-menu__link-ic"><img src="./img/catalog-menu/nastennie-pokritia.svg" alt=""></span>
-						Настенные покрытия
-						<span class="mobile-menu__chevron"></span>
-					</button>
-
-					<a href="#" class="mobile-menu__link mobile-menu__link--group"><span class="mobile-menu__link-ic"><img src="./img/catalog-menu/mob-collection-icon.svg" alt=""></span>Коллекции<span class="mobile-menu__chevron"></span></a>
-					<a href="#" class="mobile-menu__link"><span class="mobile-menu__link-ic"><img src="./img/catalog-menu/loyalnost.svg" alt=""></span>Лояльность<span class="mobile-menu__chevron"></span></a>
-					<a href="#" class="mobile-menu__link"><span class="mobile-menu__link-ic"><img src="./img/catalog-menu/skidki-i-akcii.svg" alt=""></span>Акции<span class="mobile-menu__chevron"></span></a>
-					<a href="#" class="mobile-menu__link"><span class="mobile-menu__link-ic"><img src="./img/catalog-menu/blog.svg" alt=""></span>Блог<span class="mobile-menu__chevron"></span></a>
-
-					<button type="button" class="mobile-menu__link mobile-menu__link--accent" data-popup="design">
-						<span class="mobile-menu__link-ic"><img src="./img/catalog-menu/dizayn-proekt.svg" alt=""></span>
-						Дизайн-проект
-					</button>
-				</div>
-
-				<div class="mobile-menu__support">
-					<div class="mobile-menu__support-title">Поддержка</div>
-					<a href="tel:88002347575" class="mobile-menu__support-phone">
-						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M13.12 5C14.0967 5.19057 14.9944 5.66826 15.698 6.37194C16.4017 7.07561 16.8794 7.97326 17.07 8.95M13.12 1C15.1492 1.22544 17.0416 2.13417 18.4862 3.57701C19.9309 5.01984 20.842 6.91101 21.07 8.94M9.29695 12.8631C8.09537 11.6615 7.14659 10.3028 6.45059 8.85323C6.39072 8.72854 6.36079 8.66619 6.33779 8.5873C6.25607 8.30695 6.31477 7.96269 6.48478 7.72526C6.53262 7.65845 6.58978 7.60129 6.70409 7.48698C7.0537 7.13737 7.2285 6.96257 7.34278 6.78679C7.77378 6.1239 7.77378 5.26932 7.34279 4.60643C7.2285 4.43065 7.0537 4.25585 6.70409 3.90624L6.50922 3.71137C5.97778 3.17993 5.71206 2.91421 5.42668 2.76987C4.85912 2.4828 4.18885 2.4828 3.62129 2.76987C3.33591 2.91421 3.07019 3.17993 2.53874 3.71137L2.38111 3.86901C1.85149 4.39863 1.58668 4.66344 1.38443 5.02348C1.16001 5.42298 0.998645 6.04347 1.00001 6.5017C1.00124 6.91464 1.08134 7.19687 1.24155 7.76131C2.10252 10.7947 3.72699 13.6571 6.11497 16.045C8.50295 18.433 11.3653 20.0575 14.3987 20.9185C14.9632 21.0787 15.2454 21.1588 15.6583 21.16C16.1165 21.1614 16.737 21 17.1365 20.7756C17.4966 20.5733 17.7614 20.3085 18.291 19.7789L18.4486 19.6213C18.9801 19.0898 19.2458 18.8241 19.3902 18.5387C19.6772 17.9712 19.6772 17.3009 19.3902 16.7333C19.2458 16.448 18.9801 16.1822 18.4486 15.6508L18.2538 15.4559C17.9042 15.1063 17.7294 14.9315 17.5536 14.8172C16.8907 14.3862 16.0361 14.3862 15.3732 14.8172C15.1975 14.9315 15.0226 15.1063 14.673 15.4559C14.5587 15.5702 14.5016 15.6274 14.4348 15.6752C14.1973 15.8453 13.8531 15.904 13.5727 15.8222C13.4938 15.7992 13.4315 15.7693 13.3068 15.7094C11.8572 15.0134 10.4985 14.0646 9.29695 12.8631Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-						8 800 234-75-75
-					</a>
-					<div class="mobile-menu__support-label">График работы</div>
-					<div class="mobile-menu__support-time">9:00 – 19:00 ежедневно</div>
-				</div>
-
-				<div class="mobile-menu__group">
-					<div class="mobile-menu__group-title">Покупателям</div>
-					<a href="contacts.html" class="mobile-menu__link">
-						<span class="mobile-menu__link-ic">
-							<img src="./img/catalog-menu/mob-contacts.svg" alt="">
-						</span>
-						Контакты
-					</a>
-					<a href="about.html" class="mobile-menu__link">
-						<span class="mobile-menu__link-ic">
-							<img src="./img/catalog-menu/mob-about.svg" alt="">
-						</span>
-						О компании
-						<span class="mobile-menu__chevron"></span>
-					</a>
-					<a href="#" class="mobile-menu__link">
-						<span class="mobile-menu__link-ic">
-							<img src="./img/catalog-menu/mob-delivery.svg" alt="">
-						</span>
-						Доставка
-					</a>
-					<a href="#" class="mobile-menu__link">
-						<span class="mobile-menu__link-ic">
-							<img src="./img/catalog-menu/mob-pay.svg" alt="">
-						</span>
-						Оплата и возврат
-					</a>
-				</div>
-
-				<div class="mobile-menu__group">
-					<div class="mobile-menu__group-title">Сотрудничество</div>
-					<a href="#" class="mobile-menu__link">
-						<span class="mobile-menu__link-ic">
-							<img src="./img/catalog-menu/mob-designers.svg" alt="">
-						</span>
-						Дизайнерам
-					</a>
-					<a href="#" class="mobile-menu__link">
-						<span class="mobile-menu__link-ic">
-							<img src="./img/catalog-menu/mob-opt.svg" alt="">
-						</span>
-						Опт
-					</a>
-				</div>
-
-				<div class="mobile-menu__sub" data-mobile-sub="tile">
-					<button type="button" class="mobile-menu__back" data-mobile-back>
-						<span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-						Плитка
-					</button>
-					<ul class="mobile-menu__sublist">
-						<li><a href="#">Все товары категории «Плитка»</a></li>
-						<li><a href="#">Керамическая плитка</a></li>
-						<li><a href="#">Керамогранит</a></li>
-						<li><a href="#">Утолщенный керамогранит</a></li>
-						<li><a href="#">Мозаика</a></li>
-						<li><a href="#">Плинтус</a></li>
-						<li><a href="#">Ступень</a></li>
-						<li><a href="#">Сухие смеси</a></li>
-					</ul>
-					<div class="mobile-menu__sub-filters">
-						<div class="mobile-menu__sub-col">
-							<div class="mobile-menu__sub-title">Помещение</div>
-							<a href="#">Для ванной</a>
-							<a href="#">Для кухни</a>
-							<a href="#">Для коридора</a>
-							<a href="#">Для гостиной</a>
-						</div>
-						<div class="mobile-menu__sub-col">
-							<div class="mobile-menu__sub-title">Назначение</div>
-							<a href="#">Для пола</a>
-							<a href="#">Для стен</a>
-							<a href="#">Для фартука</a>
-							<a href="#">Для фасада</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="mobile-menu__sub" data-mobile-sub="collections">
-					<button type="button" class="mobile-menu__back" data-mobile-back>
-						<span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-						Коллекции плитки
-					</button>
-					<ul class="mobile-menu__sublist">
-						<li><a href="#">Все коллекции</a></li>
-						<li><a href="#">Монохром</a></li>
-						<li><a href="#">Под дерево</a></li>
-						<li><a href="#">Под камень</a></li>
-						<li><a href="#">Под мрамор</a></li>
-						<li><a href="#">Под бетон</a></li>
-						<li><a href="#">Под металл</a></li>
-					</ul>
-				</div>
-
-				<div class="mobile-menu__sub" data-mobile-sub="plumbing">
-					<button type="button" class="mobile-menu__back" data-mobile-back>
-						<span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-						Сантехника
-					</button>
-					<ul class="mobile-menu__sublist">
-						<li><a href="#">Все товары категории «Сантехника»</a></li>
-						<li><a href="#">Ванны</a></li>
-						<li><a href="#">Душевые кабины</a></li>
-						<li><a href="#">Раковины</a></li>
-						<li><a href="#">Унитазы</a></li>
-						<li><a href="#">Смесители</a></li>
-					</ul>
-				</div>
-
-				<div class="mobile-menu__sub" data-mobile-sub="furniture">
-					<button type="button" class="mobile-menu__back" data-mobile-back>
-						<span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-						Мебель для ванной
-					</button>
-					<ul class="mobile-menu__sublist">
-						<li><a href="#">Все товары категории</a></li>
-						<li><a href="#">Тумбы с раковиной</a></li>
-						<li><a href="#">Зеркала</a></li>
-						<li><a href="#">Зеркальные шкафы</a></li>
-						<li><a href="#">Пеналы</a></li>
-						<li><a href="#">Полки</a></li>
-					</ul>
-				</div>
-
-				<div class="mobile-menu__sub" data-mobile-sub="floor">
-					<button type="button" class="mobile-menu__back" data-mobile-back>
-						<span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-						Напольные покрытия
-					</button>
-					<ul class="mobile-menu__sublist">
-						<li><a href="#">Все товары категории</a></li>
-						<li><a href="#">Ламинат</a></li>
-						<li><a href="#">Кварцвинил</a></li>
-						<li><a href="#">Паркетная доска</a></li>
-						<li><a href="#">Линолеум</a></li>
-						<li><a href="#">Пробка</a></li>
-					</ul>
-				</div>
-
-				<div class="mobile-menu__sub" data-mobile-sub="wall">
-					<button type="button" class="mobile-menu__back" data-mobile-back>
-						<span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13 5 8l5-5" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-						Настенные покрытия
-					</button>
-					<ul class="mobile-menu__sublist">
-						<li><a href="#">Все товары категории</a></li>
-						<li><a href="#">Обои</a></li>
-						<li><a href="#">Декоративная штукатурка</a></li>
-						<li><a href="#">Стеновые панели</a></li>
-						<li><a href="#">Краска</a></li>
-					</ul>
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -1192,6 +1041,20 @@
 	</div>
 </div>
 
+<div class="popup popup--storemap" data-popup-window="store-map">
+	<div class="popup__overlay" data-popup-close></div>
+
+	<div class="popup__box popup__box--storemap">
+		<button type="button" class="popup__close" data-popup-close>
+			<svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+		</button>
+
+		<div class="storemap" data-store-map-popup>
+			<div class="storemap__map" data-map></div>
+		</div>
+	</div>
+</div>
+
 <div class="popup popup--auth" data-popup-window="auth">
 	<div class="popup__overlay" data-popup-close></div>
 
@@ -1300,8 +1163,8 @@
 
 							<div class="cart-item__price">
 								<span class="cart-item__discount">-30%</span>
-								<span class="cart-item__old">14 501.60 ₽</span>
-								<span class="cart-item__sum">12 501.60 ₽</span>
+								<span class="cart-item__old">14 501 ₽</span>
+								<span class="cart-item__sum">14 501 ₽</span>
 							</div>
 						</div>
 					</div>
@@ -1378,8 +1241,8 @@
 
 							<div class="cart-item__price">
 								<span class="cart-item__discount">-30%</span>
-								<span class="cart-item__old">14 501.60 ₽</span>
-								<span class="cart-item__sum">12 501.60 ₽</span>
+								<span class="cart-item__old">14 501 ₽</span>
+								<span class="cart-item__sum">14 501 ₽</span>
 							</div>
 						</div>
 					</div>
@@ -1456,8 +1319,8 @@
 
 							<div class="cart-item__price">
 								<span class="cart-item__discount">-30%</span>
-								<span class="cart-item__old">14 501.60 ₽</span>
-								<span class="cart-item__sum">12 501.60 ₽</span>
+								<span class="cart-item__old">14 501 ₽</span>
+								<span class="cart-item__sum">14 501 ₽</span>
 							</div>
 						</div>
 					</div>
@@ -1499,7 +1362,7 @@
 
 	<section class="brand-collections gray-section">
 		<div class="wrapper">
-			<div class="sm-section-title brand-collections__title">Коллекции Italon</div>
+			<h1 class="sm-section-title brand-collections__title">Коллекции Italon</h1>
 
 			<div class="brand-collections__list">
 				<a href="collection.html" class="collection-brands__card">
@@ -1568,39 +1431,17 @@
 	<section class="category category--collection gray-section">
 		<div class="wrapper">
 			<div class="category__head">
-				<div class="sm-section-title collection__products-title">Все товары Italon</div>
-
-				<div class="products__controls">
-					<label class="products__sort">
-						Сортировать по:
-						<span class="products__sort-select ui-select">
-							<select>
-								<option>Популярности</option>
-								<option>Возрастанию цены</option>
-								<option>Убыванию цены</option>
-								<option>Новинкам</option>
-							</select>
-							<svg width="16" height="9" viewBox="0 0 16 9" fill="none"><path d="M2 1.25L8.2 7.25L14.41 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-						</span>
-					</label>
-
-					<div class="products__view">
-						<button type="button" class="products__view-btn products__view-btn--active" data-view="grid">
-							<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.23171 6.97561C5.66949 6.97561 6.02439 7.33051 6.02439 7.76829V12.2073C6.02439 12.6451 5.66949 13 5.23171 13H0.792683C0.354896 13 0 12.6451 0 12.2073V7.76829C0 7.33051 0.354896 6.97561 0.792683 6.97561H5.23171ZM12.2073 6.97561C12.6451 6.97561 13 7.33051 13 7.76829V12.2073C13 12.6451 12.6451 13 12.2073 13H7.76829C7.33051 13 6.97561 12.6451 6.97561 12.2073V7.76829C6.97561 7.33051 7.33051 6.97561 7.76829 6.97561H12.2073ZM8.56098 11.4146H11.4146V8.56098H8.56098V11.4146ZM1.58537 11.4146H4.43902V8.56098H1.58537V11.4146ZM5.23171 0C5.66949 0 6.02439 0.354896 6.02439 0.792683V5.23171C6.02439 5.66949 5.66949 6.02439 5.23171 6.02439H0.792683C0.354896 6.02439 0 5.66949 0 5.23171V0.792683C0 0.354896 0.354896 0 0.792683 0H5.23171ZM12.2073 0C12.6451 0 13 0.354896 13 0.792683V5.23171C13 5.66949 12.6451 6.02439 12.2073 6.02439H7.76829C7.33051 6.02439 6.97561 5.66949 6.97561 5.23171V0.792683C6.97561 0.354896 7.33051 0 7.76829 0H12.2073ZM8.56098 4.43902H11.4146V1.58537H8.56098V4.43902ZM1.58537 4.43902H4.43902V1.58537H1.58537V4.43902Z" fill="currentColor"/></svg>
-						</button>
-						<button type="button" class="products__view-btn" data-view="list">
-							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-2.11094e-07 7.17073C-2.28758e-07 6.76662 0.327596 6.43902 0.731707 6.43902L11.2683 6.43902C11.6724 6.43902 12 6.76662 12 7.17073L12 11.2683C12 11.6724 11.6724 12 11.2683 12L0.731707 12C0.537647 12 0.351589 11.9229 0.214367 11.7856C0.0771457 11.6484 -2.35013e-08 11.4624 -3.19839e-08 11.2683L-2.11094e-07 7.17073ZM-4.92553e-07 0.731708C-5.10217e-07 0.327598 0.327596 -1.43197e-08 0.731707 -3.19839e-08L11.2683 -4.92553e-07C11.6724 -5.10217e-07 12 0.327597 12 0.731707L12 4.82927C12 5.23338 11.6724 5.56098 11.2683 5.56098L0.731707 5.56098C0.327596 5.56098 -2.95778e-07 5.23338 -3.13443e-07 4.82927L-4.92553e-07 0.731708ZM10.5366 4.09756L10.5366 1.46341L1.46341 1.46342L1.46341 4.09756L10.5366 4.09756ZM10.5366 10.5366L10.5366 7.90244L1.46341 7.90244L1.46341 10.5366L10.5366 10.5366Z" fill="currentColor"/></svg>
-						</button>
-					</div>
-				</div>
+				<h2 class="sm-section-title collection__products-title">Все товары Italon</h2>
 			</div>
 
 			<div class="category__main">
-				<aside class="category__filters cat-filters">
+				<div class="cat-filters__overlay" data-filters-close></div>
+				<aside class="category__filters cat-filters" data-filters>
 					<div class="cat-filters__head">
-                        <span class="cat-filters__head-title">Фильтры</span>
                         <button type="button" class="cat-filters__head-close" data-filters-close aria-label="Закрыть">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 14 14M14 2 2 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2 14 14M14 2 2 14" stroke="var(--c-black)" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
                         </button>
                     </div>
 
@@ -1746,276 +1587,70 @@
 				</aside>
 
 				<div class="category__body">
-					<div class="products__chips">
-						<button type="button" class="products__chip">
-							<div>Керамогранит</div>
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" rx="8" fill="white"/><path d="M11 5L5 11M5 5L11 11" stroke="#1D1D1D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-						</button>
-						<button type="button" class="products__chip">
-							<div>Для стен</div>
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" rx="8" fill="white"/><path d="M11 5L5 11M5 5L11 11" stroke="#1D1D1D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-						</button>
-						<button type="button" class="products__chip">
-							<div>60 x 60</div>
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" rx="8" fill="white"/><path d="M11 5L5 11M5 5L11 11" stroke="#1D1D1D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-						</button>
-						<button type="button" class="products__clear">Очистить все</button>
-					</div>
-
-					<div class="products">
-						<div class="products__grid">
-							<div class="product">
-                                <div class="product__media">
-                                    <div class="product__badges">
-                                        <span class="product__badge product__badge--hit">Хит!</span>
-                                        <span class="product__badge product__badge--new">Новинка</span>
-                                        <span class="product__badge product__badge--sale">Распродажа</span>
-                                    </div>
-                                    <button type="button" class="product__fav product__fav--active">
-                                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M17.9333 1C22.16 1 25 5.0975 25 8.92C25 16.6613 13.2133 23 13 23C12.7867 23 1 16.6613 1 8.92C1 5.0975 3.84 1 8.06667 1C10.4933 1 12.08 2.25125 13 3.35125C13.92 2.25125 15.5067 1 17.9333 1Z" fill="white" stroke="#C8C8C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-                                    </button>
-                                    <a href="#" class="product__slider swiper" data-product-slider>
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><img src="./img/solution/1.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/2.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/3.webp" alt=""></div>
-                                        </div>
-                                        <div class="product__dots swiper-pagination"></div>
-                                    </a>
-                                    <span class="product__size-badge">20x120</span>
-                                </div>
-                                <div class="product__body">
-                                    <div class="product__meta">
-                                        <div class="product__meta_accent">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="12" height="12" rx="6" fill="url(#pattern0_2022_4533)"/>
-<defs>
-<pattern id="pattern0_2022_4533" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_2022_4533" transform="matrix(0.00694444 0 0 0.00641026 0 -0.0128205)"/>
-</pattern>
-<image id="image0_2022_4533" width="240" height="160" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAACgCAIAAAC9uXYyAAAE0klEQVR4AezWTY4jVRBF4SRhBAN2wAaZIyEkhuyGPbASJr2F7llL3S1ZKslul+20319EfKWUVWmn48U99wy8f/GHQCIC++YPgUQECJ2oTFG2jdAsSEWA0KnqFIbQZRyoEZTQNXouk5LQZaquEZTQNXouk5LQZaquEZTQNXouk5LQ27aVabtAUEIXKLlSREJXartAVkIXKLlSREJXartAVkIXKLlSxDtCV0IhawYChM7QogxvBAj9hsI/GQgQOkOLMrwRIPQbCv9kIEDoDC22yJBkBqGTFCnGiQChTxy8JiFA6CRFinEiQOgTB69JCBA6SZFinAgQ+sTh1qvPAhEgdKCyrHqfAKHvM/JEIAKEDlSWVe8TIPR9Rp4IRIDQgcqy6n0Crwl9f74nEBhKgNBDcTusNwFC9yZs/lAChB6K22G9CRC6N2HzhxIg9FDccQ+LsjmhozRlz4cIEPohTB6KQoDQUZqy50MECP0QJg9FIUDoKE3Z8yEChH4I062HfLYSAUKv1IZdXiZA6JcRGrASAUKv1IZdXiZA6JcRGrASAUKv1IZdXibQVeiXtzMAgYMECH0QmMfXJrD/9fd/LgTSENj/+feDC4E0BPbt159cCKQh4Df02j8Jo2y3zJ6EXqYKi7QgQOgWFM1YhgChl6nCIi0IELoFRTOWIUDoZaqwSAsChG5B8dYMnw0lQOihuB3WmwChexM2fygBQg/F7bDeBAjdm7D5QwkQeihuh/UmMFPo3tnML0iA0AVLzxyZ0JnbLZiN0AVLzxyZ0JnbLZiN0AVLHx953ImEHsfaSQMIEHoAZEeMI0DocaydNIAAoQdAdsQ4AoQex9pJAwgQegDkW0f4rC0BQrfladpkAoSeXIDj2xIgdFuepk0mQOjJBTi+LQFCt+Vp2mQCCws9mYzjQxIgdMjaLP0eAUK/R8b7IQkQOmRtln6PAKHfI+P9kAQIHbK2ZEs3jEPohjCNmk+A0PM7sEFDAoRuCNOo+QQIPb8DGzQkQOiGMI2aT4DQ8zu4tYHPDhIg9EFgHl+bAKHX7sd2BwkQ+iAwj69NgNBr92O7gwQIfRCYx9cmEFfotbnabhIBQk8C79g+BAjdh6upkwh8E/rHbXMhkITA/vvn/10IpCGw//HpTxcCSxM4ouj+8YffXAikIfDtN/SkX++ORaADAUJ3gGrkPAKEnsfeyR0IELoDVCPnESD0PPYNTjbikgChL4m4D02A0KHrs/wlAUJfEnEfmgChQ9dn+UsChL4k4j40gbRCh27F8k8TIPTT6HxxRQKEXrEVOz1NgNBPo/PFFQkQesVW7PQ0AUI/jc4XFyFwtgahz3C4iU6A0NEbtP8ZAUKf4XATnQChozdo/zMChD7D4SY6AUJHb/DW/gU/I3TB0jNHJnTmdgtmI3TB0jNHJnTmdgtmI3TB0jNHrip05k5LZyN06frzhSd0vk5LJyJ06frzhSd0vk5LJyJ06frzhf9e6HwZJSpEgNCFyq4QldAVWi6UkdCFyq4QldAVWi6UkdCFyr6MmvGe0BlbLZyJ0IXLzxid0BlbLZyJ0IXLzxid0BlbLZyJ0FfL92ZUAoSO2py9rxIg9FUs3oxKgNBRm7P3VQKEvorFm1EJEDpqc/a+SmDff/7l0OVhBFYm8BUAAP//qMqU6QAAAAZJREFUAwCwy3OWK5RAEQAAAABJRU5ErkJggg=="/>
-</defs>
-</svg>
-
-                                            <a href="#" class="product__brand">Ametis</a>
-                                            <span class="product__sep">•</span>
-                                            <a href="#" class="product__collection">Oceanmist</a>
-                                        </div>
-                                        <span class="product__stock">В наличии</span>
-                                    </div>
-                                    <a href="#" class="product__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
-                                    <div class="product__format">
-                                        <span class="product__format-label">Формат</span>
-                                        <span class="product__size product__size--active">20x120</span>
-                                        <span class="product__size">60x60</span>
-                                        <span class="product__size product__size--more">+4</span>
-                                    </div>
-                                    <div class="product__price">
-                                        <span class="product__price-now">3 801.60 ₽/м²</span>
-                                        <span class="product__price-old">4 290 ₽</span>
-                                        <span class="product__price-badge">-30%</span>
-                                    </div>
-                                    <div class="product__footer">
-                                        <button type="button" class="product__btn red-btn">
-                                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.8059 6.35V3.95C10.8059 2.18269 9.43775 0.75 7.75 0.75C6.06225 0.75 4.69406 2.18269 4.69406 3.95V6.35M1.32641 7.43157L0.868022 12.5516C0.737688 14.0073 0.672521 14.7352 0.903201 15.2974C1.10585 15.7913 1.46096 16.1997 1.91164 16.457C2.42466 16.75 3.12282 16.75 4.51914 16.75H10.9809C12.3772 16.75 13.0753 16.75 13.5884 16.457C14.039 16.1997 14.3942 15.7913 14.5968 15.2974C14.8275 14.7352 14.7623 14.0073 14.632 12.5516L14.1736 7.43157C14.0635 6.20228 14.0085 5.58763 13.7445 5.12293C13.512 4.71367 13.1684 4.38609 12.7576 4.18188C12.2911 3.95 11.7016 3.95 10.5225 3.95L4.97753 3.95C3.79843 3.95 3.20888 3.95 2.7424 4.18187C2.33156 4.38609 1.98803 4.71367 1.75551 5.12293C1.4915 5.58763 1.43647 6.20228 1.32641 7.43157Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                        <button type="button" class="product__compare" aria-label="Сравнить">
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_317_121104)">
-                                                <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_317_121104)">
-                                                <path d="M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_317_121104">
-                                                <rect width="12" height="12" fill="white"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_317_121104">
-                                                <rect width="12" height="12" fill="white" transform="translate(4 4)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-							<div class="product">
-                                <div class="product__media">
-                                    <div class="product__badges">
-                                        <span class="product__badge product__badge--hit">Хит!</span>
-                                        <span class="product__badge product__badge--new">Новинка</span>
-                                        <span class="product__badge product__badge--sale">Распродажа</span>
-                                    </div>
-                                    <button type="button" class="product__fav product__fav--active">
-                                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M17.9333 1C22.16 1 25 5.0975 25 8.92C25 16.6613 13.2133 23 13 23C12.7867 23 1 16.6613 1 8.92C1 5.0975 3.84 1 8.06667 1C10.4933 1 12.08 2.25125 13 3.35125C13.92 2.25125 15.5067 1 17.9333 1Z" fill="white" stroke="#C8C8C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-                                    </button>
-                                    <a href="#" class="product__slider swiper" data-product-slider>
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><img src="./img/solution/1.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/2.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/3.webp" alt=""></div>
-                                        </div>
-                                        <div class="product__dots swiper-pagination"></div>
-                                    </a>
-                                    <span class="product__size-badge">20x120</span>
-                                </div>
-                                <div class="product__body">
-                                    <div class="product__meta">
-                                        <div class="product__meta_accent">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="12" height="12" rx="6" fill="url(#pattern0_2022_4533)"/>
-<defs>
-<pattern id="pattern0_2022_4533" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_2022_4533" transform="matrix(0.00694444 0 0 0.00641026 0 -0.0128205)"/>
-</pattern>
-<image id="image0_2022_4533" width="240" height="160" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAACgCAIAAAC9uXYyAAAE0klEQVR4AezWTY4jVRBF4SRhBAN2wAaZIyEkhuyGPbASJr2F7llL3S1ZKslul+20319EfKWUVWmn48U99wy8f/GHQCIC++YPgUQECJ2oTFG2jdAsSEWA0KnqFIbQZRyoEZTQNXouk5LQZaquEZTQNXouk5LQZaquEZTQNXouk5LQ27aVabtAUEIXKLlSREJXartAVkIXKLlSREJXartAVkIXKLlSxDtCV0IhawYChM7QogxvBAj9hsI/GQgQOkOLMrwRIPQbCv9kIEDoDC22yJBkBqGTFCnGiQChTxy8JiFA6CRFinEiQOgTB69JCBA6SZFinAgQ+sTh1qvPAhEgdKCyrHqfAKHvM/JEIAKEDlSWVe8TIPR9Rp4IRIDQgcqy6n0Crwl9f74nEBhKgNBDcTusNwFC9yZs/lAChB6K22G9CRC6N2HzhxIg9FDccQ+LsjmhozRlz4cIEPohTB6KQoDQUZqy50MECP0QJg9FIUDoKE3Z8yEChH4I062HfLYSAUKv1IZdXiZA6JcRGrASAUKv1IZdXiZA6JcRGrASAUKv1IZdXibQVeiXtzMAgYMECH0QmMfXJrD/9fd/LgTSENj/+feDC4E0BPbt159cCKQh4Df02j8Jo2y3zJ6EXqYKi7QgQOgWFM1YhgChl6nCIi0IELoFRTOWIUDoZaqwSAsChG5B8dYMnw0lQOihuB3WmwChexM2fygBQg/F7bDeBAjdm7D5QwkQeihuh/UmMFPo3tnML0iA0AVLzxyZ0JnbLZiN0AVLzxyZ0JnbLZiN0AVLHx953ImEHsfaSQMIEHoAZEeMI0DocaydNIAAoQdAdsQ4AoQex9pJAwgQegDkW0f4rC0BQrfladpkAoSeXIDj2xIgdFuepk0mQOjJBTi+LQFCt+Vp2mQCCws9mYzjQxIgdMjaLP0eAUK/R8b7IQkQOmRtln6PAKHfI+P9kAQIHbK2ZEs3jEPohjCNmk+A0PM7sEFDAoRuCNOo+QQIPb8DGzQkQOiGMI2aT4DQ8zu4tYHPDhIg9EFgHl+bAKHX7sd2BwkQ+iAwj69NgNBr92O7gwQIfRCYx9cmEFfotbnabhIBQk8C79g+BAjdh6upkwh8E/rHbXMhkITA/vvn/10IpCGw//HpTxcCSxM4ouj+8YffXAikIfDtN/SkX++ORaADAUJ3gGrkPAKEnsfeyR0IELoDVCPnESD0PPYNTjbikgChL4m4D02A0KHrs/wlAUJfEnEfmgChQ9dn+UsChL4k4j40gbRCh27F8k8TIPTT6HxxRQKEXrEVOz1NgNBPo/PFFQkQesVW7PQ0AUI/jc4XFyFwtgahz3C4iU6A0NEbtP8ZAUKf4XATnQChozdo/zMChD7D4SY6AUJHb/DW/gU/I3TB0jNHJnTmdgtmI3TB0jNHJnTmdgtmI3TB0jNHrip05k5LZyN06frzhSd0vk5LJyJ06frzhSd0vk5LJyJ06frzhf9e6HwZJSpEgNCFyq4QldAVWi6UkdCFyq4QldAVWi6UkdCFyr6MmvGe0BlbLZyJ0IXLzxid0BlbLZyJ0IXLzxid0BlbLZyJ0FfL92ZUAoSO2py9rxIg9FUs3oxKgNBRm7P3VQKEvorFm1EJEDpqc/a+SmDff/7l0OVhBFYm8BUAAP//qMqU6QAAAAZJREFUAwCwy3OWK5RAEQAAAABJRU5ErkJggg=="/>
-</defs>
-</svg>
-
-                                            <a href="#" class="product__brand">Ametis</a>
-                                            <span class="product__sep">•</span>
-                                            <a href="#" class="product__collection">Oceanmist</a>
-                                        </div>
-                                        <span class="product__stock">В наличии</span>
-                                    </div>
-                                    <a href="#" class="product__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
-                                    <div class="product__format">
-                                        <span class="product__format-label">Формат</span>
-                                        <span class="product__size product__size--active">20x120</span>
-                                        <span class="product__size">60x60</span>
-                                        <span class="product__size product__size--more">+4</span>
-                                    </div>
-                                    <div class="product__price">
-                                        <span class="product__price-now">3 801.60 ₽/м²</span>
-                                        <span class="product__price-old">4 290 ₽</span>
-                                        <span class="product__price-badge">-30%</span>
-                                    </div>
-                                    <div class="product__footer">
-                                        <button type="button" class="product__btn red-btn">
-                                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.8059 6.35V3.95C10.8059 2.18269 9.43775 0.75 7.75 0.75C6.06225 0.75 4.69406 2.18269 4.69406 3.95V6.35M1.32641 7.43157L0.868022 12.5516C0.737688 14.0073 0.672521 14.7352 0.903201 15.2974C1.10585 15.7913 1.46096 16.1997 1.91164 16.457C2.42466 16.75 3.12282 16.75 4.51914 16.75H10.9809C12.3772 16.75 13.0753 16.75 13.5884 16.457C14.039 16.1997 14.3942 15.7913 14.5968 15.2974C14.8275 14.7352 14.7623 14.0073 14.632 12.5516L14.1736 7.43157C14.0635 6.20228 14.0085 5.58763 13.7445 5.12293C13.512 4.71367 13.1684 4.38609 12.7576 4.18188C12.2911 3.95 11.7016 3.95 10.5225 3.95L4.97753 3.95C3.79843 3.95 3.20888 3.95 2.7424 4.18187C2.33156 4.38609 1.98803 4.71367 1.75551 5.12293C1.4915 5.58763 1.43647 6.20228 1.32641 7.43157Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                        <button type="button" class="product__compare" aria-label="Сравнить">
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_317_121104)">
-                                                <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_317_121104)">
-                                                <path d="M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_317_121104">
-                                                <rect width="12" height="12" fill="white"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_317_121104">
-                                                <rect width="12" height="12" fill="white" transform="translate(4 4)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-							<div class="product">
-                                <div class="product__media">
-                                    <div class="product__badges">
-                                        <span class="product__badge product__badge--hit">Хит!</span>
-                                        <span class="product__badge product__badge--new">Новинка</span>
-                                        <span class="product__badge product__badge--sale">Распродажа</span>
-                                    </div>
-                                    <button type="button" class="product__fav product__fav--active">
-                                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M17.9333 1C22.16 1 25 5.0975 25 8.92C25 16.6613 13.2133 23 13 23C12.7867 23 1 16.6613 1 8.92C1 5.0975 3.84 1 8.06667 1C10.4933 1 12.08 2.25125 13 3.35125C13.92 2.25125 15.5067 1 17.9333 1Z" fill="white" stroke="#C8C8C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-                                    </button>
-                                    <a href="#" class="product__slider swiper" data-product-slider>
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><img src="./img/solution/1.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/2.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/3.webp" alt=""></div>
-                                        </div>
-                                        <div class="product__dots swiper-pagination"></div>
-                                    </a>
-                                    <span class="product__size-badge">20x120</span>
-                                </div>
-                                <div class="product__body">
-                                    <div class="product__meta">
-                                        <div class="product__meta_accent">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="12" height="12" rx="6" fill="url(#pattern0_2022_4533)"/>
-<defs>
-<pattern id="pattern0_2022_4533" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_2022_4533" transform="matrix(0.00694444 0 0 0.00641026 0 -0.0128205)"/>
-</pattern>
-<image id="image0_2022_4533" width="240" height="160" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAACgCAIAAAC9uXYyAAAE0klEQVR4AezWTY4jVRBF4SRhBAN2wAaZIyEkhuyGPbASJr2F7llL3S1ZKslul+20319EfKWUVWmn48U99wy8f/GHQCIC++YPgUQECJ2oTFG2jdAsSEWA0KnqFIbQZRyoEZTQNXouk5LQZaquEZTQNXouk5LQZaquEZTQNXouk5LQ27aVabtAUEIXKLlSREJXartAVkIXKLlSREJXartAVkIXKLlSxDtCV0IhawYChM7QogxvBAj9hsI/GQgQOkOLMrwRIPQbCv9kIEDoDC22yJBkBqGTFCnGiQChTxy8JiFA6CRFinEiQOgTB69JCBA6SZFinAgQ+sTh1qvPAhEgdKCyrHqfAKHvM/JEIAKEDlSWVe8TIPR9Rp4IRIDQgcqy6n0Crwl9f74nEBhKgNBDcTusNwFC9yZs/lAChB6K22G9CRC6N2HzhxIg9FDccQ+LsjmhozRlz4cIEPohTB6KQoDQUZqy50MECP0QJg9FIUDoKE3Z8yEChH4I062HfLYSAUKv1IZdXiZA6JcRGrASAUKv1IZdXiZA6JcRGrASAUKv1IZdXibQVeiXtzMAgYMECH0QmMfXJrD/9fd/LgTSENj/+feDC4E0BPbt159cCKQh4Df02j8Jo2y3zJ6EXqYKi7QgQOgWFM1YhgChl6nCIi0IELoFRTOWIUDoZaqwSAsChG5B8dYMnw0lQOihuB3WmwChexM2fygBQg/F7bDeBAjdm7D5QwkQeihuh/UmMFPo3tnML0iA0AVLzxyZ0JnbLZiN0AVLzxyZ0JnbLZiN0AVLHx953ImEHsfaSQMIEHoAZEeMI0DocaydNIAAoQdAdsQ4AoQex9pJAwgQegDkW0f4rC0BQrfladpkAoSeXIDj2xIgdFuepk0mQOjJBTi+LQFCt+Vp2mQCCws9mYzjQxIgdMjaLP0eAUK/R8b7IQkQOmRtln6PAKHfI+P9kAQIHbK2ZEs3jEPohjCNmk+A0PM7sEFDAoRuCNOo+QQIPb8DGzQkQOiGMI2aT4DQ8zu4tYHPDhIg9EFgHl+bAKHX7sd2BwkQ+iAwj69NgNBr92O7gwQIfRCYx9cmEFfotbnabhIBQk8C79g+BAjdh6upkwh8E/rHbXMhkITA/vvn/10IpCGw//HpTxcCSxM4ouj+8YffXAikIfDtN/SkX++ORaADAUJ3gGrkPAKEnsfeyR0IELoDVCPnESD0PPYNTjbikgChL4m4D02A0KHrs/wlAUJfEnEfmgChQ9dn+UsChL4k4j40gbRCh27F8k8TIPTT6HxxRQKEXrEVOz1NgNBPo/PFFQkQesVW7PQ0AUI/jc4XFyFwtgahz3C4iU6A0NEbtP8ZAUKf4XATnQChozdo/zMChD7D4SY6AUJHb/DW/gU/I3TB0jNHJnTmdgtmI3TB0jNHJnTmdgtmI3TB0jNHrip05k5LZyN06frzhSd0vk5LJyJ06frzhSd0vk5LJyJ06frzhf9e6HwZJSpEgNCFyq4QldAVWi6UkdCFyq4QldAVWi6UkdCFyr6MmvGe0BlbLZyJ0IXLzxid0BlbLZyJ0IXLzxid0BlbLZyJ0FfL92ZUAoSO2py9rxIg9FUs3oxKgNBRm7P3VQKEvorFm1EJEDpqc/a+SmDff/7l0OVhBFYm8BUAAP//qMqU6QAAAAZJREFUAwCwy3OWK5RAEQAAAABJRU5ErkJggg=="/>
-</defs>
-</svg>
-
-                                            <a href="#" class="product__brand">Ametis</a>
-                                            <span class="product__sep">•</span>
-                                            <a href="#" class="product__collection">Oceanmist</a>
-                                        </div>
-                                        <span class="product__stock">В наличии</span>
-                                    </div>
-                                    <a href="#" class="product__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
-                                    <div class="product__format">
-                                        <span class="product__format-label">Формат</span>
-                                        <span class="product__size product__size--active">20x120</span>
-                                        <span class="product__size">60x60</span>
-                                        <span class="product__size product__size--more">+4</span>
-                                    </div>
-                                    <div class="product__price">
-                                        <span class="product__price-now">3 801.60 ₽/м²</span>
-                                        <span class="product__price-old">4 290 ₽</span>
-                                        <span class="product__price-badge">-30%</span>
-                                    </div>
-                                    <div class="product__footer">
-                                        <button type="button" class="product__btn red-btn">
-                                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.8059 6.35V3.95C10.8059 2.18269 9.43775 0.75 7.75 0.75C6.06225 0.75 4.69406 2.18269 4.69406 3.95V6.35M1.32641 7.43157L0.868022 12.5516C0.737688 14.0073 0.672521 14.7352 0.903201 15.2974C1.10585 15.7913 1.46096 16.1997 1.91164 16.457C2.42466 16.75 3.12282 16.75 4.51914 16.75H10.9809C12.3772 16.75 13.0753 16.75 13.5884 16.457C14.039 16.1997 14.3942 15.7913 14.5968 15.2974C14.8275 14.7352 14.7623 14.0073 14.632 12.5516L14.1736 7.43157C14.0635 6.20228 14.0085 5.58763 13.7445 5.12293C13.512 4.71367 13.1684 4.38609 12.7576 4.18188C12.2911 3.95 11.7016 3.95 10.5225 3.95L4.97753 3.95C3.79843 3.95 3.20888 3.95 2.7424 4.18187C2.33156 4.38609 1.98803 4.71367 1.75551 5.12293C1.4915 5.58763 1.43647 6.20228 1.32641 7.43157Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            В корзину
-                                        </button>
-                                        <button type="button" class="product__compare" aria-label="Сравнить">
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_317_121104)">
-                                                <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_317_121104)">
-                                                <path d="M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_317_121104">
-                                                <rect width="12" height="12" fill="white"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_317_121104">
-                                                <rect width="12" height="12" fill="white" transform="translate(4 4)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
+					<!-- панель над карточками — та же структура, что на category/collection -->
+					<div class="products products--panel">
+						<div class="products__header">
+							<div class="products__heads">
+								<a href="#" class="products__head products__head--active">Товары</a>
+								<a href="#" class="products__head">Коллекции</a>
+							</div>
+							<button type="button" class="products__filters-btn" data-filters-open>
+								Фильтры
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 3H19L12 11V18L8 16V11L1 3Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
 						</div>
-					</div>
 
-					<a href="#" class="category__banner"><img src="./img/category/banner-pc-img.png" alt=""></a>
+						<div class="products__top">
+							<div class="products__chips">
+								<button type="button" class="products__chip">
+									<div>Керамогранит</div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" rx="8" fill="white"/><path d="M11 5L5 11M5 5L11 11" stroke="#1D1D1D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</button>
+								<button type="button" class="products__chip">
+									<div>Для стен</div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" rx="8" fill="white"/><path d="M11 5L5 11M5 5L11 11" stroke="#1D1D1D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</button>
+								<button type="button" class="products__chip">
+									<div>60 x 60</div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" rx="8" fill="white"/><path d="M11 5L5 11M5 5L11 11" stroke="#1D1D1D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</button>
+								<button type="button" class="products__clear">Очистить все</button>
+							</div>
 
-					<div class="products">
+							<div class="products__controls">
+								<label class="products__sort">
+									<span class="products__sort-label">Сортировать по:</span>
+									<span class="products__sort-select ui-select">
+										<select>
+											<option>Популярности</option>
+											<option>Возрастанию цены</option>
+											<option>Убыванию цены</option>
+											<option>Новинкам</option>
+										</select>
+										<svg width="16" height="9" viewBox="0 0 16 9" fill="none"><path d="M2 1.25L8.2 7.25L14.41 1.25" stroke="#E43D30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+									</span>
+								</label>
+
+								<!-- <div class="products__view">
+									<button type="button" class="products__view-btn products__view-btn--active" data-view="grid">
+										<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.23171 6.97561C5.66949 6.97561 6.02439 7.33051 6.02439 7.76829V12.2073C6.02439 12.6451 5.66949 13 5.23171 13H0.792683C0.354896 13 0 12.6451 0 12.2073V7.76829C0 7.33051 0.354896 6.97561 0.792683 6.97561H5.23171ZM12.2073 6.97561C12.6451 6.97561 13 7.33051 13 7.76829V12.2073C13 12.6451 12.6451 13 12.2073 13H7.76829C7.33051 13 6.97561 12.6451 6.97561 12.2073V7.76829C6.97561 7.33051 7.33051 6.97561 7.76829 6.97561H12.2073ZM8.56098 11.4146H11.4146V8.56098H8.56098V11.4146ZM1.58537 11.4146H4.43902V8.56098H1.58537V11.4146ZM5.23171 0C5.66949 0 6.02439 0.354896 6.02439 0.792683V5.23171C6.02439 5.66949 5.66949 6.02439 5.23171 6.02439H0.792683C0.354896 6.02439 0 5.66949 0 5.23171V0.792683C0 0.354896 0.354896 0 0.792683 0H5.23171ZM12.2073 0C12.6451 0 13 0.354896 13 0.792683V5.23171C13 5.66949 12.6451 6.02439 12.2073 6.02439H7.76829C7.33051 6.02439 6.97561 5.66949 6.97561 5.23171V0.792683C6.97561 0.354896 7.33051 0 7.76829 0H12.2073ZM8.56098 4.43902H11.4146V1.58537H8.56098V4.43902ZM1.58537 4.43902H4.43902V1.58537H1.58537V4.43902Z" fill="currentColor"/></svg>
+									</button>
+									<button type="button" class="products__view-btn" data-view="list">
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-2.11094e-07 7.17073C-2.28758e-07 6.76662 0.327596 6.43902 0.731707 6.43902L11.2683 6.43902C11.6724 6.43902 12 6.76662 12 7.17073L12 11.2683C12 11.6724 11.6724 12 11.2683 12L0.731707 12C0.537647 12 0.351589 11.9229 0.214367 11.7856C0.0771457 11.6484 -2.35013e-08 11.4624 -3.19839e-08 11.2683L-2.11094e-07 7.17073ZM-4.92553e-07 0.731708C-5.10217e-07 0.327598 0.327596 -1.43197e-08 0.731707 -3.19839e-08L11.2683 -4.92553e-07C11.6724 -5.10217e-07 12 0.327597 12 0.731707L12 4.82927C12 5.23338 11.6724 5.56098 11.2683 5.56098L0.731707 5.56098C0.327596 5.56098 -2.95778e-07 5.23338 -3.13443e-07 4.82927L-4.92553e-07 0.731708ZM10.5366 4.09756L10.5366 1.46341L1.46341 1.46342L1.46341 4.09756L10.5366 4.09756ZM10.5366 10.5366L10.5366 7.90244L1.46341 7.90244L1.46341 10.5366L10.5366 10.5366Z" fill="currentColor"/></svg>
+									</button>
+								</div> -->
+
+								<button type="button" class="products__filters-btn products__filters-btn--m" data-filters-open>
+									Фильтры
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 3H19L12 11V18L8 16V11L1 3Z" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+
 						<div class="products__grid">
 							<div class="product">
                                 <div class="product__media">
@@ -2066,7 +1701,7 @@
                                         <span class="product__size product__size--more">+4</span>
                                     </div>
                                     <div class="product__price">
-                                        <span class="product__price-now">3 801.60 ₽/м²</span>
+                                        <span class="product__price-now">3 801 ₽/м²</span>
                                         <span class="product__price-old">4 290 ₽</span>
                                         <span class="product__price-badge">-30%</span>
                                     </div>
@@ -2148,7 +1783,7 @@
                                         <span class="product__size product__size--more">+4</span>
                                     </div>
                                     <div class="product__price">
-                                        <span class="product__price-now">3 801.60 ₽/м²</span>
+                                        <span class="product__price-now">3 801 ₽/м²</span>
                                         <span class="product__price-old">4 290 ₽</span>
                                         <span class="product__price-badge">-30%</span>
                                     </div>
@@ -2230,7 +1865,96 @@
                                         <span class="product__size product__size--more">+4</span>
                                     </div>
                                     <div class="product__price">
-                                        <span class="product__price-now">3 801.60 ₽/м²</span>
+                                        <span class="product__price-now">3 801 ₽/м²</span>
+                                        <span class="product__price-old">4 290 ₽</span>
+                                        <span class="product__price-badge">-30%</span>
+                                    </div>
+                                    <div class="product__footer">
+                                        <button type="button" class="product__btn red-btn">
+                                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.8059 6.35V3.95C10.8059 2.18269 9.43775 0.75 7.75 0.75C6.06225 0.75 4.69406 2.18269 4.69406 3.95V6.35M1.32641 7.43157L0.868022 12.5516C0.737688 14.0073 0.672521 14.7352 0.903201 15.2974C1.10585 15.7913 1.46096 16.1997 1.91164 16.457C2.42466 16.75 3.12282 16.75 4.51914 16.75H10.9809C12.3772 16.75 13.0753 16.75 13.5884 16.457C14.039 16.1997 14.3942 15.7913 14.5968 15.2974C14.8275 14.7352 14.7623 14.0073 14.632 12.5516L14.1736 7.43157C14.0635 6.20228 14.0085 5.58763 13.7445 5.12293C13.512 4.71367 13.1684 4.38609 12.7576 4.18188C12.2911 3.95 11.7016 3.95 10.5225 3.95L4.97753 3.95C3.79843 3.95 3.20888 3.95 2.7424 4.18187C2.33156 4.38609 1.98803 4.71367 1.75551 5.12293C1.4915 5.58763 1.43647 6.20228 1.32641 7.43157Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                        <button type="button" class="product__compare" aria-label="Сравнить">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_317_121104)">
+                                                <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <g clip-path="url(#clip1_317_121104)">
+                                                <path d="M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_317_121104">
+                                                <rect width="12" height="12" fill="white"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_317_121104">
+                                                <rect width="12" height="12" fill="white" transform="translate(4 4)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+							<a href="#" class="products__banner">
+                                <picture>
+                                    <source srcset="./img/category/banner-pc-img.png" media="(max-width: 750px)">
+                                    <source srcset="./img/category/banner-pc-img.png" media="(min-width: 751px)">
+                                    <img src="./img/category/banner-pc-img.png" alt="">
+                                </picture>
+                            </a>
+							<div class="product">
+                                <div class="product__media">
+                                    <div class="product__badges">
+                                        <span class="product__badge product__badge--hit">Хит!</span>
+                                        <span class="product__badge product__badge--new">Новинка</span>
+                                        <span class="product__badge product__badge--sale">Распродажа</span>
+                                    </div>
+                                    <button type="button" class="product__fav product__fav--active">
+                                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M17.9333 1C22.16 1 25 5.0975 25 8.92C25 16.6613 13.2133 23 13 23C12.7867 23 1 16.6613 1 8.92C1 5.0975 3.84 1 8.06667 1C10.4933 1 12.08 2.25125 13 3.35125C13.92 2.25125 15.5067 1 17.9333 1Z" fill="white" stroke="#C8C8C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+                                    </button>
+                                    <a href="#" class="product__slider swiper" data-product-slider>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="./img/solution/1.webp" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/solution/2.webp" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/solution/3.webp" alt=""></div>
+                                        </div>
+                                        <div class="product__dots swiper-pagination"></div>
+                                    </a>
+                                    <span class="product__size-badge">20x120</span>
+                                </div>
+                                <div class="product__body">
+                                    <div class="product__meta">
+                                        <div class="product__meta_accent">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="12" height="12" rx="6" fill="url(#pattern0_2022_4533)"/>
+<defs>
+<pattern id="pattern0_2022_4533" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2022_4533" transform="matrix(0.00694444 0 0 0.00641026 0 -0.0128205)"/>
+</pattern>
+<image id="image0_2022_4533" width="240" height="160" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAACgCAIAAAC9uXYyAAAE0klEQVR4AezWTY4jVRBF4SRhBAN2wAaZIyEkhuyGPbASJr2F7llL3S1ZKslul+20319EfKWUVWmn48U99wy8f/GHQCIC++YPgUQECJ2oTFG2jdAsSEWA0KnqFIbQZRyoEZTQNXouk5LQZaquEZTQNXouk5LQZaquEZTQNXouk5LQ27aVabtAUEIXKLlSREJXartAVkIXKLlSREJXartAVkIXKLlSxDtCV0IhawYChM7QogxvBAj9hsI/GQgQOkOLMrwRIPQbCv9kIEDoDC22yJBkBqGTFCnGiQChTxy8JiFA6CRFinEiQOgTB69JCBA6SZFinAgQ+sTh1qvPAhEgdKCyrHqfAKHvM/JEIAKEDlSWVe8TIPR9Rp4IRIDQgcqy6n0Crwl9f74nEBhKgNBDcTusNwFC9yZs/lAChB6K22G9CRC6N2HzhxIg9FDccQ+LsjmhozRlz4cIEPohTB6KQoDQUZqy50MECP0QJg9FIUDoKE3Z8yEChH4I062HfLYSAUKv1IZdXiZA6JcRGrASAUKv1IZdXiZA6JcRGrASAUKv1IZdXibQVeiXtzMAgYMECH0QmMfXJrD/9fd/LgTSENj/+feDC4E0BPbt159cCKQh4Df02j8Jo2y3zJ6EXqYKi7QgQOgWFM1YhgChl6nCIi0IELoFRTOWIUDoZaqwSAsChG5B8dYMnw0lQOihuB3WmwChexM2fygBQg/F7bDeBAjdm7D5QwkQeihuh/UmMFPo3tnML0iA0AVLzxyZ0JnbLZiN0AVLzxyZ0JnbLZiN0AVLHx953ImEHsfaSQMIEHoAZEeMI0DocaydNIAAoQdAdsQ4AoQex9pJAwgQegDkW0f4rC0BQrfladpkAoSeXIDj2xIgdFuepk0mQOjJBTi+LQFCt+Vp2mQCCws9mYzjQxIgdMjaLP0eAUK/R8b7IQkQOmRtln6PAKHfI+P9kAQIHbK2ZEs3jEPohjCNmk+A0PM7sEFDAoRuCNOo+QQIPb8DGzQkQOiGMI2aT4DQ8zu4tYHPDhIg9EFgHl+bAKHX7sd2BwkQ+iAwj69NgNBr92O7gwQIfRCYx9cmEFfotbnabhIBQk8C79g+BAjdh6upkwh8E/rHbXMhkITA/vvn/10IpCGw//HpTxcCSxM4ouj+8YffXAikIfDtN/SkX++ORaADAUJ3gGrkPAKEnsfeyR0IELoDVCPnESD0PPYNTjbikgChL4m4D02A0KHrs/wlAUJfEnEfmgChQ9dn+UsChL4k4j40gbRCh27F8k8TIPTT6HxxRQKEXrEVOz1NgNBPo/PFFQkQesVW7PQ0AUI/jc4XFyFwtgahz3C4iU6A0NEbtP8ZAUKf4XATnQChozdo/zMChD7D4SY6AUJHb/DW/gU/I3TB0jNHJnTmdgtmI3TB0jNHJnTmdgtmI3TB0jNHrip05k5LZyN06frzhSd0vk5LJyJ06frzhSd0vk5LJyJ06frzhf9e6HwZJSpEgNCFyq4QldAVWi6UkdCFyq4QldAVWi6UkdCFyr6MmvGe0BlbLZyJ0IXLzxid0BlbLZyJ0IXLzxid0BlbLZyJ0FfL92ZUAoSO2py9rxIg9FUs3oxKgNBRm7P3VQKEvorFm1EJEDpqc/a+SmDff/7l0OVhBFYm8BUAAP//qMqU6QAAAAZJREFUAwCwy3OWK5RAEQAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
+
+                                            <a href="#" class="product__brand">Ametis</a>
+                                            <span class="product__sep">•</span>
+                                            <a href="#" class="product__collection">Oceanmist</a>
+                                        </div>
+                                        <span class="product__stock">В наличии</span>
+                                    </div>
+                                    <a href="#" class="product__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
+                                    <div class="product__format">
+                                        <span class="product__format-label">Формат</span>
+                                        <span class="product__size product__size--active">20x120</span>
+                                        <span class="product__size">60x60</span>
+                                        <span class="product__size product__size--more">+4</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product__price-now">3 801 ₽/м²</span>
                                         <span class="product__price-old">4 290 ₽</span>
                                         <span class="product__price-badge">-30%</span>
                                     </div>
@@ -2312,7 +2036,7 @@
                                         <span class="product__size product__size--more">+4</span>
                                     </div>
                                     <div class="product__price">
-                                        <span class="product__price-now">3 801.60 ₽/м²</span>
+                                        <span class="product__price-now">3 801 ₽/м²</span>
                                         <span class="product__price-old">4 290 ₽</span>
                                         <span class="product__price-badge">-30%</span>
                                     </div>
@@ -2394,7 +2118,7 @@
                                         <span class="product__size product__size--more">+4</span>
                                     </div>
                                     <div class="product__price">
-                                        <span class="product__price-now">3 801.60 ₽/м²</span>
+                                        <span class="product__price-now">3 801 ₽/м²</span>
                                         <span class="product__price-old">4 290 ₽</span>
                                         <span class="product__price-badge">-30%</span>
                                     </div>
@@ -2476,7 +2200,171 @@
                                         <span class="product__size product__size--more">+4</span>
                                     </div>
                                     <div class="product__price">
-                                        <span class="product__price-now">3 801.60 ₽/м²</span>
+                                        <span class="product__price-now">3 801 ₽/м²</span>
+                                        <span class="product__price-old">4 290 ₽</span>
+                                        <span class="product__price-badge">-30%</span>
+                                    </div>
+                                    <div class="product__footer">
+                                        <button type="button" class="product__btn red-btn">
+                                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.8059 6.35V3.95C10.8059 2.18269 9.43775 0.75 7.75 0.75C6.06225 0.75 4.69406 2.18269 4.69406 3.95V6.35M1.32641 7.43157L0.868022 12.5516C0.737688 14.0073 0.672521 14.7352 0.903201 15.2974C1.10585 15.7913 1.46096 16.1997 1.91164 16.457C2.42466 16.75 3.12282 16.75 4.51914 16.75H10.9809C12.3772 16.75 13.0753 16.75 13.5884 16.457C14.039 16.1997 14.3942 15.7913 14.5968 15.2974C14.8275 14.7352 14.7623 14.0073 14.632 12.5516L14.1736 7.43157C14.0635 6.20228 14.0085 5.58763 13.7445 5.12293C13.512 4.71367 13.1684 4.38609 12.7576 4.18188C12.2911 3.95 11.7016 3.95 10.5225 3.95L4.97753 3.95C3.79843 3.95 3.20888 3.95 2.7424 4.18187C2.33156 4.38609 1.98803 4.71367 1.75551 5.12293C1.4915 5.58763 1.43647 6.20228 1.32641 7.43157Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                        <button type="button" class="product__compare" aria-label="Сравнить">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_317_121104)">
+                                                <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <g clip-path="url(#clip1_317_121104)">
+                                                <path d="M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_317_121104">
+                                                <rect width="12" height="12" fill="white"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_317_121104">
+                                                <rect width="12" height="12" fill="white" transform="translate(4 4)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+							<div class="product">
+                                <div class="product__media">
+                                    <div class="product__badges">
+                                        <span class="product__badge product__badge--hit">Хит!</span>
+                                        <span class="product__badge product__badge--new">Новинка</span>
+                                        <span class="product__badge product__badge--sale">Распродажа</span>
+                                    </div>
+                                    <button type="button" class="product__fav product__fav--active">
+                                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M17.9333 1C22.16 1 25 5.0975 25 8.92C25 16.6613 13.2133 23 13 23C12.7867 23 1 16.6613 1 8.92C1 5.0975 3.84 1 8.06667 1C10.4933 1 12.08 2.25125 13 3.35125C13.92 2.25125 15.5067 1 17.9333 1Z" fill="white" stroke="#C8C8C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+                                    </button>
+                                    <a href="#" class="product__slider swiper" data-product-slider>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="./img/solution/1.webp" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/solution/2.webp" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/solution/3.webp" alt=""></div>
+                                        </div>
+                                        <div class="product__dots swiper-pagination"></div>
+                                    </a>
+                                    <span class="product__size-badge">20x120</span>
+                                </div>
+                                <div class="product__body">
+                                    <div class="product__meta">
+                                        <div class="product__meta_accent">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="12" height="12" rx="6" fill="url(#pattern0_2022_4533)"/>
+<defs>
+<pattern id="pattern0_2022_4533" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2022_4533" transform="matrix(0.00694444 0 0 0.00641026 0 -0.0128205)"/>
+</pattern>
+<image id="image0_2022_4533" width="240" height="160" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAACgCAIAAAC9uXYyAAAE0klEQVR4AezWTY4jVRBF4SRhBAN2wAaZIyEkhuyGPbASJr2F7llL3S1ZKslul+20319EfKWUVWmn48U99wy8f/GHQCIC++YPgUQECJ2oTFG2jdAsSEWA0KnqFIbQZRyoEZTQNXouk5LQZaquEZTQNXouk5LQZaquEZTQNXouk5LQ27aVabtAUEIXKLlSREJXartAVkIXKLlSREJXartAVkIXKLlSxDtCV0IhawYChM7QogxvBAj9hsI/GQgQOkOLMrwRIPQbCv9kIEDoDC22yJBkBqGTFCnGiQChTxy8JiFA6CRFinEiQOgTB69JCBA6SZFinAgQ+sTh1qvPAhEgdKCyrHqfAKHvM/JEIAKEDlSWVe8TIPR9Rp4IRIDQgcqy6n0Crwl9f74nEBhKgNBDcTusNwFC9yZs/lAChB6K22G9CRC6N2HzhxIg9FDccQ+LsjmhozRlz4cIEPohTB6KQoDQUZqy50MECP0QJg9FIUDoKE3Z8yEChH4I062HfLYSAUKv1IZdXiZA6JcRGrASAUKv1IZdXiZA6JcRGrASAUKv1IZdXibQVeiXtzMAgYMECH0QmMfXJrD/9fd/LgTSENj/+feDC4E0BPbt159cCKQh4Df02j8Jo2y3zJ6EXqYKi7QgQOgWFM1YhgChl6nCIi0IELoFRTOWIUDoZaqwSAsChG5B8dYMnw0lQOihuB3WmwChexM2fygBQg/F7bDeBAjdm7D5QwkQeihuh/UmMFPo3tnML0iA0AVLzxyZ0JnbLZiN0AVLzxyZ0JnbLZiN0AVLHx953ImEHsfaSQMIEHoAZEeMI0DocaydNIAAoQdAdsQ4AoQex9pJAwgQegDkW0f4rC0BQrfladpkAoSeXIDj2xIgdFuepk0mQOjJBTi+LQFCt+Vp2mQCCws9mYzjQxIgdMjaLP0eAUK/R8b7IQkQOmRtln6PAKHfI+P9kAQIHbK2ZEs3jEPohjCNmk+A0PM7sEFDAoRuCNOo+QQIPb8DGzQkQOiGMI2aT4DQ8zu4tYHPDhIg9EFgHl+bAKHX7sd2BwkQ+iAwj69NgNBr92O7gwQIfRCYx9cmEFfotbnabhIBQk8C79g+BAjdh6upkwh8E/rHbXMhkITA/vvn/10IpCGw//HpTxcCSxM4ouj+8YffXAikIfDtN/SkX++ORaADAUJ3gGrkPAKEnsfeyR0IELoDVCPnESD0PPYNTjbikgChL4m4D02A0KHrs/wlAUJfEnEfmgChQ9dn+UsChL4k4j40gbRCh27F8k8TIPTT6HxxRQKEXrEVOz1NgNBPo/PFFQkQesVW7PQ0AUI/jc4XFyFwtgahz3C4iU6A0NEbtP8ZAUKf4XATnQChozdo/zMChD7D4SY6AUJHb/DW/gU/I3TB0jNHJnTmdgtmI3TB0jNHJnTmdgtmI3TB0jNHrip05k5LZyN06frzhSd0vk5LJyJ06frzhSd0vk5LJyJ06frzhf9e6HwZJSpEgNCFyq4QldAVWi6UkdCFyq4QldAVWi6UkdCFyr6MmvGe0BlbLZyJ0IXLzxid0BlbLZyJ0IXLzxid0BlbLZyJ0FfL92ZUAoSO2py9rxIg9FUs3oxKgNBRm7P3VQKEvorFm1EJEDpqc/a+SmDff/7l0OVhBFYm8BUAAP//qMqU6QAAAAZJREFUAwCwy3OWK5RAEQAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
+
+                                            <a href="#" class="product__brand">Ametis</a>
+                                            <span class="product__sep">•</span>
+                                            <a href="#" class="product__collection">Oceanmist</a>
+                                        </div>
+                                        <span class="product__stock">В наличии</span>
+                                    </div>
+                                    <a href="#" class="product__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
+                                    <div class="product__format">
+                                        <span class="product__format-label">Формат</span>
+                                        <span class="product__size product__size--active">20x120</span>
+                                        <span class="product__size">60x60</span>
+                                        <span class="product__size product__size--more">+4</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product__price-now">3 801 ₽/м²</span>
+                                        <span class="product__price-old">4 290 ₽</span>
+                                        <span class="product__price-badge">-30%</span>
+                                    </div>
+                                    <div class="product__footer">
+                                        <button type="button" class="product__btn red-btn">
+                                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.8059 6.35V3.95C10.8059 2.18269 9.43775 0.75 7.75 0.75C6.06225 0.75 4.69406 2.18269 4.69406 3.95V6.35M1.32641 7.43157L0.868022 12.5516C0.737688 14.0073 0.672521 14.7352 0.903201 15.2974C1.10585 15.7913 1.46096 16.1997 1.91164 16.457C2.42466 16.75 3.12282 16.75 4.51914 16.75H10.9809C12.3772 16.75 13.0753 16.75 13.5884 16.457C14.039 16.1997 14.3942 15.7913 14.5968 15.2974C14.8275 14.7352 14.7623 14.0073 14.632 12.5516L14.1736 7.43157C14.0635 6.20228 14.0085 5.58763 13.7445 5.12293C13.512 4.71367 13.1684 4.38609 12.7576 4.18188C12.2911 3.95 11.7016 3.95 10.5225 3.95L4.97753 3.95C3.79843 3.95 3.20888 3.95 2.7424 4.18187C2.33156 4.38609 1.98803 4.71367 1.75551 5.12293C1.4915 5.58763 1.43647 6.20228 1.32641 7.43157Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                        <button type="button" class="product__compare" aria-label="Сравнить">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_317_121104)">
+                                                <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <g clip-path="url(#clip1_317_121104)">
+                                                <path d="M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z" stroke="#53575A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_317_121104">
+                                                <rect width="12" height="12" fill="white"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_317_121104">
+                                                <rect width="12" height="12" fill="white" transform="translate(4 4)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+							<div class="product">
+                                <div class="product__media">
+                                    <div class="product__badges">
+                                        <span class="product__badge product__badge--hit">Хит!</span>
+                                        <span class="product__badge product__badge--new">Новинка</span>
+                                        <span class="product__badge product__badge--sale">Распродажа</span>
+                                    </div>
+                                    <button type="button" class="product__fav product__fav--active">
+                                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M17.9333 1C22.16 1 25 5.0975 25 8.92C25 16.6613 13.2133 23 13 23C12.7867 23 1 16.6613 1 8.92C1 5.0975 3.84 1 8.06667 1C10.4933 1 12.08 2.25125 13 3.35125C13.92 2.25125 15.5067 1 17.9333 1Z" fill="white" stroke="#C8C8C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+                                    </button>
+                                    <a href="#" class="product__slider swiper" data-product-slider>
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="./img/solution/1.webp" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/solution/2.webp" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/solution/3.webp" alt=""></div>
+                                        </div>
+                                        <div class="product__dots swiper-pagination"></div>
+                                    </a>
+                                    <span class="product__size-badge">20x120</span>
+                                </div>
+                                <div class="product__body">
+                                    <div class="product__meta">
+                                        <div class="product__meta_accent">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="12" height="12" rx="6" fill="url(#pattern0_2022_4533)"/>
+<defs>
+<pattern id="pattern0_2022_4533" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2022_4533" transform="matrix(0.00694444 0 0 0.00641026 0 -0.0128205)"/>
+</pattern>
+<image id="image0_2022_4533" width="240" height="160" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAACgCAIAAAC9uXYyAAAE0klEQVR4AezWTY4jVRBF4SRhBAN2wAaZIyEkhuyGPbASJr2F7llL3S1ZKslul+20319EfKWUVWmn48U99wy8f/GHQCIC++YPgUQECJ2oTFG2jdAsSEWA0KnqFIbQZRyoEZTQNXouk5LQZaquEZTQNXouk5LQZaquEZTQNXouk5LQ27aVabtAUEIXKLlSREJXartAVkIXKLlSREJXartAVkIXKLlSxDtCV0IhawYChM7QogxvBAj9hsI/GQgQOkOLMrwRIPQbCv9kIEDoDC22yJBkBqGTFCnGiQChTxy8JiFA6CRFinEiQOgTB69JCBA6SZFinAgQ+sTh1qvPAhEgdKCyrHqfAKHvM/JEIAKEDlSWVe8TIPR9Rp4IRIDQgcqy6n0Crwl9f74nEBhKgNBDcTusNwFC9yZs/lAChB6K22G9CRC6N2HzhxIg9FDccQ+LsjmhozRlz4cIEPohTB6KQoDQUZqy50MECP0QJg9FIUDoKE3Z8yEChH4I062HfLYSAUKv1IZdXiZA6JcRGrASAUKv1IZdXiZA6JcRGrASAUKv1IZdXibQVeiXtzMAgYMECH0QmMfXJrD/9fd/LgTSENj/+feDC4E0BPbt159cCKQh4Df02j8Jo2y3zJ6EXqYKi7QgQOgWFM1YhgChl6nCIi0IELoFRTOWIUDoZaqwSAsChG5B8dYMnw0lQOihuB3WmwChexM2fygBQg/F7bDeBAjdm7D5QwkQeihuh/UmMFPo3tnML0iA0AVLzxyZ0JnbLZiN0AVLzxyZ0JnbLZiN0AVLHx953ImEHsfaSQMIEHoAZEeMI0DocaydNIAAoQdAdsQ4AoQex9pJAwgQegDkW0f4rC0BQrfladpkAoSeXIDj2xIgdFuepk0mQOjJBTi+LQFCt+Vp2mQCCws9mYzjQxIgdMjaLP0eAUK/R8b7IQkQOmRtln6PAKHfI+P9kAQIHbK2ZEs3jEPohjCNmk+A0PM7sEFDAoRuCNOo+QQIPb8DGzQkQOiGMI2aT4DQ8zu4tYHPDhIg9EFgHl+bAKHX7sd2BwkQ+iAwj69NgNBr92O7gwQIfRCYx9cmEFfotbnabhIBQk8C79g+BAjdh6upkwh8E/rHbXMhkITA/vvn/10IpCGw//HpTxcCSxM4ouj+8YffXAikIfDtN/SkX++ORaADAUJ3gGrkPAKEnsfeyR0IELoDVCPnESD0PPYNTjbikgChL4m4D02A0KHrs/wlAUJfEnEfmgChQ9dn+UsChL4k4j40gbRCh27F8k8TIPTT6HxxRQKEXrEVOz1NgNBPo/PFFQkQesVW7PQ0AUI/jc4XFyFwtgahz3C4iU6A0NEbtP8ZAUKf4XATnQChozdo/zMChD7D4SY6AUJHb/DW/gU/I3TB0jNHJnTmdgtmI3TB0jNHJnTmdgtmI3TB0jNHrip05k5LZyN06frzhSd0vk5LJyJ06frzhSd0vk5LJyJ06frzhf9e6HwZJSpEgNCFyq4QldAVWi6UkdCFyq4QldAVWi6UkdCFyr6MmvGe0BlbLZyJ0IXLzxid0BlbLZyJ0IXLzxid0BlbLZyJ0FfL92ZUAoSO2py9rxIg9FUs3oxKgNBRm7P3VQKEvorFm1EJEDpqc/a+SmDff/7l0OVhBFYm8BUAAP//qMqU6QAAAAZJREFUAwCwy3OWK5RAEQAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
+
+                                            <a href="#" class="product__brand">Ametis</a>
+                                            <span class="product__sep">•</span>
+                                            <a href="#" class="product__collection">Oceanmist</a>
+                                        </div>
+                                        <span class="product__stock">В наличии</span>
+                                    </div>
+                                    <a href="#" class="product__title">Керамогранит Boston Gris Decor R10 matt 12мм 29,8*60</a>
+                                    <div class="product__format">
+                                        <span class="product__format-label">Формат</span>
+                                        <span class="product__size product__size--active">20x120</span>
+                                        <span class="product__size">60x60</span>
+                                        <span class="product__size product__size--more">+4</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product__price-now">3 801 ₽/м²</span>
                                         <span class="product__price-old">4 290 ₽</span>
                                         <span class="product__price-badge">-30%</span>
                                     </div>
@@ -2679,7 +2567,7 @@
 						</ul>
 					</div>
 
-					<a href="#" class="footer__logo-m"><img src="./img/footer/logo-white.svg" alt="FLEXI"></a>
+					<a href="#" class="footer__logo-m"><img src="./img/footer/logo-white.png" alt=""></a>
 
 					<ul class="footer__bottom_list">
 						<li><a href="#">Политика конфиденциальности</a></li>

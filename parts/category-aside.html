@@ -131,19 +131,75 @@
                                 </svg>
                             </div>
                             <div class="cat-filters__row_dropdown" data-accordion-dropdown>
-                                <div class="cat-filters__row_inner">
+                                <div class="cat-filters__row_inner" data-search-filter>
                                     <div class="cat-filters__search">
-                                        <input type="text" placeholder="Поиск по брендам">
+                                        <input type="text" placeholder="Поиск по брендам" data-search-input>
                                     </div>
                                     <ul class="cat-filters__checks cat-filters__checks--scroll">
-                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Italon</span><span class="check__count">150</span></label></li>
-                                        <li><label class="check"><input type="checkbox" class="check__input" checked><span class="check__box"></span><span class="check__label">KERALD</span><span class="check__count">321</span></label></li>
-                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Atlas Concorde</span><span class="check__count">45</span></label></li>
-                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">La Faenza</span><span class="check__count">33</span></label></li>
-                                        <li><label class="check"><input type="checkbox" class="check__input" checked><span class="check__box"></span><span class="check__label">Imola</span><span class="check__count">87</span></label></li>
-                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">VitrA</span><span class="check__count">10</span></label></li>
-                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Idalgo</span><span class="check__count">1</span></label></li>
-                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">Baldocer</span><span class="check__count">9 854</span></label></li>
+                                        <li data-search-item="Italon">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input">
+                                                <span class="check__box"></span>
+                                                <span class="check__label">Italon</span>
+                                                <span class="check__count">150</span>
+                                            </label>
+                                        </li>
+                                        <li data-search-item="KERALD">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input" checked>
+                                                <span class="check__box"></span>
+                                                <span class="check__label">KERALD</span>
+                                                <span class="check__count">321</span>
+                                            </label>
+                                        </li>
+                                        <li data-search-item="Atlas Concorde">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input">
+                                                <span class="check__box"></span>
+                                                <span class="check__label">Atlas Concorde</span>
+                                                <span class="check__count">45</span>
+                                            </label>
+                                        </li>
+                                        <li data-search-item="La Faenza">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input">
+                                                <span class="check__box"></span>
+                                                <span class="check__label">La Faenza</span>
+                                                <span class="check__count">33</span>
+                                            </label>
+                                        </li>
+                                        <li data-search-item="Imola">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input" checked>
+                                                <span class="check__box"></span>
+                                                <span class="check__label">Imola</span>
+                                                <span class="check__count">87</span>
+                                            </label>
+                                        </li>
+                                        <li data-search-item="VitrA">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input">
+                                                <span class="check__box"></span>
+                                                <span class="check__label">VitrA</span>
+                                                <span class="check__count">10</span>
+                                            </label>
+                                        </li>
+                                        <li data-search-item="Idalgo">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input">
+                                                <span class="check__box"></span>
+                                                <span class="check__label">Idalgo</span>
+                                                <span class="check__count">1</span>
+                                            </label>
+                                        </li>
+                                        <li data-search-item="Baldocer">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input">
+                                                <span class="check__box"></span>
+                                                <span class="check__label">Baldocer</span>
+                                                <span class="check__count">9 854</span>
+                                            </label>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -177,12 +233,43 @@
                                 </svg>
                             </div>
                             <div class="cat-filters__row_dropdown" data-accordion-dropdown>
-                                <div class="cat-filters__row_inner">
+                                <div class="cat-filters__row_inner" data-search-filter>
+                                    <div class="cat-filters__search">
+                                        <input type="text" placeholder="Поиск по брендам" data-search-input>
+                                    </div>
                                     <ul class="cat-filters__checks">
-                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">20х40</span><span class="check__count">150</span></label></li>
-                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">30х60</span><span class="check__count">321</span></label></li>
-                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">60х60</span><span class="check__count">45</span></label></li>
-                                        <li><label class="check"><input type="checkbox" class="check__input"><span class="check__box"></span><span class="check__label">120х60</span><span class="check__count">33</span></label></li>
+                                        <li data-search-item="20х40">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input">
+                                                <span class="check__box"></span>
+                                                <span class="check__label">20х40</span>
+                                                <span class="check__count">150</span>
+                                            </label>
+                                        </li>
+                                        <li data-search-item="30х60">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input">
+                                                <span class="check__box"></span>
+                                                <span class="check__label">30х60</span>
+                                                <span class="check__count">321</span>
+                                            </label>
+                                        </li>
+                                        <li data-search-item="60х60">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input">
+                                                <span class="check__box"></span>
+                                                <span class="check__label">60х60</span>
+                                                <span class="check__count">45</span>
+                                            </label>
+                                        </li>
+                                        <li data-search-item="120х60">
+                                            <label class="check">
+                                                <input type="checkbox" class="check__input">
+                                                <span class="check__box"></span>
+                                                <span class="check__label">120х60</span>
+                                                <span class="check__count">33</span>
+                                            </label>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

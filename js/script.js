@@ -228,14 +228,23 @@ window.addEventListener('load', () => {
     }
 
     // «Приглашаем к сотрудничеству» (about): слайдер на планшете и мобилке (≤1200);
-    // на десктопе — свой грид (Swiper уничтожается)
+    // Десктоп — грид на .swiper-wrapper: head/btn переносим внутрь него (грид-ячейки).
+    // Планшет/мобилка — head/btn возвращаем в .about-coop__grid и включаем Swiper.
     const about_coop_swiper = document.querySelector('.about-coop-swiper');
     if (about_coop_swiper) {
         const about_coop_mq = window.matchMedia('(max-width: 1200px)');
+        const coop_grid    = about_coop_swiper.closest('.about-coop').querySelector('.about-coop__grid');
+        const coop_wrapper = about_coop_swiper.querySelector('.swiper-wrapper');
+        const coop_slider  = coop_grid.querySelector('.about-coop__slider');
+        const coop_head    = coop_grid.parentElement.querySelector('.about-coop__head');
+        const coop_btn     = coop_grid.parentElement.querySelector('.about-coop__btn');
         let about_coop = null;
 
         const sync_about_coop = () => {
             if (about_coop_mq.matches) {
+                // head/btn — в грид (перед слайдером / после), затем Swiper
+                if (coop_head) coop_grid.insertBefore(coop_head, coop_slider);
+                if (coop_btn)  coop_grid.appendChild(coop_btn);
                 if (!about_coop) {
                     about_coop = new Swiper(about_coop_swiper, {
                         slidesPerView: 'auto',
@@ -253,9 +262,11 @@ window.addEventListener('load', () => {
                         },
                     });
                 }
-            } else if (about_coop) {
-                about_coop.destroy(true, true);
-                about_coop = null;
+            } else {
+                // десктоп: уничтожаем Swiper и кладём head/btn внутрь .swiper-wrapper (грид-ячейки)
+                if (about_coop) { about_coop.destroy(true, true); about_coop = null; }
+                if (coop_head) coop_wrapper.appendChild(coop_head);
+                if (coop_btn)  coop_wrapper.appendChild(coop_btn);
             }
         };
 
@@ -473,41 +484,51 @@ window.addEventListener('load', () => {
         });
     });
 
-    const product_desktop_mq = window.matchMedia('(min-width: 992px)');
-    document.querySelectorAll('[data-product-slider]').forEach(el => {
+    // Слайдер картинок внутри карточки товара.
+    // Ориентируемся на тип указателя, а не на ширину: на устройстве с мышью (десктоп) —
+    // перелистывание наведением (mousemove по зонам), свайп выключен; на тач-устройствах
+    // (моб/планшет, в т.ч. 992–1200) — свайп пальцем, наведение не вешаем.
+    const product_pointer_mq = window.matchMedia('(hover: hover) and (pointer: fine)');
+    const initProductSlider = (el) => {
+        if (el.swiper) return el.swiper;                 // не инициализируем повторно
         const slider = new Swiper(el, {
             slidesPerView: 1,
-            allowTouchMove: !product_desktop_mq.matches,
+            allowTouchMove: !product_pointer_mq.matches, // тач-устройства — свайп включён
             pagination: {
                 el: el.querySelector('.swiper-pagination'),
                 clickable: true,
             },
         });
 
-        product_desktop_mq.addEventListener('change', (e) => {
+        product_pointer_mq.addEventListener('change', (e) => {
             slider.allowTouchMove = !e.matches;
         });
 
-        let zone = 0;
-        el.addEventListener('mousemove', (e) => {
-            const rect  = el.getBoundingClientRect();
-            const count = slider.slides.length;
-            let idx = Math.floor(((e.clientX - rect.left) / rect.width) * count);
-            idx = Math.max(0, Math.min(count - 1, idx));
-            if (idx === zone) return;
-            zone = idx;
-            slider.slideTo(idx, 0);
-        });
-        el.addEventListener('mouseleave', () => {
-            zone = 0;
-            slider.slideTo(0, 0);
-        });
-    });
+        // перелистывание наведением — только на устройствах с мышью (иначе мешает свайпу)
+        if (product_pointer_mq.matches) {
+            let zone = 0;
+            el.addEventListener('mousemove', (e) => {
+                const rect  = el.getBoundingClientRect();
+                const count = slider.slides.length;
+                let idx = Math.floor(((e.clientX - rect.left) / rect.width) * count);
+                idx = Math.max(0, Math.min(count - 1, idx));
+                if (idx === zone) return;
+                zone = idx;
+                slider.slideTo(idx, 0);
+            });
+            el.addEventListener('mouseleave', () => {
+                zone = 0;
+                slider.slideTo(0, 0);
+            });
+        }
+        return slider;
+    };
+    document.querySelectorAll('[data-product-slider]').forEach(initProductSlider);
 
     const catalog_btn  = document.querySelector('.header__catalog');
     const catalog      = document.querySelector('[data-catalog]');
     const mobile_menu  = document.querySelector('[data-mobile-menu]');
-    const desktop_mq   = window.matchMedia('(min-width: 992px)');
+    const desktop_mq   = window.matchMedia('(min-width: 751px)');
 
     const lock_scroll   = () => document.body.style.setProperty('overflow', 'hidden');
     const unlock_scroll = () => document.body.style.removeProperty('overflow');
@@ -553,26 +574,34 @@ window.addEventListener('load', () => {
     };
 
     if (catalog) {
+        // десктоп: наведение переключает панель (мега-меню)
         catalog.querySelectorAll('[data-catalog-tab]').forEach(tab => {
-            tab.addEventListener('mouseenter', () => set_catalog_tab(tab.dataset.catalogTab));
+            tab.addEventListener('mouseenter', () => { if (desktop_mq.matches) set_catalog_tab(tab.dataset.catalogTab); });
         });
 
+        // клик вне — закрыть (только десктоп: на моб дровер во весь экран)
         document.addEventListener('click', (e) => {
-            if (catalog.classList.contains('catalog--open') &&
+            if (desktop_mq.matches &&
+                catalog.classList.contains('catalog--open') &&
                 !catalog.contains(e.target) &&
                 !(catalog_btn && catalog_btn.contains(e.target))) {
                 close_catalog();
             }
         });
-        window.addEventListener('scroll', () => catalog.classList.contains('catalog--open') && position_catalog());
-        window.addEventListener('resize', () => catalog.classList.contains('catalog--open') && position_catalog());
+        window.addEventListener('scroll', () => desktop_mq.matches && catalog.classList.contains('catalog--open') && position_catalog());
+        window.addEventListener('resize', () => desktop_mq.matches && catalog.classList.contains('catalog--open') && position_catalog());
     }
 
     /* меню открывается ПОД шапкой (как каталог на пк): шапка остаётся на виду,
        меню растягивается на оставшуюся высоту экрана */
+    // ЕДИНЫЙ каталог-меню: mobile_menu === тот же .catalog. На моб открывается как дровер.
+    const reset_drill = () => catalog &&
+        catalog.querySelectorAll('.catalog__panel--active').forEach(p => p.classList.remove('catalog__panel--active'));
     const position_mobile = () => {
         if (!mobile_menu) return;
         const mid = document.querySelector('.header__mid');
+        mobile_menu.style.position = 'fixed';
+        mobile_menu.style.height = '';
         mobile_menu.style.top = (mid ? mid.getBoundingClientRect().bottom : 0) + 'px';
     };
     const botnav_catalog = document.querySelector('.botnav [data-mobile-menu-open]');
@@ -585,14 +614,15 @@ window.addEventListener('load', () => {
             document.querySelectorAll('.botnav__item--active').forEach(i => i.classList.remove('botnav__item--active'));
             botnav_catalog.classList.add('botnav__item--active');
         }
+        reset_drill();                 // открываем на списке категорий, не в подкатегории
         position_mobile();
-        mobile_menu.classList.add('mobile-menu--open');
+        mobile_menu.classList.add('catalog--open');
         lock_scroll();
     };
     const close_mobile = () => {
         if (!mobile_menu) return;
-        mobile_menu.classList.remove('mobile-menu--open');
-        mobile_menu.querySelectorAll('.mobile-menu__sub--active').forEach(s => s.classList.remove('mobile-menu__sub--active'));
+        mobile_menu.classList.remove('catalog--open');
+        reset_drill();
         document.body.classList.remove('mobile-menu-open');
         // после закрытия каталога активным становится «Главная»
         if (botnav_catalog) {
@@ -602,31 +632,42 @@ window.addEventListener('load', () => {
         }
         unlock_scroll();
     };
-    window.addEventListener('resize', () => mobile_menu && mobile_menu.classList.contains('mobile-menu--open') && position_mobile());
+    window.addEventListener('resize', () => {
+        if (mobile_menu && !desktop_mq.matches && mobile_menu.classList.contains('catalog--open')) position_mobile();
+    });
 
     if (mobile_menu) {
         mobile_menu.querySelectorAll('[data-mobile-close]').forEach(b => b.addEventListener('click', close_mobile));
-        mobile_menu.querySelectorAll('[data-mobile-open]').forEach(b => b.addEventListener('click', () => {
-            const sub = mobile_menu.querySelector(`[data-mobile-sub="${b.dataset.mobileOpen}"]`);
-            if (!sub) return;
-            sub.classList.add('mobile-menu__sub--active');
-            // сбрасываем прокрутку: контейнер первого уровня (чтобы подменю встало сверху)
-            // и само подменю
-            const scroll = mobile_menu.querySelector('.mobile-menu__scroll');
-            if (scroll) scroll.scrollTop = 0;
-            sub.scrollTop = 0;
+        // дрилдаун (моб): клик по категории открывает её панель поверх списка
+        mobile_menu.querySelectorAll('[data-catalog-tab]').forEach(b => b.addEventListener('click', () => {
+            if (desktop_mq.matches) return;
+            set_catalog_tab(b.dataset.catalogTab);   // ставит .catalog__panel--active + подсветку
+            const nav = mobile_menu.querySelector('.catalog__nav');
+            if (nav) nav.scrollTop = 0;
         }));
-        mobile_menu.querySelectorAll('[data-mobile-back]').forEach(b => b.addEventListener('click', () => {
-            b.closest('[data-mobile-sub]').classList.remove('mobile-menu__sub--active');
-        }));
-        const m_tabs = mobile_menu.querySelectorAll('.mobile-menu__tab');
+        mobile_menu.querySelectorAll('[data-catalog-back]').forEach(b => b.addEventListener('click', reset_drill));
+        const m_tabs = mobile_menu.querySelectorAll('.catalog__tab');
         m_tabs.forEach(t => t.addEventListener('click', () => {
-            m_tabs.forEach(x => x.classList.remove('mobile-menu__tab--active'));
-            t.classList.add('mobile-menu__tab--active');
+            m_tabs.forEach(x => x.classList.remove('catalog__tab--active'));
+            t.classList.add('catalog__tab--active');
         }));
     }
 
-    document.querySelectorAll('[data-mobile-menu-open]').forEach(b => b.addEventListener('click', open_mobile));
+    document.querySelectorAll('[data-mobile-menu-open]').forEach(b => b.addEventListener('click', (e) => {
+        // не даём этому клику всплыть до document-обработчика «клик вне каталога»,
+        // иначе на ≥751 он сразу же закроет только что открытое меню
+        e.stopPropagation();
+        // ≥751 — каталог открывается как мега-меню (open_catalog), ≤750 — как дровер (open_mobile)
+        desktop_mq.matches ? open_catalog() : open_mobile();
+        // если у триггера указана категория (напр. кнопка «Все» на странице категории) —
+        // открываем то же каталог-меню сразу с раскрытой этой категорией (дрилдаун на моб / панель на пк)
+        const tab = b.dataset.mobileMenuOpen;
+        if (tab) {
+            set_catalog_tab(tab);
+            const nav = mobile_menu && mobile_menu.querySelector('.catalog__nav');
+            if (nav) nav.scrollTop = 0;
+        }
+    }));
 
     const search_overlay = document.querySelector('[data-search]');
     const search_backdrop = document.querySelector('.m-search-overlay');
@@ -725,7 +766,7 @@ window.addEventListener('load', () => {
             if (desktop_mq.matches) {
                 catalog.classList.contains('catalog--open') ? close_catalog() : open_catalog();
             } else {
-                mobile_menu && mobile_menu.classList.contains('mobile-menu--open') ? close_mobile() : open_mobile();
+                mobile_menu && mobile_menu.classList.contains('catalog--open') ? close_mobile() : open_mobile();
             }
         });
     }
@@ -1136,7 +1177,12 @@ window.addEventListener('load', () => {
                     el: actions.querySelector('.slider-actions__pagination'),
                     type: 'fraction',
                 } : false,
-                breakpoints: {
+                // секции товаров (.prod-carousel) на планшете (751–1200) — по 2 карточки
+                // (без промежуточного 768:3); остальные карусели — общая шкала 2→3→desktop
+                breakpoints: is_prod ? {
+                    576:  { slidesPerView: 2 },
+                    1200: { slidesPerView: desktopSpv },
+                } : {
                     576:  { slidesPerView: 2 },
                     768:  { slidesPerView: 3 },
                     1200: { slidesPerView: desktopSpv },
@@ -1146,36 +1192,8 @@ window.addEventListener('load', () => {
                     resize: sync_scrollable,
                     breakpoint: sync_scrollable,
                     slideChange: function() {
-                        const product_desktop_mq = window.matchMedia('(min-width: 992px)');
-                        el.querySelectorAll('[data-product-slider]').forEach(el => {
-                            const slider = new Swiper(el, {
-                                slidesPerView: 1,
-                                allowTouchMove: !product_desktop_mq.matches,
-                                pagination: {
-                                    el: el.querySelector('.swiper-pagination'),
-                                    clickable: true,
-                                },
-                            });
-
-                            product_desktop_mq.addEventListener('change', (e) => {
-                                slider.allowTouchMove = !e.matches;
-                            });
-
-                            let zone = 0;
-                            el.addEventListener('mousemove', (e) => {
-                                const rect  = el.getBoundingClientRect();
-                                const count = slider.slides.length;
-                                let idx = Math.floor(((e.clientX - rect.left) / rect.width) * count);
-                                idx = Math.max(0, Math.min(count - 1, idx));
-                                if (idx === zone) return;
-                                zone = idx;
-                                slider.slideTo(idx, 0);
-                            });
-                            el.addEventListener('mouseleave', () => {
-                                zone = 0;
-                                slider.slideTo(0, 0);
-                            });
-                        });
+                        // клоны слайдов (loop) — доинициализируем их внутренние слайдеры (гвард el.swiper внутри)
+                        el.querySelectorAll('[data-product-slider]').forEach(initProductSlider);
                     }
                 }
             });
@@ -1281,7 +1299,7 @@ window.addEventListener('load', () => {
                                                     а финальный выбор — кликом по [data-map-confirm]
        Табы: если внутри группы есть [data-tabs-head]/[data-tabs-content] — смена вкладки
              выбирает первый пункт активной вкладки. */
-    if (typeof ymaps3 !== 'undefined' && document.querySelector('[data-map-group]')) {
+    if (typeof ymaps3 !== 'undefined' && (document.querySelector('[data-map-group]') || document.querySelector('[data-store-map-popup]'))) {
         ymaps3.ready.then(async () => {
             const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
             ymaps3.import.registerCdn('https://cdn.jsdelivr.net/npm/{package}', '@yandex/ymaps3-default-ui-theme@latest');
@@ -1289,6 +1307,14 @@ window.addEventListener('load', () => {
 
             const COLOR_ACTIVE = { day: '#E43D30', night: '#E43D30' };
             const COLOR_IDLE   = { day: '#1D1D1D', night: '#1D1D1D' };
+
+            // все метки — стандартный пин-маркер с иконкой (size:'normal'), а не кружок (это и на ПК, и на моб);
+            // активная — красная, остальные — тёмные, чтобы среди множества меток сразу было видно выбранную
+            const markerProps = (active) => ({
+                color: active ? COLOR_ACTIVE : COLOR_IDLE,
+                size:  'normal',
+                iconName: 'fallback',
+            });
 
             const buildMapGroup = (group) => {
                 const mapEl  = group.querySelector('[data-map]');
@@ -1299,27 +1325,87 @@ window.addEventListener('load', () => {
                 const activeClass = group.dataset.mapActive || 'is-active';
                 const baseZoom    = parseFloat(group.dataset.mapZoom) || 12;
                 const confirmMode = group.dataset.mapSelect === 'confirm';
+                // data-map-balloon — по клику на метку показывать дефолтную яндекс-подсказку (адрес+телефон).
+                // Нужно на моб (там список адресов скрыт, метка — единственный источник инфо). Включено только на главной.
+                const balloonMode = group.dataset.mapBalloon !== undefined;
                 const coordsOf    = p => p.getAttribute('data-map-point').split(',').map(Number); // [lng, lat]
 
-                const map = new YMap(mapEl, { location: { center: coordsOf(points[0]), zoom: baseZoom } });
+                // содержимое балуна берём из разметки пункта: .addresses__addr + .addresses__phone
+                const balloonContent = (point) => {
+                    const box = document.createElement('div');
+                    box.className = 'ymap-balloon';
+                    const addr = point.querySelector('.addresses__addr');
+                    if (addr) {
+                        const a = document.createElement('p');
+                        a.className = 'ymap-balloon__addr';
+                        a.textContent = addr.textContent.trim();
+                        box.appendChild(a);
+                    }
+                    const phone = point.querySelector('.addresses__phone');
+                    if (phone) {
+                        const a = document.createElement('a');
+                        a.className = 'ymap-balloon__phone';
+                        a.href = phone.getAttribute('href') || '#';
+                        a.textContent = phone.textContent.trim();
+                        box.appendChild(a);
+                    }
+                    return box;
+                };
+                const popupCfg = (point, show) => ({
+                    content: () => balloonContent(point), position: 'top', offset: 14, show,
+                });
+
+                // Смещение центра влево на ширину перекрывающей панели, чтобы активная точка
+                // визуально была по центру ВИДИМОЙ (не закрытой карточкой) части карты.
+                // data-map-offset-el="селектор" — мерить правый край элемента (адаптивно);
+                // либо data-map-offset-left="35%" | "400" — явный процент/пиксели. Через margin карты.
+                const offsetEl = group.dataset.mapOffsetEl ? group.querySelector(group.dataset.mapOffsetEl) : null;
+                const leftMargin = () => {
+                    // на моб карточка адресов не перекрывает карту (она под картой) — центр = точка, без смещения
+                    if (window.matchMedia('(max-width: 750px)').matches) return 0;
+                    const v = group.dataset.mapOffsetLeft;
+                    if (v) return v.trim().endsWith('%') ? mapEl.clientWidth * parseFloat(v) / 100 : (parseFloat(v) || 0);
+                    if (offsetEl) {
+                        const mapRect = mapEl.getBoundingClientRect();
+                        const elRect  = offsetEl.getBoundingClientRect();
+                        return Math.max(0, elRect.right - mapRect.left + 20); // +20 — зазор от карточки
+                    }
+                    return 0;
+                };
+                const mapMargin = () => [0, 0, 0, Math.round(leftMargin())];
+
+                const map = new YMap(mapEl, { location: { center: coordsOf(points[0]), zoom: baseZoom }, margin: mapMargin() });
                 map.addChild(new YMapDefaultSchemeLayer());
                 map.addChild(new YMapDefaultFeaturesLayer());
 
                 const markers = new Map();
                 let current = points[0];
+                const mobile_mq = window.matchMedia('(max-width: 750px)');
+
+                // на моб показать дефолтную яндекс-подсказку (адрес+телефон) у выбранной точки, у остальных — скрыть
+                const openBalloon = (point) => {
+                    if (!balloonMode || !mobile_mq.matches) return;
+                    markers.forEach((m, p) => m.update({ popup: popupCfg(p, p === point) }));
+                };
 
                 const select = (point, fly = true) => {
                     if (!point) return;
                     current = point;
                     points.forEach(p => p.classList.toggle(activeClass, p === point));
-                    markers.forEach((m, p) => m.update({ color: p === point ? COLOR_ACTIVE : COLOR_IDLE }));
-                    if (fly) map.setLocation({ center: coordsOf(point), zoom: baseZoom + 3, duration: 400 });
+                    markers.forEach((m, p) => m.update(markerProps(p === point)));
+                    if (fly) {
+                        map.update({ margin: mapMargin() }); // пересчёт под текущий размер/панель
+                        map.setLocation({ center: coordsOf(point), zoom: baseZoom + 3, duration: 400 });
+                        // на моб — сразу показать инфо выбранной точки (клик по метке И смена города)
+                        openBalloon(point);
+                    }
                 };
 
                 points.forEach(point => {
                     const marker = new YMapDefaultMarker({
                         coordinates: coordsOf(point),
-                        color: COLOR_IDLE,
+                        ...markerProps(false),
+                        ...(balloonMode ? { popup: popupCfg(point, false) } : {}),
                         onClick: () => select(point)
                     });
                     map.addChild(marker);
@@ -1342,7 +1428,10 @@ window.addEventListener('load', () => {
                     })));
 
                 // первый пункт активен по умолчанию (в confirm-режиме — без предвыбора)
-                if (!confirmMode) select(points[0], false);
+                if (!confirmMode) {
+                    select(points[0], false);
+                    openBalloon(points[0]); // на моб — сразу показать инфо выбранной по умолчанию точки
+                }
             };
 
             document.querySelectorAll('[data-map-group]').forEach(group => {
@@ -1355,6 +1444,63 @@ window.addEventListener('load', () => {
                 });
                 ro.observe(mapEl);
             });
+
+            /* ---- Контакты (моб): попап с ОДНОЙ картой, сфокусированной на точке адреса.
+                 Отдельный вариант адаптива (не data-map-group): список карточек адресов, клик
+                 по кнопке карточки → открыть попап [data-popup-window="store-map"] + фокус карты.
+                 Карта строится один раз (лениво), при повторных открытиях — переносим маркер. */
+            const storeMapPopup = document.querySelector('[data-store-map-popup]');
+            if (storeMapPopup) {
+                const mapEl = storeMapPopup.querySelector('[data-map]');
+                let smap = null, smarker = null;
+                const STORE_ZOOM = 15;
+
+                const focusStore = (coords) => {
+                    const render = () => {
+                        if (!smap) {
+                            smap = new YMap(mapEl, { location: { center: coords, zoom: STORE_ZOOM } });
+                            smap.addChild(new YMapDefaultSchemeLayer());
+                            smap.addChild(new YMapDefaultFeaturesLayer());
+                            smarker = new YMapDefaultMarker({ coordinates: coords, ...markerProps(true) });
+                            smap.addChild(smarker);
+                        } else {
+                            smarker.update({ coordinates: coords });
+                            smap.setLocation({ center: coords, zoom: STORE_ZOOM, duration: 300 });
+                        }
+                    };
+                    if (mapEl && mapEl.clientWidth && mapEl.clientHeight) { render(); return; }
+                    const ro = new ResizeObserver(() => {
+                        if (mapEl.clientWidth && mapEl.clientHeight) { ro.disconnect(); render(); }
+                    });
+                    ro.observe(mapEl);
+                };
+
+                const store_mobile_mq = window.matchMedia('(max-width: 750px)');
+                document.querySelectorAll('[data-store-map]').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const coords = (btn.dataset.storeMap || '').split(',').map(Number);
+                        if (coords.length !== 2 || coords.some(Number.isNaN)) return;
+                        e.preventDefault();                 // href="#" — не прыгать вверх
+                        if (!store_mobile_mq.matches) return; // попап-карта — только на моб
+                        window.open_popup('store-map');
+                        focusStore(coords);
+                    });
+                });
+            }
         }).catch(() => {});
     }
+
+    document.querySelectorAll('[data-search-filter]').forEach(container => {
+        const input = container.querySelector('[data-search-input]');
+
+        input?.addEventListener('input', () => {
+            const value = input.value.trim().toLowerCase();
+
+            container.querySelectorAll('[data-search-item]').forEach(item => {
+                item.hidden = !item.dataset.searchItem
+                    .toLowerCase()
+                    .includes(value);
+            });
+        });
+    });
 });
