@@ -5393,6 +5393,11 @@ div.pswp__img--placeholder,
   height: 100%;
   font-size: 24px;
   color: var(--c-black);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+.product__counter button:hover {
+  background: color-mix(in srgb, var(--c-bg) 95%, black);
 }
 .product__qty {
   width: 100%;
@@ -10214,6 +10219,11 @@ div.pswp__img--placeholder,
   font-size: 22px;
   color: var(--c-black);
   cursor: pointer;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+.cart-item__counter button:hover {
+  background: color-mix(in srgb, var(--c-bg) 95%, black);
 }
 .cart-item__counter input {
   width: 42px;
