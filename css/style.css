@@ -1627,6 +1627,7 @@ div.pswp__img--placeholder,
   -webkit-transition: 0.15s;
   transition: 0.15s;
   position: relative;
+  z-index: 1;
 }
 .profi__item::after {
   content: '';
@@ -14531,6 +14532,9 @@ div.pswp__img--placeholder,
     -webkit-transition: none;
     transition: none;
     width: 100%;
+  }
+  .profi__item::after {
+    display: none;
   }
   .profi__card {
     -webkit-box-flex: 0;
