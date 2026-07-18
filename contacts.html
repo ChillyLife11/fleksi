@@ -62,12 +62,20 @@
 
 							<div class="contacts-pop">
 								<div class="contacts-pop__inner">
-									<a href="mailto:info@fleksi.ru" class="contacts-pop__email">
-										<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 4L9.16492 9.71544C9.82609 10.1783 10.1567 10.4097 10.5163 10.4993C10.8339 10.5785 11.1661 10.5785 11.4837 10.4993C11.8433 10.4097 12.1739 10.1783 12.8351 9.71544L21 4M5.8 17H16.2C17.8802 17 18.7202 17 19.362 16.673C19.9265 16.3854 20.3854 15.9265 20.673 15.362C21 14.7202 21 13.8802 21 12.2V5.8C21 4.11984 21 3.27976 20.673 2.63803C20.3854 2.07354 19.9265 1.6146 19.362 1.32698C18.7202 1 17.8802 1 16.2 1H5.8C4.11984 1 3.27976 1 2.63803 1.32698C2.07354 1.6146 1.6146 2.07354 1.32698 2.63803C1 3.27976 1 4.11984 1 5.8V12.2C1 13.8802 1 14.7202 1.32698 15.362C1.6146 15.9265 2.07354 16.3854 2.63803 16.673C3.27976 17 4.11984 17 5.8 17Z" stroke="#C8C8C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-										<span class="contacts-pop__email-text">info@fleksi.ru</span>
-									</a>
+									<div class="contacts-pop__email">
+										<a href="mailto:info@fleksi.ru" class="contacts-pop__email-link">
+											<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 4L9.16492 9.71544C9.82609 10.1783 10.1567 10.4097 10.5163 10.4993C10.8339 10.5785 11.1661 10.5785 11.4837 10.4993C11.8433 10.4097 12.1739 10.1783 12.8351 9.71544L21 4M5.8 17H16.2C17.8802 17 18.7202 17 19.362 16.673C19.9265 16.3854 20.3854 15.9265 20.673 15.362C21 14.7202 21 13.8802 21 12.2V5.8C21 4.11984 21 3.27976 20.673 2.63803C20.3854 2.07354 19.9265 1.6146 19.362 1.32698C18.7202 1 17.8802 1 16.2 1H5.8C4.11984 1 3.27976 1 2.63803 1.32698C2.07354 1.6146 1.6146 2.07354 1.32698 2.63803C1 3.27976 1 4.11984 1 5.8V12.2C1 13.8802 1 14.7202 1.32698 15.362C1.6146 15.9265 2.07354 16.3854 2.63803 16.673C3.27976 17 4.11984 17 5.8 17Z" stroke="#C8C8C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<span class="contacts-pop__email-text">info@fleksi.ru</span>
+										</a>
+										<button type="button" class="contacts-pop__email-copy" data-copy="info@fleksi.ru" aria-label="Скопировать почту">
+											<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+												<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/>
+											</svg>
+										</button>
+									</div>
 
 									<button type="button" class="contacts-pop__call red-btn" data-popup="callback">Заказать звонок</button>
 
@@ -1167,24 +1175,6 @@
 							</div>
 						</div>
 					</div>
-
-					<a href="#" class="cart-item__addon" data-popup="addon">
-						<span class="cart-item__addon-text">
-							<span class="cart-item__addon-title">
-								Дополните комплект
-								<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1 7.33081H13.6615M7.33075 13.6616L13.6615 7.33081L7.33075 1.00006" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-							</span>
-							<span class="cart-item__addon-sub">Подборка аксессуаров</span>
-						</span>
-						<span class="cart-item__addon-thumbs">
-							<div class="cart-item__addon-thumb"><img src="./img/solution/1.webp" alt=""></div>
-							<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
-							<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
-							<div class="cart-item__addon-thumb"><img src="./img/solution/4.webp" alt=""></div>
-						</span>
-					</a>
 				</div>
 
 				<div class="cart-item" data-cart-item>
@@ -1245,24 +1235,6 @@
 							</div>
 						</div>
 					</div>
-
-					<a href="#" class="cart-item__addon" data-popup="addon">
-						<span class="cart-item__addon-text">
-							<span class="cart-item__addon-title">
-								Дополните комплект
-								<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1 7.33081H13.6615M7.33075 13.6616L13.6615 7.33081L7.33075 1.00006" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-							</span>
-							<span class="cart-item__addon-sub">Подборка аксессуаров</span>
-						</span>
-						<span class="cart-item__addon-thumbs">
-							<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
-							<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
-							<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
-							<div class="cart-item__addon-thumb"><img src="./img/solution/4.webp" alt=""></div>
-						</span>
-					</a>
 				</div>
 
 				<div class="cart-item" data-cart-item>
@@ -1323,24 +1295,6 @@
 							</div>
 						</div>
 					</div>
-
-					<a href="#" class="cart-item__addon" data-popup="addon">
-						<span class="cart-item__addon-text">
-							<span class="cart-item__addon-title">
-								Дополните комплект
-								<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1 7.33081H13.6615M7.33075 13.6616L13.6615 7.33081L7.33075 1.00006" stroke="#E43D30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-							</span>
-							<span class="cart-item__addon-sub">Подборка аксессуаров</span>
-						</span>
-						<span class="cart-item__addon-thumbs">
-							<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
-							<div class="cart-item__addon-thumb"><img src="./img/solution/2.webp" alt=""></div>
-							<div class="cart-item__addon-thumb"><img src="./img/solution/3.webp" alt=""></div>
-							<div class="cart-item__addon-thumb"><img src="./img/solution/4.webp" alt=""></div>
-						</span>
-					</a>
 				</div>
 			</div>
 		</div>
@@ -1467,8 +1421,9 @@
         </div>
     </section>
 
-	<section class="addresses addresses--stores">
-		<img src="./img/addresses/map.webp" alt="" class="addresses__map">
+	<section class="addresses addresses--stores" data-map-group data-map-active="addresses__item--active" data-map-zoom="12" data-map-offset-el=".addresses__card">
+		<!-- интерактивная ymaps-карта (ПК/планшет); на моб скрыта — там попап по кнопке -->
+		<div class="addresses__map" data-map></div>
 
 		<div class="wrapper">
 			<div class="addresses__card" data-tabs>
@@ -1484,63 +1439,69 @@
 				<div class="addresses__contents" data-tabs-contents>
 					<div class="addresses__content" data-tabs-content="active">
 						<div class="addresses__list">
-							<div class="addresses__item addresses__item--active">
+							<div class="addresses__item addresses__item--active" data-map-point="39.726000,43.602000">
 								<p class="addresses__addr">г. Сочи, Центральный район, ул. Пластунская, 72</p>
 								<p class="addresses__time">Ежедневно с 10:00 до 21:00</p>
-								<a href="tel:+78622681555" class="addresses__phone">+7 862 268-15-55</a>
-								<a href="#" class="addresses__btn" data-store-map="39.726000,43.602000">Подробнее</a>
+								<a href="tel:+78622681555" class="addresses__phone">+7 862 268-15-55 <span class="addresses__phone-copy" role="button" tabindex="0" aria-label="Скопировать"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="#53575A" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="#53575A" stroke-width="2"/></svg></span></a>
+								<a href="#" class="addresses__btn" data-store-map="39.726000,43.602000">Показать на карте</a>
 							</div>
-							<div class="addresses__item">
+							<div class="addresses__item" data-map-point="39.730000,43.585000">
 								<p class="addresses__addr">Склад г. Сочи, ул. Труда, 33 микрорайон КСМ</p>
 								<p class="addresses__time">Ежедневно с 10:00 до 21:00</p>
-								<a href="#" class="addresses__btn" data-store-map="39.730000,43.585000">Подробнее</a>
+								<a href="tel:+78622681555" class="addresses__phone">+7 862 268-15-55 <span class="addresses__phone-copy" role="button" tabindex="0" aria-label="Скопировать"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="#53575A" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="#53575A" stroke-width="2"/></svg></span></a>
+									<a href="#" class="addresses__btn" data-store-map="39.730000,43.585000">Показать на карте</a>
 							</div>
-							<div class="addresses__item">
+							<div class="addresses__item" data-map-point="39.916300,43.444800">
 								<p class="addresses__addr">г. Сочи, Адлерский район, ул. Авиационная, 28/9</p>
 								<p class="addresses__time">Ежедневно с 10:00 до 21:00</p>
-								<a href="#" class="addresses__btn" data-store-map="39.916300,43.444800">Подробнее</a>
+								<a href="tel:+78622681555" class="addresses__phone">+7 862 268-15-55 <span class="addresses__phone-copy" role="button" tabindex="0" aria-label="Скопировать"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="#53575A" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="#53575A" stroke-width="2"/></svg></span></a>
+									<a href="#" class="addresses__btn" data-store-map="39.916300,43.444800">Показать на карте</a>
 							</div>
-							<div class="addresses__item">
+							<div class="addresses__item" data-map-point="39.770000,43.520000">
 								<p class="addresses__addr">г. Сочи, Хостинский район, ул. Гагарина, 14</p>
 								<p class="addresses__time">Ежедневно с 10:00 до 21:00</p>
-								<a href="#" class="addresses__btn" data-store-map="39.770000,43.520000">Подробнее</a>
+								<a href="tel:+78622681555" class="addresses__phone">+7 862 268-15-55 <span class="addresses__phone-copy" role="button" tabindex="0" aria-label="Скопировать"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="#53575A" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="#53575A" stroke-width="2"/></svg></span></a>
+									<a href="#" class="addresses__btn" data-store-map="39.770000,43.520000">Показать на карте</a>
 							</div>
 						</div>
 					</div>
 
 					<div class="addresses__content" data-tabs-content>
 						<div class="addresses__list">
-							<div class="addresses__item addresses__item--active">
+							<div class="addresses__item addresses__item--active" data-map-point="38.976900,45.052000">
 								<p class="addresses__addr">г. Краснодар, ул. Красная, 176</p>
 								<p class="addresses__time">Ежедневно с 09:00 до 20:00</p>
-								<a href="tel:+78612000000" class="addresses__phone">+7 861 200-00-00</a>
-								<a href="#" class="addresses__btn" data-store-map="38.976900,45.052000">Подробнее</a>
+								<a href="tel:+78612000000" class="addresses__phone">+7 861 200-00-00 <span class="addresses__phone-copy" role="button" tabindex="0" aria-label="Скопировать"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="#53575A" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="#53575A" stroke-width="2"/></svg></span></a>
+								<a href="#" class="addresses__btn" data-store-map="38.976900,45.052000">Показать на карте</a>
 							</div>
-							<div class="addresses__item">
+							<div class="addresses__item" data-map-point="39.030000,45.035000">
 								<p class="addresses__addr">г. Краснодар, ул. Ставропольская, 234</p>
 								<p class="addresses__time">Ежедневно с 09:00 до 20:00</p>
-								<a href="#" class="addresses__btn" data-store-map="39.030000,45.035000">Подробнее</a>
+								<a href="tel:+78612000000" class="addresses__phone">+7 861 200-00-00 <span class="addresses__phone-copy" role="button" tabindex="0" aria-label="Скопировать"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="#53575A" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="#53575A" stroke-width="2"/></svg></span></a>
+									<a href="#" class="addresses__btn" data-store-map="39.030000,45.035000">Показать на карте</a>
 							</div>
-							<div class="addresses__item">
+							<div class="addresses__item" data-map-point="38.940000,45.045000">
 								<p class="addresses__addr">г. Краснодар, ул. Дзержинского, 100</p>
 								<p class="addresses__time">Ежедневно с 09:00 до 20:00</p>
-								<a href="#" class="addresses__btn" data-store-map="38.940000,45.045000">Подробнее</a>
+								<a href="tel:+78612000000" class="addresses__phone">+7 861 200-00-00 <span class="addresses__phone-copy" role="button" tabindex="0" aria-label="Скопировать"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="#53575A" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="#53575A" stroke-width="2"/></svg></span></a>
+									<a href="#" class="addresses__btn" data-store-map="38.940000,45.045000">Показать на карте</a>
 							</div>
 						</div>
 					</div>
 
 					<div class="addresses__content" data-tabs-content>
 						<div class="addresses__list">
-							<div class="addresses__item addresses__item--active">
+							<div class="addresses__item addresses__item--active" data-map-point="39.922400,43.426900">
 								<p class="addresses__addr">г. Адлер, ул. Ленина, 219</p>
 								<p class="addresses__time">Ежедневно с 10:00 до 21:00</p>
-								<a href="tel:+78622990000" class="addresses__phone">+7 862 299-00-00</a>
-								<a href="#" class="addresses__btn" data-store-map="39.922400,43.426900">Подробнее</a>
+								<a href="tel:+78622990000" class="addresses__phone">+7 862 299-00-00 <span class="addresses__phone-copy" role="button" tabindex="0" aria-label="Скопировать"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="#53575A" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="#53575A" stroke-width="2"/></svg></span></a>
+								<a href="#" class="addresses__btn" data-store-map="39.922400,43.426900">Показать на карте</a>
 							</div>
-							<div class="addresses__item">
+							<div class="addresses__item" data-map-point="39.915100,43.431800">
 								<p class="addresses__addr">г. Адлер, ул. Кирова, 58</p>
 								<p class="addresses__time">Ежедневно с 10:00 до 21:00</p>
-								<a href="#" class="addresses__btn" data-store-map="39.915100,43.431800">Подробнее</a>
+								<a href="tel:+78622990000" class="addresses__phone">+7 862 299-00-00 <span class="addresses__phone-copy" role="button" tabindex="0" aria-label="Скопировать"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="11" height="11" rx="2" stroke="#53575A" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="#53575A" stroke-width="2"/></svg></span></a>
+									<a href="#" class="addresses__btn" data-store-map="39.915100,43.431800">Показать на карте</a>
 							</div>
 						</div>
 					</div>

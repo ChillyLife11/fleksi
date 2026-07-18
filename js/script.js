@@ -256,6 +256,10 @@ window.addEventListener('load', () => {
                         pagination: {
                             el: '.about-coop .slider-actions__pagination',
                             type: 'fraction',
+                            // всего — число карточек (5), а не число позиций прокрутки:
+                            // spv:'auto' схлопывает последние снапы (у края видно 2 карточки
+                            // сразу) и дефолтный total показывал бы 4
+                            formatFractionTotal: () => coop_wrapper.querySelectorAll('.swiper-slide').length,
                         },
                         breakpoints: {
                             751: { spaceBetween: 22 },
@@ -723,14 +727,20 @@ window.addEventListener('load', () => {
     if (info_tips.length) {
         const TIP_PAD = 12;
 
+        const drawer_mq = window.matchMedia('(max-width: 1200px)');
+
         const clamp_tip = (info) => {
             const tip = info.querySelector('.cat-filters__info_tip');
             if (!tip) return;
             tip.style.setProperty('--tip-shift', '0px');
             const rect = tip.getBoundingClientRect();
+            /* на ≤1200 фильтры — дровер со скроллом: зажимаем в его границы
+               (overflow панели обрезает всё, что торчит наружу), иначе — в экран */
+            const drawer = drawer_mq.matches && info.closest('[data-filters]');
+            const bounds = drawer ? drawer.getBoundingClientRect() : { left: 0, right: window.innerWidth };
             let shift = 0;
-            if (rect.left < TIP_PAD) shift = TIP_PAD - rect.left;
-            else if (rect.right > window.innerWidth - TIP_PAD) shift = window.innerWidth - TIP_PAD - rect.right;
+            if (rect.left < bounds.left + TIP_PAD) shift = bounds.left + TIP_PAD - rect.left;
+            else if (rect.right > bounds.right - TIP_PAD) shift = bounds.right - TIP_PAD - rect.right;
             tip.style.setProperty('--tip-shift', Math.round(shift) + 'px');
         };
 
@@ -1030,9 +1040,9 @@ window.addEventListener('load', () => {
         el.addEventListener('mouseleave', reset);
     });
 
-    document.querySelectorAll('.contact-card__copy').forEach(btn => {
+    document.querySelectorAll('.contact-card__copy, .addresses__phone-copy').forEach(btn => {
         const getValue = () => {
-            const pill = btn.closest('.contact-card__pill');
+            const pill = btn.closest('.contact-card__pill, .addresses__phone');
             return pill ? pill.textContent.trim() : '';
         };
         btn.addEventListener('click', (e) => {
@@ -1049,15 +1059,32 @@ window.addEventListener('load', () => {
     });
 
     const buyboxFull    = document.querySelector('[data-buybox-full]');
-    const buyboxStickies = document.querySelectorAll('[data-buybox-sticky]'); // десктоп-панель + моб-плашка
-    if (buyboxFull && buyboxStickies.length) {
+    const buyboxStickies = document.querySelectorAll('[data-buybox-sticky]'); // моб-плашка
+    if (buyboxFull) {
+        const buyboxAside = buyboxFull.closest('.buybox');
+        // компакт-режим — пока панель является правой колонкой (десктоп и планшет
+        // ≥951); на ≤950 она уезжает вниз на всю ширину («разворот») — там не нужен
+        const compactMq   = window.matchMedia('(min-width: 951px)');
+        // высота полной панели: порог компакт-режима считаем от неё, а не от
+        // текущего rect панели — иначе схлопывание меняло бы сам порог (цикл)
+        let buyboxFullH = 0;
+
         const updateBuyboxSticky = () => {
             const stickyHeader = parseInt(getComputedStyle(document.body).getPropertyValue('--sticky-header-height'), 10) || 0;
             const offset = stickyHeader + 20;
-            const passed = buyboxFull.getBoundingClientRect().bottom < offset;
+
+            if (compactMq.matches && buyboxAside) {
+                if (!buyboxFull.classList.contains('buybox__inner--compact')) buyboxFullH = buyboxFull.offsetHeight;
+                const passed = buyboxAside.getBoundingClientRect().top + buyboxFullH < offset;
+                buyboxFull.classList.toggle('buybox__inner--compact', passed);
+            } else {
+                buyboxFull.classList.remove('buybox__inner--compact');
+            }
+
+            const passedBar = buyboxFull.getBoundingClientRect().bottom < offset;
             buyboxStickies.forEach(el => {
-                el.classList.toggle('is-visible', passed);
-                el.setAttribute('aria-hidden', passed ? 'false' : 'true');
+                el.classList.toggle('is-visible', passedBar);
+                el.setAttribute('aria-hidden', passedBar ? 'false' : 'true');
             });
         };
         window.addEventListener('scroll', updateBuyboxSticky, { passive: true });
