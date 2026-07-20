@@ -2045,6 +2045,7 @@ div.pswp__img--placeholder,
   padding-bottom: 40px;
   /* contacts (--stores): телефон — пилюля с кнопкой копирования (как у contact-card);
        клик по номеру — дозвон (tel:), по иконке — копирование */
+  /* кнопка-ссылка «Все контакты» под картой — только мобилка (media.less) */
 }
 .addresses .wrapper {
   pointer-events: none;
@@ -2279,6 +2280,28 @@ div.pswp__img--placeholder,
   transition: background 0.15s;
 }
 .addresses__btn:hover {
+  background: var(--c-red);
+}
+.addresses__all {
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  min-height: 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--c-red);
+  background: transparent;
+  border: 1px solid var(--c-red);
+  border-radius: 20px 20px 5px 20px;
+  -webkit-transition: color 0.15s, background 0.15s;
+  transition: color 0.15s, background 0.15s;
+}
+.addresses__all:hover {
+  color: #fff;
   background: var(--c-red);
 }
 .events {
@@ -9720,6 +9743,11 @@ div.pswp__img--placeholder,
   background: color-mix(in srgb, var(--c-black) 75%, transparent);
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+.collection-gallery__arrow:hover {
+  background: color-mix(in srgb, var(--c-gray) 75%, transparent);
 }
 .collection-gallery__arrow.swiper-button-disabled {
   display: none;
@@ -10103,12 +10131,12 @@ div.pswp__img--placeholder,
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  -ms-grid-columns: 165px minmax(0, 320px) auto auto;
-  grid-template-columns: 165px minmax(0, 320px) auto auto;
+  -ms-grid-columns: 111px 1fr auto auto;
+  grid-template-columns: 111px 1fr auto auto;
   gap: 20px;
 }
 .cart-item__media {
-  width: 165px;
+  width: 111px;
   height: 111px;
   border-radius: 10px;
   overflow: hidden;
@@ -15927,6 +15955,7 @@ div.pswp__img--placeholder,
     /* margin:0 auto у .wrapper мешает растянуться во flex-колонке — сбрасываем */
     /* три равные вкладки-города, как в макете */
     /* на мобилке показываем только карту, список адресов скрыт */
+    /* кнопка-ссылка «Все контакты» под картой (на contacts.html этого блока нет — там свой .addresses--stores) */
   }
   .addresses::before {
     display: none;
@@ -16004,6 +16033,16 @@ div.pswp__img--placeholder,
   }
   .addresses__contents {
     display: none;
+  }
+  .addresses__all {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+            order: 3;
+    width: calc(100% - 32px);
+    margin: 16px auto 0;
   }
   /* контакты: адреса — плоский список карточек магазинов (без карты и табов) */
   .addresses--stores {
