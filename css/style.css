@@ -12888,7 +12888,7 @@ div.pswp__img--placeholder,
           justify-content: center;
 }
 .catalog-list {
-  padding: 40px 0 60px;
+  padding: 0 0 60px;
 }
 .catalog-list__grid {
   display: -ms-grid;
