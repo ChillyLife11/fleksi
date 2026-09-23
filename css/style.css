@@ -5021,12 +5021,16 @@ div.pswp__img--placeholder,
   margin-left: -10px;
   margin-right: -10px;
   margin-bottom: -20px;
+  /* сетка без фильтров-сайдбара (страница «Избранное») — 4 карточки в ряд вместо 3 */
 }
 .products__grid > * {
   width: calc(100% / 12 * 4 - 20px);
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
+}
+.products__grid--wide > * {
+  width: calc(100% / 12 * 3 - 20px);
 }
 .products__grid--list {
   -ms-grid-columns: 1fr;
@@ -5066,6 +5070,15 @@ div.pswp__img--placeholder,
 }
 .products__more:hover {
   background: var(--c-gray-light);
+}
+/* страница «Избранное» (favorites.html): крошки, заголовок и сетка карточек на всю ширину */
+.favorites {
+  padding-bottom: 60px;
+}
+.favorites__count {
+  margin-top: 16px;
+  font-size: 16px;
+  color: var(--c-gray);
 }
 .product-page__content {
   display: -webkit-box;
@@ -14861,6 +14874,10 @@ div.pswp__img--placeholder,
   .desktop,
   .mobile {
     display: none !important;
+  }
+  /* сетка «Избранного» на планшете — 3 карточки в ряд (на ≤750 переходит в 2 колонки) */
+  .products__grid--wide > * {
+    width: calc(100% / 12 * 4 - 20px);
   }
   .des-audience__grid {
     -ms-grid-columns: (minmax(0, 1fr))[2];

@@ -406,6 +406,18 @@ window.addEventListener('load', () => {
         });
     });
 
+    const anchors = document.querySelectorAll('[data-anchor]');
+	if (anchors.length > 0) {
+		anchors.forEach(anchor => anchor.addEventListener('click', e => {
+			e.preventDefault();
+			window.scrollTo({
+				left: 0,
+				top: document.querySelector('#' + anchor.dataset.anchor).offsetTop - 80,
+				behavior: 'smooth'
+			});
+		}));
+	}
+    
     document.querySelectorAll('[data-accordion]').forEach(accordion => {
         const allow_multiple = accordion.hasAttribute('data-accordion-multiple');
 
