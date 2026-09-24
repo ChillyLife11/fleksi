@@ -1811,7 +1811,12 @@ div.pswp__img--placeholder,
   transition: opacity 0.2s ease;
 }
 .profi__panel-block {
-  width: var(--profi-panel-w, 100%);
+  /* Фолбэк повторяет формулу set_panel_width() из script.js (ширина .wrapper минус
+           карточки и отступы), т.к. JS стартует только по window load — после загрузки всех
+           картинок. Со старым фолбэком 100% панели неактивных карточек сжимались до ~8px,
+           текст переносился в колонку и секция «распухала» до ~900px вместо 565.
+           Ниже 1440 фолбэк не участвует: там медиазапрос задаёт width: 100%. */
+  width: var(--profi-panel-w, calc(min(100vw - 60px, 1440px) - 950px));
   -webkit-flex-shrink: 0;
           flex-shrink: 0;
 }
