@@ -21891,6 +21891,10 @@ body:has(.page-404) .menu_top_block {
   .page-404__code {
     font-size: 72px;
   }
+  /* на ≤750 media.less переводит .section-title в text-align: left — для 404 возвращаем центр */
+  .page-404__title {
+    text-align: center;
+  }
   .page-404__actions {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
