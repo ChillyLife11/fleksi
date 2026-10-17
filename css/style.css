@@ -20618,7 +20618,8 @@ div.pswp__img--placeholder,
   border-collapse: collapse;
   table-layout: fixed;
   /* у td из разметки бекенда нет классов — «Название» и «Цена» цепляем по порядку строк */
-  /* фото на белой плитке: фон страницы серый, подложка @bg была бы не видна */
+  /* фото на белой плитке: фон страницы серый, подложка @bg была бы не видна.
+       Высота фиксированная, ширина подстраивается под пропорции снимка. */
 }
 .compare-table th,
 .compare-table td {
@@ -20660,14 +20661,13 @@ div.pswp__img--placeholder,
   color: var(--c-red);
 }
 .compare-table__photo {
-  display: block;
+  display: inline-block;
 }
 .compare-table__photo img {
   display: block;
-  width: 100%;
-  height: 200px;
-  padding: 10px;
-  box-sizing: border-box;
+  width: auto;
+  height: 110px;
+  max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   background: #fff;
@@ -21845,9 +21845,6 @@ body:has(.page-404) .menu_top_block {
   }
   .compare-table tr:nth-child(3) td {
     font-size: 17px;
-  }
-  .compare-table__photo img {
-    height: 140px;
   }
   .brands-root__grid {
     -ms-grid-columns: (minmax(0, 1fr))[2];
