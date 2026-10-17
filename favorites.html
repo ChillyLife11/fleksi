@@ -7,6 +7,10 @@
 
 	<link rel="stylesheet" href="./libs/swiper/swiper.min.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<!-- CSS от бекенда (src/add-css/, копируются gulp-задачей addCss как есть).
+	     Подключаются ПОСЛЕ ./css/style.css — это оверрайды поверх вёрстки. -->
+	<link rel="stylesheet" href="./add-css/catalog-isolate.css">
+
 </head>
 <body>
 
@@ -150,12 +154,22 @@
 						</button>
 
 						<form class="header__search">
+							<input type="hidden" name="faction_type" value="variant">
+							<input type="hidden" name="faction_word" value="">
+							<input type="hidden" name="faction_site" value="variant2">
+							<input type="text" name="form_text_name_1" value="" style="position:absolute;z-index:-1;opacity:0; margin:0;padding:0;width:120px;" autocomplete="one-time-code">
+							
 							<input type="text" class="header__search_inp" placeholder="Поиск">
 							<button type="submit" class="header__search_submit">
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M19 19L14.65 14.65M9 4C11.7614 4 14 6.23858 14 9M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 								</svg>
 							</button>
+
+
+							<!-- список подсказок поиска: только на index-search.html,
+							     остальные страницы подключают шапку без аргумента -->
+							
 						</form>
 
 						<button type="button" class="header__phone-m" data-popup="write" aria-label="Связаться с нами">
@@ -179,13 +193,13 @@
 									<path d="M1 22C3.85485 18.9397 7.7308 17.0588 12 17.0588C16.2692 17.0588 20.1451 18.9397 23 22M17.5 6.55882C17.5 9.62888 15.0376 12.1176 12 12.1176C8.96243 12.1176 6.5 9.62888 6.5 6.55882C6.5 3.48877 8.96243 1 12 1C15.0376 1 17.5 3.48877 17.5 6.55882Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 								</svg>
 							</a>
-							<a href="#" class="header__mid_btn">
+							<a href="#" class="header__mid_btn is-active">
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M7.11111 13.2222V18.1111M16.8889 10.7778V18.1111M12 5.88889V18.1111M6.86667 23H17.1333C19.1869 23 20.2136 23 20.998 22.6004C21.6879 22.2488 22.2488 21.6879 22.6004 20.998C23 20.2136 23 19.1869 23 17.1333V6.86667C23 4.81314 23 3.78638 22.6004 3.00203C22.2488 2.31211 21.6879 1.75118 20.998 1.39964C20.2136 1 19.1869 1 17.1333 1H6.86667C4.81314 1 3.78638 1 3.00203 1.39964C2.31211 1.75118 1.75118 2.31211 1.39964 3.00203C1 3.78638 1 4.81314 1 6.86667V17.1333C1 19.1869 1 20.2136 1.39964 20.998C1.75118 21.6879 2.31211 22.2488 3.00203 22.6004C3.78638 23 4.81314 23 6.86667 23Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 								</svg>
 								<span>2</span>
 							</a>
-							<a href="favorites.html" class="header__mid_btn">
+							<a href="favorites.html" class="header__mid_btn is-active">
 								<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.5222 1C20.3967 1 23 4.725 23 8.2C23 15.2375 12.1956 21 12 21C11.8044 21 1 15.2375 1 8.2C1 4.725 3.60333 1 7.47778 1C9.70222 1 11.1567 2.1375 12 3.1375C12.8433 2.1375 14.2978 1 16.5222 1Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 								</svg>
@@ -1336,8 +1350,6 @@
                                     <a href="#" class="product__slider swiper" data-product-slider>
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide"><img src="./img/solution/1.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/2.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/3.webp" alt=""></div>
                                         </div>
                                         <div class="product__dots swiper-pagination"></div>
                                     </a>
@@ -1418,8 +1430,6 @@
                                     <a href="#" class="product__slider swiper" data-product-slider>
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide"><img src="./img/solution/1.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/2.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/3.webp" alt=""></div>
                                         </div>
                                         <div class="product__dots swiper-pagination"></div>
                                     </a>
@@ -1500,8 +1510,6 @@
                                     <a href="#" class="product__slider swiper" data-product-slider>
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide"><img src="./img/solution/1.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/2.webp" alt=""></div>
-                                            <div class="swiper-slide"><img src="./img/solution/3.webp" alt=""></div>
                                         </div>
                                         <div class="product__dots swiper-pagination"></div>
                                     </a>
